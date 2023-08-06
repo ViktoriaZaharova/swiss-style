@@ -1,0 +1,71 @@
+@import "vars"
+
+footer
+	background: #f1f1f1
+	padding: 70px 0
+	
+	.address
+		margin: 22px 0 13px	
+		font-size: 14px
+
+.footer-box
+	&__title
+		width: 100%
+		margin: 0 0 25px
+		font-weight: bold
+	
+
+.footer-menu
+	font-size: 14px
+	li
+		margin: 0 0 19px
+		&:last-child
+			margin: 0
+		a
+			color: #232323
+			position: relative
+			z-index: 1
+			&::before
+				content: ''
+				position: absolute
+				bottom: -2px
+				left: 50%
+				transform: translate(-50%,0)
+				width: 0
+				height: 2px
+				border-radius: 2px
+				background: $accent
+				transition: .4s
+				z-index: -1
+			&:hover
+				color: $accent
+				&::before
+					width: 100%	
+
+.list-social
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		margin: 0 12px 0 0
+		&:last-child
+			margin: 0
+		a
+			@include d-flex
+			border-radius: 50%
+			width: 49px
+			height: 49px
+			min-width: 49px
+			padding: 13px
+			background: rgba(#000, .1)
+			fill: #fff
+			&:hover
+				background: rgba(#000, .4)
+
+
+.footer-bottom
+	margin: 40px 0 0
+	font-size: 13px
+	color: #999
+	.box-text
+		text-align: right	
