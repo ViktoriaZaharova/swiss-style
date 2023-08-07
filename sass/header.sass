@@ -21,7 +21,7 @@ header
 	display: block
 
 .form-search
-	margin: 0 53px
+	margin: 0 auto
 	display: flex
 	align-items: center
 	position: relative
@@ -43,6 +43,7 @@ header
 		margin: 0
 
 .dropdown-location
+	font-size: 13px
 	&__icon
 		@include d-flex
 		width: 9px
@@ -58,11 +59,11 @@ header
 .header-contacts
 	position: relative
 	padding: 0 32px 0 0
-	margin: 0 52px 0 auto
+	margin: 0 auto
+	text-align: right
 	.link
 		color: #232323
-		font-size: 13px
-		margin: 3px 0 0
+		margin: 3px 0 0 auto
 		&:hover
 			color: $accent
 
@@ -118,4 +119,21 @@ header
 			margin: 0 auto
 			position: relative
 
+.header-bottom
+	background: #f1f1f1
+	padding: 14px 0
+	font-size: 16px
+
+.nav-menu-user, .nav-menu
+	display: flex
+	align-items: center
+	
+	flex-direction: row
+	li
+			margin: 0 70px 0 0
+			&:last-child
+				margin: 0
+
+.nav-menu-user
+	margin: 0 0 0 auto
 

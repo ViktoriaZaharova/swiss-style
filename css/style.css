@@ -158,13 +158,40 @@ button:hover, button:focus, .btn:hover, .btn:focus {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 10px 45px;
+  padding: 10px 20px;
   font-size: 16px;
-  font-weight: bold;
-  height: 46px;
-  border-radius: 10px;
+  height: 48px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.btn-accent {
+  background: #c21212;
+  color: #fff;
+}
+.btn-accent:hover {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.btn-grey {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fefefe;
+}
+.btn-grey:hover {
+  background: #c21212;
+  color: #fff;
+}
+
+.btn-gradient {
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ba6203), to(#edca92));
+  background-image: linear-gradient(to right, #ba6203, #edca92);
+}
+.btn-gradient:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ba6203), to(#edca92));
+  background-image: linear-gradient(to left, #ba6203, #edca92);
+  color: #fff;
 }
 
 .svg-icon {
@@ -191,6 +218,10 @@ ul, ol {
   list-style-type: disc;
 }
 
+.list-circle {
+  list-style-type: circle;
+}
+
 .container {
   max-width: 1450px;
   padding: 0 10px;
@@ -203,8 +234,20 @@ ul, ol {
   padding: 0 10px;
 }
 
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.m-70 {
+  margin: 70px 0;
 }
 
 .p-45 {
@@ -231,7 +274,6 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   color: #232323;
-  font-size: 13px;
 }
 .dropdown-toggle:hover {
   color: #c21212;
@@ -251,6 +293,24 @@ h2 {
   border: solid 1px #c4c4c4;
   border-radius: 0;
   font-size: 13px;
+}
+
+.nav-link {
+  padding: 0;
+  color: #232323;
+}
+.nav-link:hover {
+  color: #c21212;
+}
+
+.box-text {
+  line-height: 1.5;
+}
+.box-text p {
+  margin: 0 0 30px;
+}
+.box-text p:last-child {
+  margin: 0;
 }
 
 .slick-slider {

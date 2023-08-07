@@ -5,6 +5,86 @@
 	margin: 30px 0 0
 
 .advantages
-	margin: 70px 0
-			
+	margin: 70px 0 40px
 
+.advantages-box
+	display: flex
+	align-items: center
+	margin: 0 auto 30px 0
+	&:last-child
+		margin-right: 0
+	&__icon
+		@include d-flex
+		width: 30px
+		height: 35px
+		min-width: 30px
+		margin: 0 12px 0 0
+
+// categories
+.categories
+	margin: 0 0 40px
+
+.categories-box
+	width: 100%
+	height: 100%
+	position: relative
+	z-index: 1
+	padding: 150px 20px 20px 20px
+	&__bg
+		position: absolute
+		z-index: -1
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: 100%
+		height: 100%
+		object-fit: cover
+	.btn
+		padding: 16px 20px
+		border-radius: 0
+		font-weight: normal
+
+// popular brands
+.popular-brands
+	h2
+		margin: 0 0 28px 
+
+
+.popular-brands-wrapper
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 40px 0 0
+
+.popular-brands-box
+	margin: 0 auto 45px 0
+	@include d-flex
+
+.popular-brands-link
+	display: flex
+	align-items: center
+	color: #232323
+	font-size: 14px
+	border-bottom: 2px solid $accent
+	margin: 0 0 65px
+	.svg-icon
+		margin: 0 0 0 8px
+		width: 13px
+		height: 8px
+		@include d-flex
+		fill: #000
+	&:hover
+		color: $accent
+		.svg-icon
+			fill: $accent	
+
+// subscribe
+.subscribe-section
+	margin: 80px 0 0
+	background-color: #2d2d2d
+	color: #fff
+	padding: 45px 0
+
+
+	

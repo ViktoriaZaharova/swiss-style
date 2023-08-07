@@ -117,12 +117,31 @@ button, .btn
 	align-items: center
 	justify-content: center
 	text-align: center
-	padding: 10px 45px
+	padding: 10px 20px
 	font-size: 16px
-	font-weight: bold
-	height: 46px
-	border-radius: 10px
+	height: 48px
 	transition: 0.3s ease
+
+.btn-accent
+	background: $accent
+	color: #fff
+	&:hover
+		background: $grey
+		color: #333
+
+.btn-grey
+	background: rgba(#000, .3)
+	color: #fefefe
+	&:hover
+		background: $accent
+		color: #fff
+
+.btn-gradient
+	color: #fff
+	background-image: linear-gradient(to right, #ba6203, #edca92)
+	&:hover
+		background-image: linear-gradient(to left, #ba6203, #edca92)
+		color: #fff
 
 .svg-icon
 	display: inline-block
@@ -143,6 +162,9 @@ ul, ol
 .list-dots
 	list-style-type: disc
 
+.list-circle
+	list-style-type: circle
+
 .container
 	max-width: 1450px
 	padding: 0 10px
@@ -152,8 +174,17 @@ ul, ol
 	>*
 		padding: 0 10px
 
+.mb-25
+	margin-bottom: 25px
+
 .mb-30
 	margin-bottom: 30px
+
+.mb-40
+	margin-bottom: 40px
+
+.m-70
+	margin: 70px 0
 
 .p-45
 	padding: 45px 0
@@ -172,11 +203,11 @@ h2
 	display: flex
 	align-items: center
 	color: #232323
-	font-size: 13px	
+
 	&:hover
 		color: $accent
 	&:after
-		border: none	
+		border: none
 		margin: 0 0 0 15px
 		width: 10px
 		height: 6px
@@ -187,7 +218,20 @@ h2
 .dropdown-menu
 	border: solid 1px #c4c4c4
 	border-radius: 0
-	font-size: 13px		
+	font-size: 13px
+
+.nav-link
+	padding: 0
+	color: #232323
+	&:hover
+		color: $accent
+
+.box-text
+	line-height: 1.5
+	p
+		margin: 0 0 30px
+		&:last-child
+			margin: 0
 
 // slick slider style
 .slick-slider
@@ -218,14 +262,14 @@ h2
 		&:last-child
 			margin: 0
 		button
-			display: none	
+			display: none
 	.slick-active
-		background: $accent	
+		background: $accent
 
 .slick-arrow
 	position: absolute
 	z-index: 2
-	opacity: 1		
+	opacity: 1
 	top: 50%
 	transform: translate(0,-50%)
 	cursor: pointer
@@ -244,8 +288,7 @@ h2
 	right: 18px
 
 .slick-prev
-	left: 18px		
-
+	left: 18px
 
 //checkbox my
 .label-checkbox
