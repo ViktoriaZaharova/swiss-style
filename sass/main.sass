@@ -20,6 +20,226 @@
 		min-width: 30px
 		margin: 0 12px 0 0
 
+// categories-products
+.categories-products
+	margin: 0 0 40px
+	&__item
+		height: 107px
+		width: 71px
+		margin: 25px 0
+		@include d-flex
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(241, 241, 241, 0.92)
+			transition: .3s
+		img
+			max-height: 100%
+			width: 100%
+
+.categories-products-box
+	width: calc(20% - 9px)
+	margin: 0 auto 30px 0
+	background: #f1f1f1
+	transition: .3s
+	position: relative
+	z-index: 1
+	border: 1px solid transparent
+	&:last-child
+		margin: 0 0 30px
+	&:hover
+		background: #fff
+		border-style: solid
+		border-width: 1px
+		border-image-source: linear-gradient(to top, #edca92, #ba6203)
+		border-image-slice: 1
+		box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2)
+		.slick-arrow
+			opacity: 0.3
+		.categories-products-box__name
+			color: #ba6203
+		.categories-products
+			&__item
+				&::before
+					background: rgba(#fff, .9)	
+	&__name
+		color: #232323
+		width: 100%
+		text-align: center
+		margin: 10px auto 26px
+		font-size: 14px
+
+.categories-products-slider
+	width: 100%
+	height: 165px
+	padding: 10px 34px 0
+	.slick-arrow
+		background: transparent
+		border-radius: none
+		fill: #232323
+		opacity: 0
+		&:hover
+			opacity: 1
+	.slick-prev
+		left: 5px
+	.slick-next
+		right: 5px		
+	.slick-slide
+			
+	.slick-current
+		margin: 0 -20px	
+		.categories-products__item
+			position: relative
+			z-index: 1
+			padding: 0
+			width: 102px
+			height: 165px
+			margin: 0
+			&::before
+				opacity: 0
+
+// brands
+.brands
+	margin: 0 0 50px
+
+.brands-item
+	width: 100%
+	height: 100%
+	@include d-flex
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+// popular
+.products-slider
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		right: 0
+		top: 25px
+		height: calc(100% - 25px - 30px - 12px)
+		width: 1px
+		z-index: 1
+		background: #f2f2f2
+	.slide
+		padding: 25px 0 30px
+	.slick-dots
+		margin: 0
+
+.product-card
+	width: 100%
+	height: 100%
+	border: solid 1px #f2f2f2
+	background-color: #fff
+	position: relative
+	padding: 9px 10px 34px
+	transition: .3s
+	font-size: 16px
+	&__img
+		width: 100%
+		height: 282px
+		@include d-flex
+		img
+			max-height: 100%
+	&__body
+		width: 100%
+		max-height: 35px
+		min-height: 35px
+		overflow: hidden
+		position: relative
+		z-index: 1
+		line-height: 1.38
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 15px
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+	&__name
+		color: #232323
+		&:hover
+			color: $accent
+	&__footer
+		width: 100%
+		position: relative
+		display: flex
+		align-items: center
+		margin: 12px 0 0
+	.btn-add-card
+		top: 5px
+		right: 0
+		opacity: 0
+		position: absolute
+	&:hover
+		box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2)
+		border: solid 1px #f2f2f2
+		z-index: 1
+		position: relative
+		.btn-add-card
+			opacity: 1
+
+.list-labels
+	width: 100%
+	display: flex
+	align-items: start
+	justify-content: flex-end
+	padding: 8px
+	z-index: 1
+	position: absolute
+	left: 0
+	top: 0
+	font-size: 14px
+	color: #fff
+	line-height: 1
+	li
+		margin: 0 2px 2px 0
+		padding: 5px
+		height: 23px
+		&:last-child
+			margin-right: 0
+	&__new
+		height: 24px
+		background-image: linear-gradient(to left, #ba6203, #edca92)
+		@include d-flex
+	&__sale
+		background: $accent
+
+.price
+	margin: 0 0 17px
+	display: flex
+	align-items: center
+	font-weight: bold
+
+.old-price
+	margin: 0 0 0 9px
+	color: #999
+	font-size: 14px
+	font-weight: normal
+	text-decoration: line-through
+
+.loan-price
+	font-size: 14px
+
+.btn-add-card
+	fill: #fff
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	background: $accent
+	padding: 15px 13px
+	&:hover
+		background: $grey
+		fill: $accent
+
 // categories
 .categories
 	margin: 0 0 40px
@@ -44,11 +264,15 @@
 		border-radius: 0
 		font-weight: normal
 
+// seo-section
+.seo-section
+	h2
+		margin: 0 0 22px
+
 // popular brands
 .popular-brands
 	h2
-		margin: 0 0 28px 
-
+		margin: 0 0 28px
 
 .popular-brands-wrapper
 	width: 100%
@@ -77,7 +301,7 @@
 	&:hover
 		color: $accent
 		.svg-icon
-			fill: $accent	
+			fill: $accent
 
 // subscribe
 .subscribe-section
@@ -85,6 +309,41 @@
 	background-color: #2d2d2d
 	color: #fff
 	padding: 45px 0
+	h2
+		margin: 0 0 14px
 
+.subscribe-content
+	display: flex
+	align-items: center
 
-	
+.subscribe-icon
+	@include d-flex
+	max-width: 76px
+	width: 100%
+	margin: 0 35px 0 0
+
+.subscribe-text
+	max-width: 315px
+	width: 100%
+	.box-text
+		line-height: 1.5
+
+.form-subdcribe
+	width: calc(100% - 315px - 35px - 76px)
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	padding: 0 0 0 50px
+	label
+		width: calc(100% - 150px - 23px)
+		margin: 0 auto 0 0
+	button
+		padding: 10px
+		max-width: 150px
+		width: 100%
+
+.consent
+	margin: 12px 0 0
+	width: 100%
+	color: #8c8b8b
+	font-size: 13px

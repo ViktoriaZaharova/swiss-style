@@ -185,12 +185,12 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 .btn-gradient {
   color: #fff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ba6203), to(#edca92));
-  background-image: linear-gradient(to right, #ba6203, #edca92);
-}
-.btn-gradient:hover {
   background-image: -webkit-gradient(linear, right top, left top, from(#ba6203), to(#edca92));
   background-image: linear-gradient(to left, #ba6203, #edca92);
+}
+.btn-gradient:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ba6203), to(#edca92));
+  background-image: linear-gradient(to right, #ba6203, #edca92);
   color: #fff;
 }
 
@@ -234,6 +234,10 @@ ul, ol {
   padding: 0 10px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-25 {
   margin-bottom: 25px;
 }
@@ -263,6 +267,7 @@ h2 {
   font-size: 26px;
   font-weight: 500;
   width: 100%;
+  line-height: 1.38;
 }
 
 .dropdown-toggle {
@@ -301,6 +306,45 @@ h2 {
 }
 .nav-link:hover {
   color: #c21212;
+}
+
+.nav-tabs {
+  border: none;
+  border-radius: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.nav-tabs .nav-item {
+  margin: 0 46px 0 0;
+}
+.nav-tabs .nav-item:last-child {
+  margin: 0;
+}
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  color: #232323;
+  font-size: 14px;
+  position: relative;
+}
+.nav-tabs .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 2px;
+  background: #c21212;
+  bottom: -5px;
+  left: 0;
+}
+.nav-tabs .nav-link.active {
+  background: transparent;
+  color: #232323;
+}
+.nav-tabs .nav-link.active::before {
+  width: 100%;
 }
 
 .box-text {
