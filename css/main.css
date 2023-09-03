@@ -554,3 +554,310 @@
   color: #8c8b8b;
   font-size: 13px;
 }
+
+.nav-tabs-delivery {
+  border-bottom: solid 1px #dfdfdf;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav-tabs-delivery .nav-item {
+  margin: 0 85px 0 0;
+}
+.nav-tabs-delivery .nav-item:last-child {
+  margin: 0;
+}
+.nav-tabs-delivery .nav-link {
+  padding: 0 0 12px;
+  font-size: 18px;
+}
+.nav-tabs-delivery .nav-link::before {
+  bottom: 0;
+}
+
+.tab-content-delivery {
+  padding: 30px 0 0;
+}
+.tab-content-delivery ul li, .tab-content-delivery ol li {
+  margin: 0 0 10px;
+}
+.tab-content-delivery ul li:last-child, .tab-content-delivery ol li:last-child {
+  margin: 0;
+}
+.tab-content-delivery .box-text {
+  max-width: 1110px;
+}
+.tab-content-delivery .list-delivery li {
+  margin: 0 45px 35px 0;
+}
+.tab-content-delivery .list-delivery li:last-child {
+  margin: 0 0 35px;
+}
+
+.reserve-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0;
+}
+.reserve-time img {
+  max-width: 34px;
+  margin: 0 10px 0 0;
+}
+
+.list-delivery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.list-delivery li {
+  margin: 0 45px 35px 0;
+  max-width: 104px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.list-delivery li:last-child {
+  margin: 0 0 35px;
+  max-width: 198px;
+}
+
+.information-delivery-box {
+  margin: 40px 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 50px;
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+.information-delivery-box__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+}
+.information-delivery-box__body {
+  width: calc(100% - 50px);
+  padding: 0 0 0 20px;
+}
+.information-delivery-box__body p {
+  margin: 0 0 10px;
+}
+.information-delivery-box__body p:last-child {
+  margin: 0;
+}
+
+.blog-card {
+  width: 100%;
+  font-size: 14px;
+}
+.blog-card__img {
+  width: 100%;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog-card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-card__body {
+  padding: 20px 0 0;
+  width: 100%;
+}
+.blog-card__title {
+  margin: 18px 0 0;
+  color: #232323;
+  font-size: 16px;
+}
+.blog-card__title:hover {
+  color: #c21212;
+}
+.blog-card .link-details {
+  margin: 19px 0 0;
+}
+.blog-card:hover .link-details {
+  color: #c21212;
+}
+.blog-card:hover .link-details svg {
+  fill: #c21212;
+}
+
+.btn-toggle {
+  margin: 0 auto;
+}
+
+.blog-card-min {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 30px;
+  font-size: 13px;
+}
+.blog-card-min:last-child {
+  margin: 0;
+}
+.blog-card-min__img {
+  width: 70px;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+.blog-card-min__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-card-min__body {
+  width: calc(100% - 76px);
+  padding: 0 0 0 16px;
+}
+.blog-card-min .date {
+  margin: 0 0 10px;
+}
+.blog-card-min__title {
+  color: #232323;
+}
+.blog-card-min__title:hover {
+  color: #c21212;
+}
+
+.date {
+  color: #999;
+}
+
+.subscribe-blog {
+  margin: 30px 0;
+  background: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2);
+          box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2);
+  border: solid 1px #f2f2f2;
+  padding: 20px;
+  font-size: 13px;
+}
+.subscribe-blog h3 {
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+.subscribe-blog__form {
+  margin: 20px 0 0;
+  width: 100%;
+}
+.subscribe-blog__form label {
+  margin: 0 0 19px;
+}
+.subscribe-blog__form label:last-child {
+  margin: 0;
+}
+.subscribe-blog__form .checkbox {
+  margin: 19px 0 0;
+}
+.subscribe-blog__form .form-group {
+  width: 100%;
+  position: relative;
+}
+.subscribe-blog__form input {
+  padding: 0 48px 0 15px;
+  font-size: 14px;
+}
+.subscribe-blog__form input::-webkit-input-placeholder {
+  color: #999;
+}
+.subscribe-blog__form input::-moz-placeholder {
+  color: #999;
+}
+.subscribe-blog__form input:-ms-input-placeholder {
+  color: #999;
+}
+.subscribe-blog__form input::-ms-input-placeholder {
+  color: #999;
+}
+.subscribe-blog__form input::placeholder {
+  color: #999;
+}
+.subscribe-blog__form [type=submit] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #c21212;
+  fill: #fff;
+  width: 48px;
+  height: 100%;
+}
+.subscribe-blog__form [type=submit] svg {
+  width: 13px;
+  height: 12px;
+}
+.subscribe-blog__form [type=submit]:hover {
+  background: #f1f1f1;
+  fill: #c21212;
+}
+
+.banner-blog {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.banner-blog img {
+  width: 100%;
+}
