@@ -68,7 +68,7 @@ input, textarea, select
 	outline: none
 	box-shadow: none
 	appearance: none
-	padding: 0 18px
+	padding: 0 15px
 	box-sizing: border-box
 	font-family: $default-font
 	border: solid 1px #c4c4c4
@@ -99,6 +99,16 @@ textarea
 
 [type="radio"], [type="checkbox"]
 	appearance: auto
+
+.form
+	input, textarea
+		font-size: 14px
+		&::placeholder
+			color: #999	
+
+.form-callback			
+	textarea
+		height: 240px		
 
 button, .btn
 	outline: none
@@ -151,7 +161,7 @@ button, .btn
 	color: #232323
 	&:hover
 		background: $accent
-		color: #fff		
+		color: #fff
 
 .svg-icon
 	display: inline-block
@@ -184,6 +194,9 @@ ul, ol
 	>*
 		padding: 0 10px
 
+.mb-15
+	margin-bottom: 15px		
+
 .mb-20
 	margin-bottom: 20px
 
@@ -192,6 +205,9 @@ ul, ol
 
 .mb-30
 	margin-bottom: 30px
+
+.mb-35
+	margin-bottom: 35px
 
 .mb-40
 	margin-bottom: 40px
@@ -221,7 +237,7 @@ a.color-inherit
 		color: $accent
 
 .text-decoration
-	text-decoration: underline	
+	text-decoration: underline
 
 .link-details
 	display: flex
@@ -233,7 +249,10 @@ a.color-inherit
 	&:hover
 		color: $accent
 		svg
-			fill: $accent		
+			fill: $accent
+
+.icon-hover
+	display: none			
 
 h1
 	width: 100%
@@ -246,6 +265,18 @@ h2
 	font-weight: 500
 	width: 100%
 	line-height: 1.38
+
+h3
+	width: 100%
+	font-size: 26px
+	font-weight: 500
+	margin: 0 0 15px
+
+.h3
+	width: 100%
+	font-size: 18px
+	font-weight: bold
+	margin: 0 0 20px	
 
 .dropdown-toggle
 	cursor: pointer
@@ -478,10 +509,8 @@ h2
 				fill: $accent
 		svg
 			width: 9px
-			height: 15px		
+			height: 15px
 			fill: #232323
-
-		
 
 //checkbox my
 .checkbox

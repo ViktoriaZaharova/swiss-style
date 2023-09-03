@@ -158,130 +158,237 @@
 		</div>
 	</header>
 
-	<section class="page page-delivery">
+	<section class="page page-favorites">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<nav aria-label="breadcrumb" class="nav-breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Доставка</li>
+							<li class="breadcrumb-item active" aria-current="page">Избранное</li>
 						</ol>
 					</nav>
 				</div>
 			</div>
 
+			<div class="row align-items-center">
+				<div class="col-12 col-sm-6">
+					<h1>Избранное</h1>
+				</div>
+				<div class="col-12 col-sm-6">
+					<a href="#" class="text-decoration color-inherit link-clear">Очистить все</a>
+				</div>
+			</div>
+
 			<div class="row">
-				<div class="col-12 d-flex flex-wrap">
-					<div class="sidebar">
-						<div class="sidebar-box">
-							<div class="sidebar-box__title">Покупателям</div>
-							<ul class="sidebar-box__menu my-ul">
-								<li><a href="corporate.html">Корпоративным клиентам</a></li>
-								<li><a href="warranty.html">Международная гарантия</a></li>
-								<li><a href="complain.html">Пожаловаться директору</a></li>
-								<li><a href="payments.html">Оплата </a></li>
-								<li><a href="delivery.html" class="active">Бесплатная доставка</a></li>
+				<div class="col-12">
+					<div class="products-row">
+						<div class="product-card">
+							<ul class="product-card__nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart-1"></use>
+										</svg></a></li>
+								<li><a href="#"><img src="img/compare-1.svg" alt="">
+										<img src="img/compare-2.svg" alt="" class="icon-hover">
+									</a></li>
 							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">T058.109.17.036.00</div>
+								<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg></a>
+							</div>
 						</div>
-						<div class="sidebar-box">
-							<div class="sidebar-box__title">Информация</div>
-							<ul class="sidebar-box__menu my-ul">
-								<li><a href="about.html">О компании</a></li>
-								<li><a href="contacts.html">Контакты</a></li>
-								<li><a href="shops.html">Магазины</a></li>
-								<li><a href="question.html">Популярные вопросы</a></li>
-								<li><a href="loyalty.hyml">Программа лояльности</a></li>
+						<div class="product-card">
+							<ul class="product-card__nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart-1"></use>
+										</svg></a></li>
+								<li><a href="#"><img src="img/compare-1.svg" alt="">
+										<img src="img/compare-2.svg" alt="" class="icon-hover">
+									</a></li>
 							</ul>
-						</div>
-					</div>
-
-					<div class="page-content">
-						<h1>Доставка</h1>
-
-						<div class="box-text mb-50">
-							<p>Телефоны для консультации по заказам: <a href="tel:+78005113054"
-									class="d-inline font-700 color-inherit">8 800 511-30-54</a> (звонок по России бесплатно), <a
-									href="tel:8 (812) 200-41-78" class="d-inline font-700 color-inherit">8 (812) 200-41-78</a>, e-mail:
-								<a href="mailto:admin@swiss-style.ru" class="d-inline font-700 color-inherit">admin@swiss-style.ru</a>
-							</p>
-						</div>
-
-						<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery" id="myTab" role="tablist">
-							<li class="nav-item" role="presentation">
-								<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane"
-									type="button" role="tab" aria-controls="1-tab-pane" aria-selected="true">Доставка по
-									Санкт-Петербургу</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#2-tab-pane" type="button"
-									role="tab" aria-controls="2-tab-pane" aria-selected="false">Самовывоз из магазина</button>
-							</li>
-							<li class="nav-item" role="presentation">
-								<button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#3-tab-pane" type="button"
-									role="tab" aria-controls="3-tab-pane" aria-selected="false">Доставка по России</button>
-							</li>
-						</ul>
-
-						<div class="tab-content tab-content-delivery" id="myTabContent">
-							<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab"
-								tabindex="0">
-								<ul class="list-circle">
-									<li>
-										<p>Доставку по Санкт-Петербургу к Вам домой или в офис осуществляет наш профессиональный консультант
-											с 11:00 до 21:00.</p>
-									</li>
-									<li>
-										<p>Доставка <strong>бесплатная</strong> при стоимости заказа свыше 10 000 руб.</p>
-									</li>
-									<li>
-										<p>При стоимости заказа менее 10 000 руб. - стоимость доставки 500 руб.</p>
-									</li>
-								</ul>
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
 							</div>
-							<div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
-								<div class="box-text">
-									<p>Забрать понравившуюся Вам модель часов Вы сможете в одном из нашео магазина. Для этого Вам нужно
-										позвонить по телефону 8
-										800 511-30-54
-										(звонок по России бесплатно), 8 (812) 200-41-78, где специалист зарезервирует их для Вас.</p>
-
-									<div class="reserve-time">
-										<img src="img/calendar.svg" alt="">
-										<p>Резерв для Вас сохранится в течение 5 дней.</p>
-									</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
+
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg></a>
 							</div>
-							<div class="tab-pane fade" id="3-tab-pane" role="tabpanel" aria-labelledby="3-tab" tabindex="0">
-								<div class="box-text">
-									<p>Доставка по РФ осуществляется бесплатно для товаров стоимостью свыше 10 000 рублей, кроме товара,
-										предлагаемого по
-										специальной цене
-										(распродажная скидка).</p>
-
-									<p>Доставка по России осуществляется курьерской службой компаний СДЕК, DPD, Boxberry.</p>
-
-									<ul class="list-delivery my-ul">
-										<li><img src="img/D_CDEK.svg" alt=""></li>
-										<li><img src="img/D_DPD.svg" alt=""></li>
-										<li><img src="img/boxberry_logo.svg" alt=""></li>
-									</ul>
-
-									<p>Для заказа: выберите любые часы или аксессуары и нажмите кнопку КУПИТЬ, оформить заказ и отправить
-										заказ. С Вами
-										свяжется наш консультант
-										для подтверждения заказа.</p>
-								</div>
-
-								<div class="information-box">
-									<div class="information-box__icon"><img src="img/information.svg" alt=""></div>
-									<div class="information-box__body">
-										<p>Несколько моделей для выбора не доставляются. Выбирайте нужную Вам модель.</p>
-
-										<p>Ремешки, браслеты и расходные материалы для деловых аксессуаров доставляются только после оплаты.
-										</p>
+						</div>
+						<div class="product-card">
+							<ul class="product-card__nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart-1"></use>
+										</svg></a></li>
+								<li><a href="#"><img src="img/compare-1.svg" alt="">
+										<img src="img/compare-2.svg" alt="" class="icon-hover">
+									</a></li>
+							</ul>
+							<ul class="list-labels my-ul">
+								<li class="list-labels__sale">-25</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽<div class="old-price">112500₽</div>
 									</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
+
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg></a>
+							</div>
+						</div>
+						<div class="product-card">
+							<ul class="product-card__nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart-1"></use>
+										</svg></a></li>
+								<li><a href="#"><img src="img/compare-1.svg" alt="">
+										<img src="img/compare-2.svg" alt="" class="icon-hover">
+									</a></li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg></a>
+							</div>
+						</div>
+						<div class="product-card">
+							<ul class="product-card__nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart-1"></use>
+										</svg></a></li>
+								<li><a href="#"><img src="img/compare-1.svg" alt="">
+										<img src="img/compare-2.svg" alt="" class="icon-hover">
+									</a></li>
+							</ul>
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">T058.109.17.036.00</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg></a>
+							</div>
+						</div>
+						<div class="product-card">
+							<ul class="product-card__nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart-1"></use>
+										</svg></a></li>
+								<li><a href="#"><img src="img/compare-1.svg" alt="">
+										<img src="img/compare-2.svg" alt="" class="icon-hover">
+									</a></li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">T058.109.17.036.00</div>
+								<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+						
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg></a>
+							</div>
+						</div>
+						<div class="product-card">
+							<ul class="product-card__nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart-1"></use>
+										</svg></a></li>
+								<li><a href="#"><img src="img/compare-1.svg" alt="">
+										<img src="img/compare-2.svg" alt="" class="icon-hover">
+									</a></li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">T058.109.17.036.00</div>
+								<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+						
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg></a>
+							</div>
+						</div>
+						<div class="product-card">
+							<ul class="product-card__nav my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#heart-1"></use>
+										</svg></a></li>
+								<li><a href="#"><img src="img/compare-1.svg" alt="">
+										<img src="img/compare-2.svg" alt="" class="icon-hover">
+									</a></li>
+							</ul>
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg></a>
 							</div>
 						</div>
 					</div>

@@ -80,7 +80,7 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0 18px;
+  padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -132,6 +132,29 @@ textarea {
   -webkit-appearance: auto;
      -moz-appearance: auto;
           appearance: auto;
+}
+
+.form input, .form textarea {
+  font-size: 14px;
+}
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+  color: #999;
+}
+.form input::-moz-placeholder, .form textarea::-moz-placeholder {
+  color: #999;
+}
+.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
+  color: #999;
+}
+.form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
+  color: #999;
+}
+.form input::placeholder, .form textarea::placeholder {
+  color: #999;
+}
+
+.form-callback textarea {
+  height: 240px;
 }
 
 button, .btn {
@@ -249,6 +272,10 @@ ul, ol {
   padding: 0 10px;
 }
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -259,6 +286,10 @@ ul, ol {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
 }
 
 .mb-40 {
@@ -321,6 +352,10 @@ a.color-inherit:hover {
   fill: #c21212;
 }
 
+.icon-hover {
+  display: none;
+}
+
 h1 {
   width: 100%;
   font-size: 36px;
@@ -333,6 +368,20 @@ h2 {
   font-weight: 500;
   width: 100%;
   line-height: 1.38;
+}
+
+h3 {
+  width: 100%;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+.h3 {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 20px;
 }
 
 .dropdown-toggle {
