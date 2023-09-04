@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Швейцарский стиль - салон швейцарских часов</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<a href="index.html" class="logo">
+							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
+								часов</span>
+						</a>
+						<form action="" method="post" class="form-search">
+							<label>
+								<input type="text" name="search" placeholder="Поиск">
+							</label>
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+						</form>
+
+						<div class="dropdown dropdown-location">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="dropdown-location__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg></span>
+								Санкт-Петербург
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Действие</a></li>
+								<li><a class="dropdown-item" href="#">Другое действие</a></li>
+								<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+							</ul>
+						</div>
+
+						<div class="header-contacts">
+							<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
+							<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
+							<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
+						</div>
+
+						<div class="user-navigation">
+							<a href="comparison.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#balance"></use>
+									</svg>
+									<span class="user-navigation-link__value">5</span>
+								</span>
+								<span class="user-navigation-link__text">Сравнение</span>
+
+							</a>
+							<a href="favorites.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Избранное</span>
+							</a>
+							<a href="#" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#user"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Вход</span>
+							</a>
+							<a href="basket.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg>
+									<span class="user-navigation-link__value">18</span>
+								</span>
+								<span class="user-navigation-link__text">Корзина</span>
+
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<ul class="navbar-nav nav-menu my-ul">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Мужские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Женские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Аксесуары</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="stock.html" class="nav-link">Акции</a>
+							</li>
+							<li class="nav-item">
+								<a href="new.html" class="nav-link">Новинки</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav nav-menu-user my-ul">
+							<li class="nav-item">
+								<a href="how-to-buy.html" class="nav-link">Как купить</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Рассрочка 0%</a>
+							</li>
+							<li class="nav-item">
+								<a href="blog.html" class="nav-link">Блог</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="page page-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">О компании</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap">
+					<div class="sidebar">
+						<div class="sidebar-box">
+							<div class="sidebar-box__title">Покупателям</div>
+							<ul class="sidebar-box__menu my-ul">
+								<li><a href="corporate.html">Корпоративным клиентам</a></li>
+								<li><a href="warranty.html">Международная гарантия</a></li>
+								<li><a href="complain.html">Пожаловаться директору</a></li>
+								<li><a href="payments.html">Оплата</a></li>
+								<li><a href="delivery.html">Бесплатная доставка</a></li>
+							</ul>
+						</div>
+						<div class="sidebar-box">
+							<div class="sidebar-box__title">Информация</div>
+							<ul class="sidebar-box__menu my-ul">
+								<li><a href="about.html" class="active">О компании</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="shops.html">Магазины</a></li>
+								<li><a href="question.html">Популярные вопросы</a></li>
+								<li><a href="loyalty.hyml">Программа лояльности</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="page-content">
+						<div class="corporate-home">
+							<img src="img/about-bg.jpg" alt="" class="corporate-home__bg">
+							<h1>О компании</h1>
+							<div class="box-text">
+								<p>«Швейцарский стиль» — это швейцарская точность, высокое качество, разумное сочетание выдержанности и элегантности с
+								роскошью и респектабельностью.</p>
+							</div>
+							<div class="corporate-home-advantages">
+								<div class="corporate-home-advantages-box">
+									<div class="corporate-home-advantages-box__icon"><img src="img/star.svg" alt=""></div>
+									<div class="corporate-home-advantages-box__body">
+										<p>Работаем <br>
+										20 лет</p>
+									</div>
+								</div>
+								<div class="corporate-home-advantages-box">
+									<div class="corporate-home-advantages-box__icon"><img src="img/warranty.svg" alt=""></div>
+									<div class="corporate-home-advantages-box__body">
+										<p>Гарантия <br>
+										от 2-х лет</p>
+									</div>
+								</div>
+								<div class="corporate-home-advantages-box">
+									<div class="corporate-home-advantages-box__icon"><img src="img/award.svg" alt=""></div>
+									<div class="corporate-home-advantages-box__body">
+										<p>Оригинальный <br>
+										товар</p>
+									</div>
+								</div>
+								<div class="corporate-home-advantages-box">
+									<div class="corporate-home-advantages-box__icon"><img src="img/watch.svg" alt=""></div>
+									<div class="corporate-home-advantages-box__body">
+										<p>40 000 товаров <br>
+										в наличии</p>
+									</div>
+								</div>
+								<div class="corporate-home-advantages-box">
+									<div class="corporate-home-advantages-box__icon"><img src="img/data-protection.svg" alt=""></div>
+									<div class="corporate-home-advantages-box__body">
+										<p>Индивидуальный <br>
+										подход</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-text mb-30">
+							<p>Наш покупатель — это человек, достигший такого положения, при котором становится небезразлично понятие стиля, который
+							хочет быть независимым. Эксклюзивные модели, необычный дизайн и качество представленных в наших салонах часов
+							подчеркивают его независимое мышление и стремление ко всему достойному.</p>
+							
+							<p>Компания "Швейцарский Стиль" под таким названием начала работать в Санкт-Петербурге с 4 мая 2001 года. Компания является
+							авторизованным дилером по продаже продукции ведущих мировых часовых брендов, таких как: Longines, Rado, <a href="#" class="text-decoration d-inline color-accent">Tissot</a>, Century,
+							Maurice Lacroix, Perrelet, Armand Nicolet, Raymond Weil, Auguste Reymond, Epos, Bruno Sohnle, Victorinox, Invicta,
+							Wainer а также деловых аксессуаров Dupont.</p>
+						</div>
+
+						<div class="row mb-40">
+							<div class="col-12 col-sm-6 col-md-4 mb-35">
+								<div class="about-advabtages-box">
+									<div class="about-advabtages-box__icon"><img src="img/gear.svg" alt=""></div>
+									<div class="about-advabtages-box__body">
+										<p>Для владельцев механических часов
+										с автоматическим заводом рады
+										предложить модули для подзавода
+										часов известного производителя
+										Underwood.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 mb-35">
+								<div class="about-advabtages-box">
+									<div class="about-advabtages-box__icon"><img src="img/all-inclusive.svg" alt=""></div>
+									<div class="about-advabtages-box__body">
+										<p>Предлагаемый ассортимент
+										аксессуаров к часам известных
+										мировых производителей позволяет
+										на месте решить проблему с заменой
+										ремешка или браслета для Ваших
+										часов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 mb-35">
+								<div class="about-advabtages-box">
+									<div class="about-advabtages-box__icon"><img src="img/stamp.svg" alt=""></div>
+									<div class="about-advabtages-box__body">
+										<p>Вся представленная в наших салонах
+										продукция имеет официальное
+										происхождение и сервисную
+										поддержку.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 mb-35">
+								<div class="about-advabtages-box">
+									<div class="about-advabtages-box__icon"><img src="img/business-man.svg" alt=""></div>
+									<div class="about-advabtages-box__body">
+										<p>В наших салонах работают опытные
+										продавцы-консультанты, прошедшие
+										обучение и стажировки на
+										специализированных курсах и
+										специальных семинарах, созываемых
+										ведущими производителями
+										швейцарских часов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 mb-35">
+								<div class="about-advabtages-box">
+									<div class="about-advabtages-box__icon"><img src="img/shopping.svg" alt=""></div>
+									<div class="about-advabtages-box__body">
+										<p>Индивидуальный подход, система
+										скидок и подарков, профессионализм
+										в сочетании с доброжелательным
+										отношением, помогают нашим
+										покупателям сделать правильный
+										выбор.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 mb-35">
+								<div class="about-advabtages-box">
+									<div class="about-advabtages-box__icon"><img src="img/management-service.svg" alt=""></div>
+									<div class="about-advabtages-box__body">
+										<p>Всем клиентам, часы которых
+										требуют ремонта или обслуживания
+										предлагаем обратиться в наш
+										сервисный центр.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="corporate-box">
+							<h3>Политика возврата и обмена часов в магазинах "Швейцарский Стиль"</h3>
+							<div class="box-text">
+								<ul class="list-circle">
+									<li>Возврат и обмен часов, приобретенных в наших магазинах, осуществляется в соответствии с положениями ст.18 и 25
+										«Закона о
+										защите прав потребителей».</li>
+								
+									<li>Обмен или возврат товара надлежащего качества, который не подошел по форме, габаритам, фасону, расцветке, размеру
+										или
+										комплектации, возможен в течение 14 дней не считая дня покупки, при условии, если указанный товар не был в
+										употреблении
+										(отсутствие характерных признаков использования товара – царапины, вмятины, потертости на корпусе, стекле, браслете
+										или
+										ремешке), сохранены его товарный вид (упаковка, ярлыки, инструкции, паспорта, сертификаты, гарантийные карты) и
+										потребительские свойства (исправность и соответствие техническим характеристикам требует проверки в сервисном
+										центре).</li>
+								
+									<li>Обмен или возврат товара ненадлежащего качества возможен только после проведения проверки товара в авторизованном
+										сервисном центре или специализированном экспертном учреждении с оформлением соответствующих документов (техническое
+										или
+										экспертное заключение) указывающих причину возникновения недостатка.</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="about-information-box">
+							<div class="box-text">
+								<p>Во всех случаях обмена или возврата необходимо обратиться с заявлением в магазины «Швейцарский Стиль» по адресам:</p>
+							</div>
+
+							<ul class="list-contacts my-ul">
+								<li>
+									<div class="list-contacts__icon"><img src="img/marker.svg" alt=""></div>
+									<div class="list-contacts__body">
+										<p>Санкт-Петербург, ул. Савушкина д.126А, ТРК "Атлантик Сити", пом. А-37Б <a href="#" class="color-accent text-decoration d-inline" target="_blank">Посмотреть на карте</a>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="list-contacts__icon"><img src="img/alarm-clock.svg" alt=""></div>
+									<div class="list-contacts__body"><p>Часы работы с 11.00 до 22.00, без выходных</p></div>
+								</li>
+								<li>
+									<div class="list-contacts__icon"><img src="img/phone-call.svg" alt=""></div>
+									<div class="list-contacts__body"><p>Тел.: (812) 334-25-50</p></div>
+								</li>
+							</ul>
+						</div>
+					
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Информация</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="about.html">О компании</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="shops.html">Магазины</a></li>
+								<li><a href="question.html">Популярные вопросы</a></li>
+								<li><a href="program.html">Программа лояльности</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Покупателям</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="corporative.html">Корпоративным клиентам</a></li>
+								<li><a href="warranty.html">Международная гарантия</a></li>
+								<li><a href="help.html">Пожаловаться директору</a></li>
+								<li><a href="payments.html">Оплата</a></li>
+								<li><a href="delivery.html">Бесплатная доставка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Каталог</div>
+							<div class="row">
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Maurice lacroix</a></li>
+										<li><a href="catalog.html">Frederique constant</a></li>
+										<li><a href="catalog.html">Tissot</a></li>
+										<li><a href="catalog.html">Longines</a></li>
+										<li><a href="catalog.html">Rado</a></li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Victorinox</a></li>
+										<li><a href="catalog.html">Wainer</a></li>
+										<li><a href="catalog.html">Jaguar</a></li>
+										<li><a href="catalog.html">Epos</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Мы в социальных сетях</div>
+							<ul class="list-social my-ul">
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#youtube"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tg"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#twitter"></use>
+										</svg>
+									</a></li>
+							</ul>
+
+							<div class="address">
+								<p>Санкт-Петербург</p>
+							</div>
+							<a href="tel:+78122004178" class="phone">8 (812) 200-41-78</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="copyright">Swiss-Style.Ru Copyright © 2006 - 2021 Магазин швейцарских часов в Санкт-Петербурге
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="box-text">
+							<p>Информация на сайте не является публичной афертой</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+	<script src="js/map.js"></script>
+
+</body>
+
+</html>

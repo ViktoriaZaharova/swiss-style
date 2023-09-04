@@ -74,3 +74,14 @@ rev.slick({
 		return "";
 	}
 });
+
+
+// активная ссылка меню
+$('.sidebar-box__menu li a').each(function () {
+	let location = window.location.href;
+	let link = this.href;
+	if (location === link) {
+		$(this).addClass('active');
+	}
+});
+// end

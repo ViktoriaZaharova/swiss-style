@@ -328,6 +328,13 @@ a.color-inherit:hover {
   color: #c21212;
 }
 
+a.color-accent {
+  color: #c21212;
+}
+a.color-accent:hover {
+  color: #333;
+}
+
 .text-decoration {
   text-decoration: underline;
 }
