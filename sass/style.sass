@@ -163,6 +163,13 @@ button, .btn
 		background: $accent
 		color: #fff
 
+.btn-group
+	flex-wrap: wrap
+	.btn
+		margin: 0 0 12px
+		&:last-child
+			margin: 0		
+
 .svg-icon
 	display: inline-block
 	width: 100%
@@ -184,6 +191,22 @@ ul, ol
 
 .list-circle
 	list-style-type: circle
+
+.list-decimal
+	counter-reset: list
+	li
+		display: flex
+		align-items: center
+		&::before
+			content: counter(list)
+			counter-increment: list
+			border-radius: 50%
+			@include d-flex
+			text-align: center
+			margin: 0 12px 0 0
+			width: 36px
+			height: 36px
+			background: #f1f1f1	
 
 .container
 	max-width: 1450px
@@ -214,6 +237,9 @@ ul, ol
 
 .mb-50
 	margin-bottom: 50px
+
+.mb-100
+	margin-bottom: 100px	
 
 .m-70
 	margin: 70px 0
