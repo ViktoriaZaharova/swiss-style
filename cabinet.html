@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Швейцарский стиль - салон швейцарских часов</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<a href="index.html" class="logo">
+							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
+								часов</span>
+						</a>
+						<form action="" method="post" class="form-search">
+							<label>
+								<input type="text" name="search" placeholder="Поиск">
+							</label>
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+						</form>
+
+						<div class="dropdown dropdown-location">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="dropdown-location__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg></span>
+								Санкт-Петербург
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Действие</a></li>
+								<li><a class="dropdown-item" href="#">Другое действие</a></li>
+								<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+							</ul>
+						</div>
+
+						<div class="header-contacts">
+							<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
+							<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
+							<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
+						</div>
+
+						<div class="user-navigation">
+							<a href="comparison.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#balance"></use>
+									</svg>
+									<span class="user-navigation-link__value">5</span>
+								</span>
+								<span class="user-navigation-link__text">Сравнение</span>
+
+							</a>
+							<a href="favorites.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Избранное</span>
+							</a>
+							<a href="#" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#user"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Вход</span>
+							</a>
+							<a href="basket.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg>
+									<span class="user-navigation-link__value">18</span>
+								</span>
+								<span class="user-navigation-link__text">Корзина</span>
+
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<ul class="navbar-nav nav-menu my-ul">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Мужские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Женские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Аксесуары</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="stock.html" class="nav-link">Акции</a>
+							</li>
+							<li class="nav-item">
+								<a href="new.html" class="nav-link">Новинки</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav nav-menu-user my-ul">
+							<li class="nav-item">
+								<a href="how-to-buy.html" class="nav-link">Как купить</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Рассрочка 0%</a>
+							</li>
+							<li class="nav-item">
+								<a href="blog.html" class="nav-link">Блог</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="page page-cabinet">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap">
+					<div class="sidebar">
+						<div class="sidebar-box">
+							<ul class="sidebar-box__menu my-ul">
+								<li><a href="cabinet.html">Личные данные</a></li>
+								<li><a href="cabinet-delivery.html">Адрес доставки</a></li>
+								<li><a href="cabinet-orders.html">Список заказов</a></li>
+								<li><a href="cabinet-status.html">Проверка статуса заказа</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="page-content">
+						<h1>Личный кабинет</h1>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Информация</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="about.html">О компании</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="shops.html">Магазины</a></li>
+								<li><a href="question.html">Популярные вопросы</a></li>
+								<li><a href="loyalty.html">Программа лояльности</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Покупателям</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="corporate.html">Корпоративным клиентам</a></li>
+								<li><a href="warranty.html">Международная гарантия</a></li>
+								<li><a href="complain.html">Пожаловаться директору</a></li>
+								<li><a href="payments.html">Оплата</a></li>
+								<li><a href="delivery.html">Бесплатная доставка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Каталог</div>
+							<div class="row">
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Maurice lacroix</a></li>
+										<li><a href="catalog.html">Frederique constant</a></li>
+										<li><a href="catalog.html">Tissot</a></li>
+										<li><a href="catalog.html">Longines</a></li>
+										<li><a href="catalog.html">Rado</a></li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Victorinox</a></li>
+										<li><a href="catalog.html">Wainer</a></li>
+										<li><a href="catalog.html">Jaguar</a></li>
+										<li><a href="catalog.html">Epos</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Мы в социальных сетях</div>
+							<ul class="list-social my-ul">
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#youtube"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tg"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#twitter"></use>
+										</svg>
+									</a></li>
+							</ul>
+
+							<div class="address">
+								<p>Санкт-Петербург</p>
+							</div>
+							<a href="tel:+78122004178" class="phone">8 (812) 200-41-78</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="copyright">Swiss-Style.Ru Copyright © 2006 - 2021 Магазин швейцарских часов в Санкт-Петербурге
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="box-text">
+							<p>Информация на сайте не является публичной афертой</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

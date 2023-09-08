@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Швейцарский стиль - салон швейцарских часов</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<a href="index.html" class="logo">
+							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
+								часов</span>
+						</a>
+						<form action="" method="post" class="form-search">
+							<label>
+								<input type="text" name="search" placeholder="Поиск">
+							</label>
+							<button type="submit"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></button>
+						</form>
+
+						<div class="dropdown dropdown-location">
+							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="dropdown-location__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg></span>
+								Санкт-Петербург
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Действие</a></li>
+								<li><a class="dropdown-item" href="#">Другое действие</a></li>
+								<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+							</ul>
+						</div>
+
+						<div class="header-contacts">
+							<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
+							<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
+							<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
+						</div>
+
+						<div class="user-navigation">
+							<a href="comparison.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#balance"></use>
+									</svg>
+									<span class="user-navigation-link__value">5</span>
+								</span>
+								<span class="user-navigation-link__text">Сравнение</span>
+
+							</a>
+							<a href="favorites.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Избранное</span>
+							</a>
+							<a href="#" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#user"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Вход</span>
+							</a>
+							<a href="basket.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg>
+									<span class="user-navigation-link__value">18</span>
+								</span>
+								<span class="user-navigation-link__text">Корзина</span>
+
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<ul class="navbar-nav nav-menu my-ul">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Мужские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Женские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Аксесуары</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="stock.html" class="nav-link">Акции</a>
+							</li>
+							<li class="nav-item">
+								<a href="new.html" class="nav-link">Новинки</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav nav-menu-user my-ul">
+							<li class="nav-item">
+								<a href="how-to-buy.html" class="nav-link">Как купить</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Рассрочка 0%</a>
+							</li>
+							<li class="nav-item">
+								<a href="blog.html" class="nav-link">Блог</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="page page-catalog">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Часы</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<h1>Каталог часов</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap">
+					<div class="sidebar sidebar-catalog">
+						<div class="sidebar-catalog__close"></div>
+						<form action="" method="post" class="form-filter">
+
+							<div class="accordion accordion-flush accordion-catalog">
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+											aria-expanded="true" aria-controls="collapse1">
+											Цена
+										</button>
+									</div>
+									<div id="collapse1" class="accordion-collapse collapse show">
+										<div class="accordion-body">
+											<div class="range_val">
+												<input type="text" name="dec" class="dec1">
+												<span class="line">-</span>
+												<input type="text" name="dec" class="dec2">
+											</div>
+											<div class="slider-range"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+											aria-expanded="false" aria-controls="collapse2">
+											Пол
+										</button>
+									</div>
+									<div id="collapse2" class="accordion-collapse collapse show">
+										<div class="accordion-body">
+											<ul class="list-checkbox-catalog my-ul">
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox1">
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#boy"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Мужсские</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox1" checked>
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#girl"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Женские</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox1">
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#unisex"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Унисекс</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+											aria-expanded="false" aria-controls="collapse3">
+											По типу механизма
+										</button>
+									</div>
+									<div id="collapse3" class="accordion-collapse collapse show">
+										<div class="accordion-body">
+											<ul class="list-checkbox-catalog my-ul">
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox2">
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#quarz"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Кварцевый</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox2">
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#cog-wheel"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Механический</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox2">
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#stopwatch"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Электронный</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+											aria-expanded="false" aria-controls="collapse4">
+											Стекло
+										</button>
+									</div>
+									<div id="collapse4" class="accordion-collapse collapse show">
+										<div class="accordion-body">
+											<ul class="list-checkbox-catalog my-ul">
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox3">
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#sapphire"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Сапфировое</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox3">
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#gem"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Минеральное</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox-catalog">
+														<input type="checkbox" name="checkbox3">
+														<span class="checkbox-catalog__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#watch-glass"></use>
+															</svg></span>
+														<span class="checkbox-catalog__text">Хезалитовое</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+											aria-expanded="false" aria-controls="collapse5">
+											Корпус
+										</button>
+									</div>
+									<div id="collapse5" class="accordion-collapse collapse show">
+										<div class="accordion-body">
+											<ul class="list-checkbox list-scroll my-ul">
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Сталь</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Керамика</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4" checked>
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Золото</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Титан</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Латунь</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Серебро</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Алюминий</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Сталь</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Сталь</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Сталь</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Сталь</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox4">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Сталь</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+											Водонепроницаемость
+										</button>
+									</div>
+									<div id="collapse6" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<ul class="list-checkbox list-scroll my-ul">
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="radio" name="checkbox5">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Да</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="radio" name="checkbox5">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Нет</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+											Форма
+										</button>
+									</div>
+									<div id="collapse7" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<ul class="list-checkbox list-scroll my-ul">
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox6">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Да</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox6">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Нет</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+											Применение
+										</button>
+									</div>
+									<div id="collapse8" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<ul class="list-checkbox list-scroll my-ul">
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox7">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Да</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox7">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Нет</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+											Функционал
+										</button>
+									</div>
+									<div id="collapse9" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<ul class="list-checkbox list-scroll my-ul">
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox8">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Да</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox8">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Нет</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+											Оформление
+										</button>
+									</div>
+									<div id="collapse10" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<ul class="list-checkbox list-scroll my-ul">
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox9">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Да</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox9">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Нет</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+											Цвет циферблата
+										</button>
+									</div>
+									<div id="collapse10" class="accordion-collapse collapse show">
+										<div class="accordion-body">
+											<ul class="list-checkbox list-scroll my-ul">
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-white"></span>
+														<span class="checkbox-text">Белый</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-rhodium"></span>
+														<span class="checkbox-text">Родий</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10" checked>
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-silver"></span>
+														<span class="checkbox-text">Серебристый</span>
+													</label>
+													<a href="#" class="tooltip-result">
+														<span class="text-decoration">Показать</span> <strong>125</strong> товаров
+													</a>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-blue"></span>
+														<span class="checkbox-text">Синий</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-ivory"></span>
+														<span class="checkbox-text">Слоновая кость</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-black"></span>
+														<span class="checkbox-text">Черный</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-anthracite"></span>
+														<span class="checkbox-text">Антрацит</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-blue"></span>
+														<span class="checkbox-text">Синий</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="checkbox" name="checkbox10">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-color checkbox-color-ivory"></span>
+														<span class="checkbox-text">Слоновая кость</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item">
+									<div class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+											Функционал
+										</button>
+									</div>
+									<div id="collapse11" class="accordion-collapse collapse">
+										<div class="accordion-body">
+											<ul class="list-checkbox list-scroll my-ul">
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="radio" name="checkbox8">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Да</span>
+													</label>
+												</li>
+												<li>
+													<label class="checkbox checkbox-v2">
+														<input type="radio" name="checkbox8">
+														<span class="checkbox-custom"></span>
+														<span class="checkbox-text">Нет</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<a href="#" class="btn btn-light-grey btn-clear">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#clear"></use>
+								</svg>
+								<span>Сбросить фильтры</span>
+							</a>
+						</form>
+
+						<a href="#" class="banner-catalog"><img src="img/banner-catalog.jpg" alt=""></a>
+					</div>
+
+					<div class="page-content">
+						<div class="row align-items-center mb-40">
+							<div class="col-12 col-lg-10">
+								<div class="box-text">
+									<p><strong>Tissot</strong> — марка швейцарских часов, основанная в 1853 году Шарль-Фелисьеном Тиссо в
+										городе Ле-Локль.</p>
+								</div>
+							</div>
+							<div class="col-12 col-lg-2">
+								<div class="logo-brand"><img src="img/brand-logo2.png" alt=""></div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<div class="brands-slider">
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min1.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Maurice Lacroix</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min2.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Frederique Constant</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min3.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Tissot</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min4.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Longines</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min5.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Rado</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min6.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Epos</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min2.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Jaguar</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min1.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Wainer</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="#" class="brands-slider-item">
+											<span class="brands-slider-item__photo"><img src="img/catalog-min7.jpg" alt=""></span>
+											<span class="brands-slider-item__body">Victorinox</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="sorting-box">
+									<p>Сортировать:</p>
+									<select name="select" class="select-my">
+										<option value="по цене">по цене</option>
+										<option value="по алфавиту">по алфавиту</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<ul class="nav nav-tabs nav-tabs-catalog" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane"
+											type="button" role="tab" aria-controls="1-tab-pane" aria-selected="true"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#tab-block"></use>
+											</svg></button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#2-tab-pane" type="button"
+											role="tab" aria-controls="2-tab-pane" aria-selected="false"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#tab-list"></use>
+											</svg></button>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-12">
+								<div class="tab-content tab-content-catalog" id="myTabContent">
+									<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab"
+										tabindex="0">
+										<div class="products-row products-row-catalog">
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__new">Новинка</li>
+												</ul>
+												<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__sale">-25</li>
+												</ul>
+												<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽<div class="old-price">112500₽</div>
+														</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__new">Новинка</li>
+												</ul>
+												<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__sale">-25</li>
+												</ul>
+												<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽<div class="old-price">112500₽</div>
+														</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card">
+												<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
+										<div class="products-row products-row-catalog products-row-catalog-v2">
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__new">Новинка</li>
+												</ul>
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽<div class="old-price">112500₽</div>
+														</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__new">Новинка</li>
+												</ul>
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__sale">-25</li>
+												</ul>
+												<div class="product-card__head">
+
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽<div class="old-price">112500₽</div>
+														</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__new">Новинка</li>
+												</ul>
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽<div class="old-price">112500₽</div>
+														</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__new">Новинка</li>
+												</ul>
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__sale">-25</li>
+												</ul>
+												<div class="product-card__head">
+
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽<div class="old-price">112500₽</div>
+														</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__new">Новинка</li>
+												</ul>
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+											
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+											
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+											
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+											
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+											
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽<div class="old-price">112500₽</div>
+														</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+											
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											
+											<div class="product-card product-card-v2">
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+											
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+											
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__new">Новинка</li>
+												</ul>
+												<div class="product-card__head">
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+											
+												<div class="product-card__body">
+													<div class="article">T058.109.17.036.00</div>
+													<a href="product.html" class="product-card__name">
+														Tissot T-Classic Tradition Quartz collection</a>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+											
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+											
+											<div class="product-card product-card-v2">
+												<ul class="list-labels my-ul">
+													<li class="list-labels__sale">-25</li>
+												</ul>
+												<div class="product-card__head">
+											
+													<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+													</ul>
+												</div>
+											
+												<div class="product-card__body">
+													<div class="article">L4.790.2.11.2</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="price-wrapper">
+														<div class="price">112500₽<div class="old-price">112500₽</div>
+														</div>
+														<div class="loan-price">от 8961₽ в мес.</div>
+													</div>
+											
+													<a href="#" class="btn-add-card"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket"></use>
+														</svg></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-12 mb-40">
+								<a href="#" class="btn btn-toggle btn-light-grey">Показать еще</a>
+							</div>
+							<div class="col-12">
+								<nav class="nav-pagination">
+									<ul class="pagination">
+										<li class="page-item">
+											<a class="page-link page-link-arrow" href="#" aria-label="Previous">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#prev"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="page-item"><a class="page-link active" href="#">1</a></li>
+										<li class="page-item"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">...</a></li>
+										<li class="page-item"><a class="page-link" href="#">153</a></li>
+										<li class="page-item">
+											<a class="page-link page-link-arrow" href="#" aria-label="Next">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#next"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="seo-catalog mb-50">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mb-20">
+					<h2>Швейцарские часы Тиссот</h2>
+				</div>
+
+				<div class="col-12">
+					<div class="box-text">
+						<p>Нет оснований не доверять руководителю швейцарской компании Tissot господину Франсуа Тьебо,
+							утверждающему, что по
+							количеству экземпляров в мире механические часы известной марки Tissot занимают первое место! Они же
+							лидируют по
+							объему
+							ежегодно выпускаемых партий. При этом, несмотря на огромный тираж, брендовые швейцарские часы были и
+							остаются
+							эталоном
+							качества и стиля.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-brand mb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mb-20">
+					<h2>Знакомьтесь, Tissot!</h2>
+				</div>
+				<div class="col-12">
+					<div class="text-toggle-wrapper">
+						<div class="box-text text-toggle">
+							<p>Швейцарские часы Tissot в России известны уже полтора столетия. В начале своего победного шествия по
+								планете цена на
+								часы была доступна только самым состоятельным людям. И это не удивительно – точный и надежный часовой
+								механизм в
+								сочетании с достойным дизайном был показателем состоятельности его владельца.</p>
+
+							<p>Современные часы Tissot 1853 являются достойными своих знаменитых предков, но при этом их стоимость
+								остается в среднем
+								ценовом диапазоне. Швейцарское качество по карману любому ценителю настоящих брендовых часов: тот, кто
+								знает в них толк,
+								делает ставку на фирменный стиль и гарантии качества.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate impedit quos explicabo
+								tenetur quia quidem esse! Ad quas eos consequuntur voluptatem nam consectetur odit ratione. Quibusdam
+								amet officiis temporibus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="articles-brand mb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mb-20">
+					<h2>Статьи о бренде</h2>
+				</div>
+
+				<div class="col-12">
+					<div class="articles-slider">
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog1.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
+										механические — отличия, плюсы,
+										минусы</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog2.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
+										механические — отличия, плюсы,
+										минусы</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog3.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Как грамотно выбрать наручные
+										часы? 12 советов экспертов</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog4.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
+										или сапфировое?</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog5.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
+										или сапфировое?</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog4.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
+										или сапфировое?</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog2.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
+										механические — отличия, плюсы,
+										минусы</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="viewed mb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Вы недавно смотрели</h2>
+				</div>
+
+				<div class="col-12">
+					<div class="products-slider">
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">T058.109.17.036.00</div>
+									<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__sale">-25</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽<div class="old-price">112500₽</div>
+										</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">T058.109.17.036.00</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Информация</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="about.html">О компании</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="shops.html">Магазины</a></li>
+								<li><a href="question.html">Популярные вопросы</a></li>
+								<li><a href="loyalty.html">Программа лояльности</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Покупателям</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="corporate.html">Корпоративным клиентам</a></li>
+								<li><a href="warranty.html">Международная гарантия</a></li>
+								<li><a href="complain.html">Пожаловаться директору</a></li>
+								<li><a href="payments.html">Оплата</a></li>
+								<li><a href="delivery.html">Бесплатная доставка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Каталог</div>
+							<div class="row">
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Maurice lacroix</a></li>
+										<li><a href="catalog.html">Frederique constant</a></li>
+										<li><a href="catalog.html">Tissot</a></li>
+										<li><a href="catalog.html">Longines</a></li>
+										<li><a href="catalog.html">Rado</a></li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Victorinox</a></li>
+										<li><a href="catalog.html">Wainer</a></li>
+										<li><a href="catalog.html">Jaguar</a></li>
+										<li><a href="catalog.html">Epos</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Мы в социальных сетях</div>
+							<ul class="list-social my-ul">
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#youtube"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tg"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#twitter"></use>
+										</svg>
+									</a></li>
+							</ul>
+
+							<div class="address">
+								<p>Санкт-Петербург</p>
+							</div>
+							<a href="tel:+78122004178" class="phone">8 (812) 200-41-78</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="copyright">Swiss-Style.Ru Copyright © 2006 - 2021 Магазин швейцарских часов в Санкт-Петербурге
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="box-text">
+							<p>Информация на сайте не является публичной афертой</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
