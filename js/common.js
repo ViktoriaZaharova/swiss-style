@@ -233,3 +233,28 @@ $('.btn-view-password').on('click', function () {
 	return false;
 });
 
+$('.change-password').on('click', function (e) {
+	e.preventDefault();
+	$(this).fadeOut();
+	$('.btn-save').css('display', 'flex');
+	$('.change-password-box').fadeIn();
+});
+
+
+$('.link-details-order').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $(this).parents('.order-box').find('.order-box__body');
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.html('Скрыть детали заказа -');
+		content.slideDown();
+	} else {
+		$this.removeClass('trigger');
+		$this.html('Все детали заказа +');
+		content.slideUp();
+	}
+});

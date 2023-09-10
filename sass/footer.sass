@@ -3,9 +3,9 @@
 footer
 	background: #f1f1f1
 	padding: 70px 0
-	
+
 	.address
-		margin: 22px 0 13px	
+		margin: 22px 0 13px
 		font-size: 14px
 
 .footer-box
@@ -13,7 +13,6 @@ footer
 		width: 100%
 		margin: 0 0 25px
 		font-weight: bold
-	
 
 .footer-menu
 	font-size: 14px
@@ -40,7 +39,7 @@ footer
 			&:hover
 				color: $accent
 				&::before
-					width: 100%	
+					width: 100%
 
 .list-social
 	display: flex
@@ -62,10 +61,72 @@ footer
 			&:hover
 				background: rgba(#000, .4)
 
-
 .footer-bottom
 	margin: 40px 0 0
 	font-size: 13px
 	color: #999
 	.box-text
-		text-align: right	
+		text-align: right
+
+// modal
+.modal-dialog
+	max-width: 440px
+
+.modal-content
+	border: none
+	border-radius: 0
+	box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2)
+	background-color: #fff
+	padding: 40px
+
+.modal-header
+	flex-wrap: wrap
+	text-align: center
+	padding: 0
+	border: none
+	.btn-close
+		position: absolute
+		padding: 10px
+		margin: 0
+		top: 7px
+		right: 8px
+		border-radius: 50%
+		width: 30px
+		height: 30px
+		border: none
+		background: #f1f1f1
+		box-sizing: border-box
+		opacity: 1
+		cursor: pointer
+		@include d-flex
+
+.modal-title
+	font-size: 22px
+	font-weight: 500
+	width: 100%
+	text-align: center
+
+.modal-body
+	padding: 17px 0 0
+	border: none
+	.box-text
+		text-align: center
+		margin: 0 auto 27px
+
+.form-modal
+	label
+		margin: 0 0 14px
+		&:last-child
+			margin: 0
+	input, textarea
+		&::placeholder
+			color: #999
+	textarea
+		height: 120px
+		padding: 18px 15px
+	.checkbox
+		max-width: none
+		a
+			display: inline
+	[type="submit"]
+			width: 100%

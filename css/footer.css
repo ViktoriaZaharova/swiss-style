@@ -95,3 +95,100 @@ footer .address {
 .footer-bottom .box-text {
   text-align: right;
 }
+
+.modal-dialog {
+  max-width: 440px;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2);
+          box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2);
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-header {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  padding: 0;
+  border: none;
+}
+.modal-header .btn-close {
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  top: 7px;
+  right: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #f1f1f1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 1;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 17px 0 0;
+  border: none;
+}
+.modal-body .box-text {
+  text-align: center;
+  margin: 0 auto 27px;
+}
+
+.form-modal label {
+  margin: 0 0 14px;
+}
+.form-modal label:last-child {
+  margin: 0;
+}
+.form-modal input::-webkit-input-placeholder, .form-modal textarea::-webkit-input-placeholder {
+  color: #999;
+}
+.form-modal input::-moz-placeholder, .form-modal textarea::-moz-placeholder {
+  color: #999;
+}
+.form-modal input:-ms-input-placeholder, .form-modal textarea:-ms-input-placeholder {
+  color: #999;
+}
+.form-modal input::-ms-input-placeholder, .form-modal textarea::-ms-input-placeholder {
+  color: #999;
+}
+.form-modal input::placeholder, .form-modal textarea::placeholder {
+  color: #999;
+}
+.form-modal textarea {
+  height: 120px;
+  padding: 18px 15px;
+}
+.form-modal .checkbox {
+  max-width: none;
+}
+.form-modal .checkbox a {
+  display: inline;
+}
+.form-modal [type=submit] {
+  width: 100%;
+}

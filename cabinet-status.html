@@ -187,57 +187,22 @@
 					<div class="page-content">
 						<h1>Личный кабинет</h1>
 
-						<div class="cabinet-subtitle">Ваш адрес для доставки</div>
+						<div class="cabinet-subtitle">Введите номер заказа</div>
 						<form action="" method="post" class="form-cabinet">
 							<div class="row">
 								<div class="col-12 col-sm-6 col-md-4 mb-15">
-									<label><input type="text" placeholder="Регион*" name="region" required>
-									<span class="input-icon"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#pencil"></use>
-									</svg></span>
+									<label><input type="text" name="name">
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
 									</label>
 								</div>
-								<div class="col-12 col-sm-6 col-md-4 mb-15">
-									<label><input type="text" placeholder="Город*" name="city" required>
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
-									</label>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 mb-15">
-									<label><input type="text" placeholder="Улица*" name="street" required>
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
-									</label>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 mb-15">
-									<label><input type="text" placeholder="Дом*" name="house" required>
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
-									</label>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 mb-15">
-									<label><input type="text" placeholder="Квартира*" name="apartment" required>
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
-									</label>
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 mb-15">
-									<label><input type="text" placeholder="Этаж" name="floor">
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
-									</label>
-								</div>
-								<div class="col-12 mb-15">
-									<label><textarea name="message" placeholder="Комметарии для курьера"></textarea></label>
-								</div>
-
-								<div class="col-12">
-									<button type="submit" class="btn btn-accent" disabled="disabled">Сохранить</button>
+								
+								<div class="col-12 col-sm-6 col-lg-4">
+									<div class="form-group">
+										<button type="submit" class="btn btn-accent">Проверить</button>
+										<div class="load-result">Ожидает обработки</div>
+									</div>
 								</div>
 							</div>
 						</form>

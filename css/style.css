@@ -90,7 +90,9 @@ input, textarea, select {
   height: 48px;
   background: #fff;
   color: #232323;
-  font-size: 13px;
+  font-size: 14px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
   color: #232323;
@@ -116,7 +118,7 @@ input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:f
 label {
   display: block;
   width: 100%;
-  margin: 0 0 13px;
+  position: relative;
 }
 label:last-child {
   margin: 0;

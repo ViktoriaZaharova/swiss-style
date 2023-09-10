@@ -187,7 +187,83 @@
 					<div class="page-content">
 						<h1>Личный кабинет</h1>
 
-						
+						<div class="cabinet-subtitle">Ваши данные</div>
+						<form action="" method="post" class="form-cabinet">
+							<div class="row">
+								<div class="col-12 col-sm-6 col-md-4 mb-15">
+									<label><input type="text" placeholder="ФИО" name="name">
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
+									</label>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-15">
+									<label><input type="text" placeholder="Email" name="mail" required>
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
+									</label>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-15">
+									<label><input type="text" placeholder="Телефон*" name="phone" required>
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
+									</label>
+								</div>
+								
+								<div class="col-12">
+									<a href="#" class="color-accent change-password">Смена пароля</a>
+									<button type="submit" class="btn btn-accent btn-save">Сохранить</button>
+								</div>
+
+								<div class="col-12">
+									<div class="change-password-box">
+										<div class="h4">Сменить пароль</div>
+
+										<div class="row">
+											<div class="col-12 col-sm-6 col-md-4 mb-15">
+												<label><input type="password" placeholder="Старый пароль" name="old_password" required class="input-password">
+													<span class="input-icon btn-view-password"><svg class="svg-icon svg-icon-view">
+															<use xlink:href="img/sprite.svg#view"></use>
+														</svg>
+													<svg class="svg-icon svg-icon-noview">
+														<use xlink:href="img/sprite.svg#noview"></use>
+													</svg>
+													</span>
+												</label>
+											</div>
+											<div class="col-12 col-sm-6 col-md-4 mb-15">
+												<label><input type="password" placeholder="Новый пароль" name="new_password" required class="input-password">
+													<span class="input-icon btn-view-password"><svg class="svg-icon svg-icon-view">
+															<use xlink:href="img/sprite.svg#view"></use>
+														</svg>
+														<svg class="svg-icon svg-icon-noview">
+															<use xlink:href="img/sprite.svg#noview"></use>
+														</svg>
+													</span>
+												</label>
+											</div>
+											<div class="col-12 col-sm-6 col-md-4 mb-15">
+												<label><input type="password" placeholder="Повторите новый пароль" name="old_password" required class="input-password">
+													<span class="input-icon btn-view-password"><svg class="svg-icon svg-icon-view">
+															<use xlink:href="img/sprite.svg#view"></use>
+														</svg>
+														<svg class="svg-icon svg-icon-noview">
+															<use xlink:href="img/sprite.svg#noview"></use>
+														</svg>
+													</span>
+												</label>
+											</div>
+
+											<div class="col-12">
+												<button type="submit" class="btn btn-accent">Сохранить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
