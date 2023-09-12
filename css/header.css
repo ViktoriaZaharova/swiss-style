@@ -1,5 +1,36 @@
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 header .phone {
   font-size: 18px;
+}
+header.fixed {
+  -webkit-box-shadow: 0px 14px 10px 0 rgba(29, 29, 27, 0.07);
+          box-shadow: 0px 14px 10px 0 rgba(29, 29, 27, 0.07);
+}
+header.fixed .logo {
+  font-size: 7.5px;
+  letter-spacing: 1.43px;
+}
+header.fixed .logo-icon {
+  max-width: 127px;
+}
+header.fixed .btn-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header.fixed .header-bottom {
+  display: none;
+  background: #fff;
+  border-top: 1px solid #f1f1f1;
 }
 
 .header-top {
@@ -8,12 +39,29 @@ header .phone {
 }
 
 .logo {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   letter-spacing: 2.28px;
   font-size: 12px;
   color: #232323;
 }
 .logo:hover {
   color: #232323;
+}
+
+.logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 200px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .logo-text {
@@ -219,4 +267,54 @@ header .phone {
 
 .nav-menu-user {
   margin: 0 0 0 auto;
+}
+
+.btn-burger {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: #f1f1f1;
+  position: relative;
+  padding: 17px 15px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 0 30px 0 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-burger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #232323;
+  border-radius: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-burger.click span {
+  top: 23px;
+  position: absolute;
+}
+.btn-burger.click span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.btn-burger.click span:last-child {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.btn-burger.click span:nth-child(2) {
+  width: 0;
+  height: 0;
 }

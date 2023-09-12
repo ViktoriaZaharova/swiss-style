@@ -96,6 +96,14 @@ footer .address {
   text-align: right;
 }
 
+.modal-backdrop {
+  background: #232323;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
 .modal-dialog {
   max-width: 440px;
 }
@@ -107,6 +115,13 @@ footer .address {
           box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2);
   background-color: #fff;
   padding: 40px;
+}
+.modal-content .tab-content form .checkbox {
+  color: #232323;
+  font-size: 14px;
+}
+.modal-content .tab-content .form-registration .checkbox {
+  font-size: 13px;
 }
 
 .modal-header {
@@ -142,6 +157,11 @@ footer .address {
           justify-content: center;
 }
 
+.btn-close:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .modal-title {
   font-size: 22px;
   font-weight: 500;
@@ -155,9 +175,13 @@ footer .address {
 }
 .modal-body .box-text {
   text-align: center;
-  margin: 0 auto 27px;
+  margin: 0 auto;
 }
 
+.form-modal {
+  margin: 27px auto 0;
+  width: 100%;
+}
 .form-modal label {
   margin: 0 0 14px;
 }
@@ -185,10 +209,86 @@ footer .address {
 }
 .form-modal .checkbox {
   max-width: none;
+  margin: 20px 0;
 }
 .form-modal .checkbox a {
   display: inline;
 }
 .form-modal [type=submit] {
   width: 100%;
+}
+
+#entranceModal .modal-dialog {
+  max-width: 600px;
+}
+#entranceModal .modal-header {
+  padding: 26px 0 0;
+}
+#entranceModal .modal-content {
+  padding: 0;
+}
+#entranceModal .modal-body {
+  padding: 40px;
+}
+
+.nav-tabs-modal {
+  padding: 0 40px;
+}
+
+.form-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.form-code label {
+  width: calc(100% - 10px - 150px);
+  margin: 0 auto 0 0;
+}
+.form-code input::-webkit-input-placeholder {
+  color: #999;
+}
+.form-code input::-moz-placeholder {
+  color: #999;
+}
+.form-code input:-ms-input-placeholder {
+  color: #999;
+}
+.form-code input::-ms-input-placeholder {
+  color: #999;
+}
+.form-code input::placeholder {
+  color: #999;
+}
+
+.link-password {
+  border-bottom: 1px solid #c4c4c4;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recapcha {
+  margin: 25px auto 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

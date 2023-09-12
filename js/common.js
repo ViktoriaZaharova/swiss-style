@@ -1,5 +1,19 @@
 $('[name="phone"]').mask('+7 (999) 999-99-99');
 
+// header fixed
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 200) {
+		$('header').addClass('fixed');
+	} else {
+		$('header').removeClass('fixed');
+	}
+});
+
+$('.btn-burger').on('click', function () {
+	$(this).toggleClass('click');
+	$('.header-bottom').fadeToggle();
+});
+
 $('.home-slider').slick({
 	slidesToShow: 1,
 	dots: true,
@@ -19,11 +33,33 @@ $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
 	$('.slick-slider').slick('setPosition');
 });
 
+$('.comparison-slider').slick({
+	slidesToShow: 6,
+	arrows: true,
+	asNavFor: '.characteristics-slider',
+	prevArrow: '<button type="button" class="slick-prev slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+});
+
+$('.article-catalog-slider').slick({
+	slidesToShow: 4,
+	arrows: false,
+	dots: true,
+});
+
+$('.characteristics-slider').slick({
+	slidesToShow: 6,
+	arrows: false,
+	asNavFor: '.comparison-slider',
+});
+
 $('.articles-slider').slick({
 	slidesToShow: 5,
 	slidesToScroll: 2,
 	arrows: false,
 	dots: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
 });
 
 $('.brands-slider').slick({

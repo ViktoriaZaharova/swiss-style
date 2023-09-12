@@ -45,6 +45,7 @@ body
 	font-weight: normal
 	background: #fff
 	color: #232323
+	padding: 148px 0 0
 
 img
 	display: block
@@ -343,6 +344,7 @@ h3
 		color: $accent
 
 .nav-tabs
+	width: 100%
 	border: none
 	border-radius: 0
 	justify-content: flex-end
@@ -431,6 +433,15 @@ h3
 	@include d-flex
 	&:hover
 		background: $accent
+
+.slick-arrow-white
+	background: #fff
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+	fill: #232323
+	&:hover, &:focus
+		fill: $accent
+		background: #fff		
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
 
 .slick-next
 	right: 18px

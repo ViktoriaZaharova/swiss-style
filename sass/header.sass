@@ -2,19 +2,45 @@
 
 // header
 header
+	position: fixed
+	z-index: 3
+	width: 100%
+	top: 0
+	left: 0
+	background: #fff
+	transition: .3s
 	.phone
 		font-size: 18px
+	&.fixed
+		box-shadow: 0px 14px 10px 0 rgba(29, 29, 27, 0.07)
+		.logo
+			font-size: 7.5px
+			letter-spacing: 1.43px
+		.logo-icon
+			max-width: 127px
+		.btn-burger
+			display: flex
+		.header-bottom
+			display: none
+			background: #fff
+			border-top: 1px solid #f1f1f1
 
 .header-top
 	padding: 14px 0
 	font-size: 13px
 
 .logo
+	transition: .3s
 	letter-spacing: 2.28px
 	font-size: 12px
 	color: #232323
 	&:hover
 		color: #232323
+
+.logo-icon
+	@include d-flex
+	max-width: 200px
+	transition: .3s
 
 .logo-text
 	margin: 6px 0 0
@@ -127,13 +153,49 @@ header
 .nav-menu-user, .nav-menu
 	display: flex
 	align-items: center
-	
+
 	flex-direction: row
 	li
-			margin: 0 70px 0 0
-			&:last-child
-				margin: 0
+		margin: 0 70px 0 0
+		&:last-child
+			margin: 0
 
 .nav-menu-user
 	margin: 0 0 0 auto
 
+.btn-burger
+	border-radius: 50%
+	width: 48px
+	height: 48px
+	min-width: 48px
+	background: #f1f1f1
+	position: relative
+	padding: 17px 15px
+	display: none
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	cursor: pointer
+	margin: 0 30px 0 0
+	transition: .3s
+	span
+		display: block
+		width: 18px
+		height: 2px
+		background: #232323
+		border-radius: 2px
+		transition: .3s
+	&.click
+		span
+			top: 23px
+			position: absolute
+			&:first-child
+				transform: rotate(45deg)
+			&:last-child
+				transform: rotate(135deg)	
+			&:nth-child(2)
+				width: 0
+				height: 0
+
+
+	

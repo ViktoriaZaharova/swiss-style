@@ -47,6 +47,7 @@ body {
   font-weight: normal;
   background: #fff;
   color: #232323;
+  padding: 148px 0 0;
 }
 
 img {
@@ -484,6 +485,7 @@ h3 {
 }
 
 .nav-tabs {
+  width: 100%;
   border: none;
   border-radius: 0;
   -webkit-box-pack: end;
@@ -611,6 +613,19 @@ h3 {
 }
 .slick-arrow:hover {
   background: #c21212;
+}
+
+.slick-arrow-white {
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  fill: #232323;
+}
+.slick-arrow-white:hover, .slick-arrow-white:focus {
+  fill: #c21212;
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .slick-next {
