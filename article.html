@@ -2,1105 +2,1105 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Швейцарский стиль - салон швейцарских часов</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Швейцарский стиль - салон швейцарских часов</title>
 
-  <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
-  <!-- add plugins css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <!-- add plugins css end -->
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
 
-<header>
-  <div class="header-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center flex-wrap">
-<div class="btn-burger">
-	<span></span>
-	<span></span>
-	<span></span>
-</div>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 
-          <a href="index.html" class="logo">
-            <span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
+						<a href="index.html" class="logo">
+							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
 								часов</span>
-          </a>
-          <form action="" method="post" class="form-search">
-            <label>
-              <input type="text" name="search" placeholder="Поиск">
-            </label>
-            <button type="submit">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-            </button>
-          </form>
+						</a>
+						<form action="" method="post" class="form-search">
+							<label>
+								<input type="text" name="search" placeholder="Поиск">
+							</label>
+							<button type="submit">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</form>
 
-          <div class="dropdown dropdown-location">
-            <a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+						<div class="dropdown dropdown-location">
+							<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false"
+								data-bs-auto-close="outside">
 								<span class="dropdown-location__icon"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#location"></use>
 									</svg></span>
-              Санкт-Петербург
-            </a>
-						<div class="dropdown-menu">
-							<div class="dropdown-menu-visible">
-								<div class="dropdown-menu-head">
-									<div class="dropdown-menu-title">
-										<div class="h3">Ваш город
-											<strong class="color-accent name-city">Санкт-Петербург</strong>
+								Санкт-Петербург
+							</a>
+							<div class="dropdown-menu">
+								<div class="dropdown-menu-visible">
+									<div class="dropdown-menu-head">
+										<div class="dropdown-menu-title">
+											<div class="h3">Ваш город
+												<strong class="color-accent name-city">Санкт-Петербург</strong>
+											</div>
 										</div>
 									</div>
+
+									<div class="btn-group">
+										<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
+										<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
+									</div>
 								</div>
-						
-								<div class="btn-group">
-									<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
-									<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
-								</div>
-							</div>
-						
-							<div class="dropdown-menu-hidden">
-								<div class="dropdown-menu-head">
+
+								<div class="dropdown-menu-hidden">
+									<div class="dropdown-menu-head">
 										<form action="" method="post" class="form-search">
 											<label><input type="text" placeholder="Поиск города" name="search"></label>
 											<button type="submit"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#search"></use>
-											</svg></button>
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg></button>
 										</form>
-								</div>
-								<div class="dropdown-menu-body">
-									<ul class="list-cities my-ul list-scroll">
-										<li><a href="#">Москва</a></li>
-										<li><a href="#" class="checked">Санкт-Петербург</a></li>
-										<li><a href="#">Казань</a></li>
-										<li><a href="#">Нижний Новгород</a></li>
-										<li><a href="#">Екатеренбург</a></li>
-										<li><a href="#">Самара</a></li>
-										<li><a href="#">Ростов-на-Дону</a></li>
-										<li><a href="#">Уфа</a></li>
-										<li><a href="#">Челябинск</a></li>
-										<li><a href="#">Саратов</a></li>
-										<li><a href="#">Самара</a></li>
-										<li><a href="#">Аксай</a></li>
-										<li><a href="#">Александров</a></li>
-										<li><a href="#">Александров Гай</a></li>
-										<li><a href="#">Александровск</a></li>
-										<li><a href="#">Алексеевка
-												(Самарская область)</a></li>
-										<li><a href="#">Баксан</a></li>
-									</ul>
+									</div>
+									<div class="dropdown-menu-body">
+										<ul class="list-cities my-ul list-scroll">
+											<li><a href="#">Москва</a></li>
+											<li><a href="#" class="checked">Санкт-Петербург</a></li>
+											<li><a href="#">Казань</a></li>
+											<li><a href="#">Нижний Новгород</a></li>
+											<li><a href="#">Екатеренбург</a></li>
+											<li><a href="#">Самара</a></li>
+											<li><a href="#">Ростов-на-Дону</a></li>
+											<li><a href="#">Уфа</a></li>
+											<li><a href="#">Челябинск</a></li>
+											<li><a href="#">Саратов</a></li>
+											<li><a href="#">Самара</a></li>
+											<li><a href="#">Аксай</a></li>
+											<li><a href="#">Александров</a></li>
+											<li><a href="#">Александров Гай</a></li>
+											<li><a href="#">Александровск</a></li>
+											<li><a href="#">Алексеевка
+													(Самарская область)</a></li>
+											<li><a href="#">Баксан</a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
-          </div>
 
-          <div class="header-contacts">
-            <a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
-            <a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
-            <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
-          </div>
+						<div class="header-contacts">
+							<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
+							<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
+							<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
+						</div>
 
-          <div class="user-navigation">
-            <a href="comparison.html" class="user-navigation-link">
+						<div class="user-navigation">
+							<a href="comparison.html" class="user-navigation-link">
 								<span class="user-navigation-link__icon"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#balance"></use>
 									</svg>
 									<span class="user-navigation-link__value">5</span>
 								</span>
-              <span class="user-navigation-link__text">Сравнение</span>
+								<span class="user-navigation-link__text">Сравнение</span>
 
-            </a>
-            <a href="favorites.html" class="user-navigation-link">
+							</a>
+							<a href="favorites.html" class="user-navigation-link">
 								<span class="user-navigation-link__icon"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#heart"></use>
 									</svg></span>
-              <span class="user-navigation-link__text">Избранное</span>
-            </a>
-            <a href="#" class="user-navigation-link" data-bs-toggle="modal" data-bs-target="#entranceModal">
+								<span class="user-navigation-link__text">Избранное</span>
+							</a>
+							<a href="#" class="user-navigation-link" data-bs-toggle="modal" data-bs-target="#entranceModal">
 								<span class="user-navigation-link__icon"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#user"></use>
 									</svg></span>
-              <span class="user-navigation-link__text">Вход</span>
-            </a>
-            <a href="basket.html" class="user-navigation-link">
+								<span class="user-navigation-link__text">Вход</span>
+							</a>
+							<a href="basket.html" class="user-navigation-link">
 								<span class="user-navigation-link__icon"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#basket"></use>
 									</svg>
 									<span class="user-navigation-link__value">18</span>
 								</span>
-              <span class="user-navigation-link__text">Корзина</span>
+								<span class="user-navigation-link__text">Корзина</span>
 
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center flex-wrap">
-          <ul class="navbar-nav nav-menu my-ul">
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Мужские
-                часы</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Действие</a></li>
-                <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Женские
-                часы</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Действие</a></li>
-                <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Аксесуары</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Действие</a></li>
-                <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="stock.html" class="nav-link">Акции</a>
-            </li>
-            <li class="nav-item">
-              <a href="new.html" class="nav-link">Новинки</a>
-            </li>
-          </ul>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<ul class="navbar-nav nav-menu my-ul">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Мужские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Женские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Аксесуары</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="stock.html" class="nav-link">Акции</a>
+							</li>
+							<li class="nav-item">
+								<a href="new.html" class="nav-link">Новинки</a>
+							</li>
+						</ul>
 
-          <ul class="navbar-nav nav-menu-user my-ul">
-            <li class="nav-item">
-              <a href="how-to-buy.html" class="nav-link">Как купить</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Рассрочка 0%</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Блог</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+						<ul class="navbar-nav nav-menu-user my-ul">
+							<li class="nav-item">
+								<a href="how-to-buy.html" class="nav-link">Как купить</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Рассрочка 0%</a>
+							</li>
+							<li class="nav-item">
+								<a href="blog.html" class="nav-link">Блог</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-<section class="page page-article">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <nav aria-label="breadcrumb" class="nav-breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Какие часы лучше: кварцевые или механические —
-              отличия, плюсы, минусы
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
+	<section class="page page-article">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Какие часы лучше: кварцевые или механические —
+								отличия, плюсы, минусы
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
 
-    <div class="row">
-      <div class="col-12">
-        <h1>Какие часы лучше: кварцевые или механические — отличия, плюсы, минусы</h1>
-      </div>
-    </div>
+			<div class="row">
+				<div class="col-12">
+					<h1>Какие часы лучше: кварцевые или механические — отличия, плюсы, минусы</h1>
+				</div>
+			</div>
 
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap">
-        <div class="page-content page-content-reverse">
-          <div class="article-image"><img src="img/article-home.jpg" alt=""></div>
-          <div class="article-information">
-            <div class="article-information-box">
-              <div class="article-information-box__icon"><img src="img/calendar2.svg" alt=""></div>
-              <div class="article-information-box__text">28.07.2023</div>
-            </div>
-            <div class="article-information-box">
-              <div class="article-information-box__icon"><img src="img/eye2.svg" alt=""></div>
-              <div class="article-information-box__text">358</div>
-            </div>
-            <div class="article-information-box">
-              <div class="article-information-box__icon user-icon"><img src="img/user2.svg" alt=""></div>
-              <div class="article-information-box__text">Admin</div>
-            </div>
-          </div>
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap">
+					<div class="page-content page-content-reverse">
+						<div class="article-image"><img src="img/article-home.jpg" alt=""></div>
+						<div class="article-information">
+							<div class="article-information-box">
+								<div class="article-information-box__icon"><img src="img/calendar2.svg" alt=""></div>
+								<div class="article-information-box__text">28.07.2023</div>
+							</div>
+							<div class="article-information-box">
+								<div class="article-information-box__icon"><img src="img/eye2.svg" alt=""></div>
+								<div class="article-information-box__text">358</div>
+							</div>
+							<div class="article-information-box">
+								<div class="article-information-box__icon user-icon"><img src="img/user2.svg" alt=""></div>
+								<div class="article-information-box__text">Admin</div>
+							</div>
+						</div>
 
-          <div class="box-text">
-            <p>Кварц или механика? О, какие дискуссии затеваются по этому поводу среди часовых фанатов! На самом деле,
-              спорить не о
-              чем: как это часто бывает, каждая сторона права по-своему.</p>
-          </div>
+						<div class="box-text">
+							<p>Кварц или механика? О, какие дискуссии затеваются по этому поводу среди часовых фанатов! На самом деле,
+								спорить не о
+								чем: как это часто бывает, каждая сторона права по-своему.</p>
+						</div>
 
 
-          <div id="artile-section1" class="article-page-section">
-            <h2>"Кварцевый механизм" в часах - что это значит?</h2>
+						<div id="artile-section1" class="article-page-section">
+							<h2>"Кварцевый механизм" в часах - что это значит?</h2>
 
-            <div class="box-text">
-              <p>Давайте выясним: почему часы называют кварцевыми и как они работают?</p>
+							<div class="box-text">
+								<p>Давайте выясним: почему часы называют кварцевыми и как они работают?</p>
 
-              <p><strong>Основными компонентами таких часов являются:</strong></p>
+								<p><strong>Основными компонентами таких часов являются:</strong></p>
 
-              <ul class="list-circle">
-                <li>электронный блок с кварцевым кристаллом;
-                </li>
-                <li>шаговый электродвигатель.</li>
-              </ul>
+								<ul class="list-circle">
+									<li>электронный блок с кварцевым кристаллом;
+									</li>
+									<li>шаговый электродвигатель.</li>
+								</ul>
 
-              <p>Кварц обладает уникальными функциями. Под влиянием постоянного электрического тока он сжимается и
-                разжимается, тем самым
-                генерируя переменный электрический импульс и, как следствие, колебания с очень стабильной и очень
-                высокой частотой. За
-                счет этого электроника посылает сигнал двигателю, который поворачивает стрелки на нужный угол.</p>
-            </div>
+								<p>Кварц обладает уникальными функциями. Под влиянием постоянного электрического тока он сжимается и
+									разжимается, тем самым
+									генерируя переменный электрический импульс и, как следствие, колебания с очень стабильной и очень
+									высокой частотой. За
+									счет этого электроника посылает сигнал двигателю, который поворачивает стрелки на нужный угол.</p>
+							</div>
 
-            <div class="information-box article-info-box">
-              <div class="information-box__icon"><img src="img/info2.svg" alt=""></div>
-              <div class="information-box__body">
-                <p>Кварцевые часы – уникальное сочетание высокой точности работы и удобства в ежедневной эксплуатации.
-                </p>
-              </div>
-            </div>
+							<div class="information-box article-info-box">
+								<div class="information-box__icon"><img src="img/info2.svg" alt=""></div>
+								<div class="information-box__body">
+									<p>Кварцевые часы – уникальное сочетание высокой точности работы и удобства в ежедневной эксплуатации.
+									</p>
+								</div>
+							</div>
 
-            <div class="box-text mb-35">
-              <p>Питание электронного блока и двигателя обеспечивается батарейкой, которая рассчитана на несколько лет
-                и избавляет
-                владельца аксессуара от необходимости постоянно заводить устройство.</p>
+							<div class="box-text mb-35">
+								<p>Питание электронного блока и двигателя обеспечивается батарейкой, которая рассчитана на несколько лет
+									и избавляет
+									владельца аксессуара от необходимости постоянно заводить устройство.</p>
 
-              <p>Часы с цифровым дисплеем в нашей стране называют электронными. Однако принципиально правильное
-                название этого типа часов
-                – кварцевые часы с цифровой индикацией. Такое название уточняет, что, сердцем часов является генератор
-                на основе кварца,
-                а информация показана в виде цифр на дисплее.</p>
+								<p>Часы с цифровым дисплеем в нашей стране называют электронными. Однако принципиально правильное
+									название этого типа часов
+									– кварцевые часы с цифровой индикацией. Такое название уточняет, что, сердцем часов является генератор
+									на основе кварца,
+									а информация показана в виде цифр на дисплее.</p>
 
-              <p>Впрочем, есть довольно большая группа кварцевых часов с чисто стрелочной индикацией или смешанной,
-                это так называемые
-                «ана-диджи» – от слов analog и digitale. Кварцевые часы со стрелочной индикацией бывают очень простыми
-                по функциям, но
-                при этом очень дорогими благодаря эксклюзивному ювелирному исполнению. Таковы, например, женские
-                часы-«змейки» Serpenti
-                от бренда Bvlgari. А индикация «ана-диджи» широко применяется во многих популярных моделях, в том
-                числе Casio.</p>
-            </div>
+								<p>Впрочем, есть довольно большая группа кварцевых часов с чисто стрелочной индикацией или смешанной,
+									это так называемые
+									«ана-диджи» – от слов analog и digitale. Кварцевые часы со стрелочной индикацией бывают очень простыми
+									по функциям, но
+									при этом очень дорогими благодаря эксклюзивному ювелирному исполнению. Таковы, например, женские
+									часы-«змейки» Serpenti
+									от бренда Bvlgari. А индикация «ана-диджи» широко применяется во многих популярных моделях, в том
+									числе Casio.</p>
+							</div>
 
-            <div class="article-image"><img src="img/article6.jpg" alt="">
-              <span class="article-image__name">Кварцевый механизм</span>
-            </div>
-          </div>
+							<div class="article-image"><img src="img/article6.jpg" alt="">
+								<span class="article-image__name">Кварцевый механизм</span>
+							</div>
+						</div>
 
-          <div id="artile-section2" class="article-page-section">
-            <h2>Как работают механические и кварцевые часы: разница?</h2>
-            <div class="box-text">
-              <p>Не будем вдаваться в сложные термины, описывающие принципы работы часовых механизмов, а изложим
-                основной смысл.</p>
+						<div id="artile-section2" class="article-page-section">
+							<h2>Как работают механические и кварцевые часы: разница?</h2>
+							<div class="box-text">
+								<p>Не будем вдаваться в сложные термины, описывающие принципы работы часовых механизмов, а изложим
+									основной смысл.</p>
 
-              <p>Механизм наручных часов с ручным заводом состоит из трех главных узлов:</p>
+								<p>Механизм наручных часов с ручным заводом состоит из трех главных узлов:</p>
 
-              <ul class="list-circle">
-                <li>заводная пружина;</li>
-                <li>передача, она же трансмиссия, состоящая из шестеренок и других подобных деталей;</li>
-                <li>спуск – сердце часового механизма, отвечающее за точность хода и включающее в себя баланс,
-                  спираль, анкерное колесо и
-                  анкер.
-                </li>
-              </ul>
+								<ul class="list-circle">
+									<li>заводная пружина;</li>
+									<li>передача, она же трансмиссия, состоящая из шестеренок и других подобных деталей;</li>
+									<li>спуск – сердце часового механизма, отвечающее за точность хода и включающее в себя баланс,
+										спираль, анкерное колесо и
+										анкер.
+									</li>
+								</ul>
 
-              <p>Пружина отвечает за длительность хода устройства. За счет прокручивания заводной головки пружинка
-                скручивается, энергия
-                накапливается в ней и далее передается на шестерни. Они, в свою очередь, перемещают стрелки часов.
-                Далее энергия
-                передается на так называемый регулятор – колесо баланса со спиралью. Колесо колеблется, поддерживая
-                точность хода через
-                анкер и анкерное колесо. Кстати, неравномерная раскрутка пружины влечет за собой неточность хода.
-                Погрешность в
-                несколько секунд в сутки является нормой для большинства механических часов.</p>
-            </div>
-          </div>
+								<p>Пружина отвечает за длительность хода устройства. За счет прокручивания заводной головки пружинка
+									скручивается, энергия
+									накапливается в ней и далее передается на шестерни. Они, в свою очередь, перемещают стрелки часов.
+									Далее энергия
+									передается на так называемый регулятор – колесо баланса со спиралью. Колесо колеблется, поддерживая
+									точность хода через
+									анкер и анкерное колесо. Кстати, неравномерная раскрутка пружины влечет за собой неточность хода.
+									Погрешность в
+									несколько секунд в сутки является нормой для большинства механических часов.</p>
+							</div>
+						</div>
 
-          <div id="artile-section3" class="article-page-section interesting-page-section">
-            <div class="row align-items-center">
-              <div class="col-12 col-lg-6">
-                <h2>Это может быть вам интересно</h2>
-              </div>
-              <div class="col-12 col-lg-6">
-                <a href="catalog.html" class="link-page">
-                  <span>Перейти в каталог</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
+						<div id="artile-section3" class="article-page-section interesting-page-section">
+							<div class="row align-items-center">
+								<div class="col-12 col-lg-6">
+									<h2>Это может быть вам интересно</h2>
+								</div>
+								<div class="col-12 col-lg-6">
+									<a href="catalog.html" class="link-page">
+										<span>Перейти в каталог</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
 
-            <div class="article-catalog-slider">
-              <div class="slide">
-                <div class="product-card">
-                  <a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
-                  <div class="product-card__body">
-                    <div class="article">T058.109.17.036.00</div>
-                    <a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
-                  </div>
-                  <div class="product-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">112500₽</div>
-                      <div class="loan-price">от 8961₽ в мес.</div>
-                    </div>
+							<div class="article-catalog-slider">
+								<div class="slide">
+									<div class="product-card">
+										<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+										<div class="product-card__body">
+											<div class="article">T058.109.17.036.00</div>
+											<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+										</div>
+										<div class="product-card__footer">
+											<div class="price-wrapper">
+												<div class="price">112500₽</div>
+												<div class="loan-price">от 8961₽ в мес.</div>
+											</div>
 
-                    <a href="#" class="btn-add-card">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#basket"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="product-card">
-                  <ul class="list-labels my-ul">
-                    <li class="list-labels__new">Новинка</li>
-                  </ul>
-                  <a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
-                  <div class="product-card__body">
-                    <div class="article">L4.790.2.11.2</div>
-                  </div>
-                  <div class="product-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">112500₽</div>
-                      <div class="loan-price">от 8961₽ в мес.</div>
-                    </div>
+											<a href="#" class="btn-add-card">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#basket"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="product-card">
+										<ul class="list-labels my-ul">
+											<li class="list-labels__new">Новинка</li>
+										</ul>
+										<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+										<div class="product-card__body">
+											<div class="article">L4.790.2.11.2</div>
+										</div>
+										<div class="product-card__footer">
+											<div class="price-wrapper">
+												<div class="price">112500₽</div>
+												<div class="loan-price">от 8961₽ в мес.</div>
+											</div>
 
-                    <a href="#" class="btn-add-card">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#basket"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="product-card">
-                  <ul class="list-labels my-ul">
-                    <li class="list-labels__sale">-25</li>
-                  </ul>
-                  <a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
-                  <div class="product-card__body">
-                    <div class="article">L4.790.2.11.2</div>
-                  </div>
-                  <div class="product-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">112500₽
-                        <div class="old-price">112500₽</div>
-                      </div>
-                      <div class="loan-price">от 8961₽ в мес.</div>
-                    </div>
+											<a href="#" class="btn-add-card">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#basket"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="product-card">
+										<ul class="list-labels my-ul">
+											<li class="list-labels__sale">-25</li>
+										</ul>
+										<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+										<div class="product-card__body">
+											<div class="article">L4.790.2.11.2</div>
+										</div>
+										<div class="product-card__footer">
+											<div class="price-wrapper">
+												<div class="price">112500₽
+													<div class="old-price">112500₽</div>
+												</div>
+												<div class="loan-price">от 8961₽ в мес.</div>
+											</div>
 
-                    <a href="#" class="btn-add-card">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#basket"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="product-card">
-                  <a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
-                  <div class="product-card__body">
-                    <div class="article">L4.790.2.11.2</div>
-                  </div>
-                  <div class="product-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">112500₽</div>
-                      <div class="loan-price">от 8961₽ в мес.</div>
-                    </div>
+											<a href="#" class="btn-add-card">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#basket"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="product-card">
+										<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+										<div class="product-card__body">
+											<div class="article">L4.790.2.11.2</div>
+										</div>
+										<div class="product-card__footer">
+											<div class="price-wrapper">
+												<div class="price">112500₽</div>
+												<div class="loan-price">от 8961₽ в мес.</div>
+											</div>
 
-                    <a href="#" class="btn-add-card">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#basket"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="product-card">
-                  <ul class="list-labels my-ul">
-                    <li class="list-labels__new">Новинка</li>
-                  </ul>
-                  <a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
-                  <div class="product-card__body">
-                    <div class="article">T058.109.17.036.00</div>
-                  </div>
-                  <div class="product-card__footer">
-                    <div class="price-wrapper">
-                      <div class="price">112500₽</div>
-                      <div class="loan-price">от 8961₽ в мес.</div>
-                    </div>
+											<a href="#" class="btn-add-card">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#basket"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="product-card">
+										<ul class="list-labels my-ul">
+											<li class="list-labels__new">Новинка</li>
+										</ul>
+										<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+										<div class="product-card__body">
+											<div class="article">T058.109.17.036.00</div>
+										</div>
+										<div class="product-card__footer">
+											<div class="price-wrapper">
+												<div class="price">112500₽</div>
+												<div class="loan-price">от 8961₽ в мес.</div>
+											</div>
 
-                    <a href="#" class="btn-add-card">
-                      <svg class="svg-icon">
-                        <use xlink:href="img/sprite.svg#basket"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+											<a href="#" class="btn-add-card">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#basket"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-          <div id="artile-section3" class="article-page-section">
-            <h2>Как работают механические и кварцевые часы: разница?</h2>
-            <div class="box-text">
-              <p>Питание электронного блока и двигателя обеспечивается батарейкой, которая рассчитана на несколько лет
-                и избавляет
-                владельца аксессуара от необходимости постоянно заводить устройство.</p>
+						<div id="artile-section3" class="article-page-section">
+							<h2>Как работают механические и кварцевые часы: разница?</h2>
+							<div class="box-text">
+								<p>Питание электронного блока и двигателя обеспечивается батарейкой, которая рассчитана на несколько лет
+									и избавляет
+									владельца аксессуара от необходимости постоянно заводить устройство.</p>
 
-              <p>Часы с цифровым дисплеем в нашей стране называют электронными. Однако принципиально правильное
-                название этого типа часов
-                – кварцевые часы с цифровой индикацией. Такое название уточняет, что, сердцем часов является генератор
-                на основе кварца,
-                а информация показана в виде цифр на дисплее.</p>
+								<p>Часы с цифровым дисплеем в нашей стране называют электронными. Однако принципиально правильное
+									название этого типа часов
+									– кварцевые часы с цифровой индикацией. Такое название уточняет, что, сердцем часов является генератор
+									на основе кварца,
+									а информация показана в виде цифр на дисплее.</p>
 
-              <p>Впрочем, есть довольно большая группа кварцевых часов с чисто стрелочной индикацией или смешанной,
-                это
-                так называемые
-                «ана-диджи» – от слов analog и digitale. Кварцевые часы со стрелочной индикацией бывают очень простыми
-                по функциям, но
-                при этом очень дорогими благодаря эксклюзивному ювелирному исполнению. Таковы, например, женские
-                часы-«змейки» Serpenti
-                от бренда Bvlgari. А индикация «ана-диджи» широко применяется во многих популярных моделях, в том
-                числе Casio.</p>
-            </div>
-          </div>
+								<p>Впрочем, есть довольно большая группа кварцевых часов с чисто стрелочной индикацией или смешанной,
+									это
+									так называемые
+									«ана-диджи» – от слов analog и digitale. Кварцевые часы со стрелочной индикацией бывают очень простыми
+									по функциям, но
+									при этом очень дорогими благодаря эксклюзивному ювелирному исполнению. Таковы, например, женские
+									часы-«змейки» Serpenti
+									от бренда Bvlgari. А индикация «ана-диджи» широко применяется во многих популярных моделях, в том
+									числе Casio.</p>
+							</div>
+						</div>
 
-          <div class="share-box">
-            <p>Поделиться</p>
-            <ul class="list-social list-social-v2 my-ul">
-              <li><a href="#">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#youtube"></use>
-                </svg>
-              </a></li>
-              <li><a href="#">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-              </a></li>
-              <li><a href="#">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#tg"></use>
-                </svg>
-              </a></li>
-              <li><a href="#">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
-                </svg>
-              </a></li>
-            </ul>
-          </div>
-        </div>
+						<div class="share-box">
+							<p>Поделиться</p>
+							<ul class="list-social list-social-v2 my-ul">
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#youtube"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tg"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#twitter"></use>
+										</svg>
+									</a></li>
+							</ul>
+						</div>
+					</div>
 
-        <div class="sidebar">
-          <div class="sidebar-box">
-            <div class="sidebar-box__title">Содержание</div>
-            <ul class="sidebar-box__menu my-ul">
-              <li><a href="#artile-section1" class="go_to">"Кварцевый механизм" в часах - что
-                это значит?</a></li>
-              <li><a href="#artile-section2" class="go_to">Как работают механические и кварцевые
-                часы: разница?</a></li>
-              <li><a href="#artile-section3" class="go_to">Кварц или механика с автоподзаводом:
-                что выбрать</a></li>
-              <li><a href="#artile-section4" class="go_to">Как понять, какие часы перед вами:
-                кварцевые часы или механические</a></li>
-              <li><a href="#artile-section5" class="go_to">Так что лучше выбрать: кварц или
-                механику?</a></li>
-              <li><a href="#artile-section6" class="go_to">Как работают механические и кварцевые
-                часы: разница?</a></li>
-              <li><a href="#artile-section7" class="go_to">Кварц или механика с автоподзаводом:
-                что выбрать</a></li>
-              <li><a href="#artile-section8" class="go_to">Как понять, какие часы перед вами:
-                кварцевые часы или механические</a></li>
-            </ul>
-          </div>
-          <div class="sidebar-box">
-            <div class="sidebar-box__title">Последние записи</div>
-            <div class="blog-card-min">
-              <a href="article.html" class="blog-card-min__img"><img src="img/blog-min1.jpg" alt=""></a>
-              <div class="blog-card-min__body">
-                <div class="date">28.07.2023</div>
-                <a href="article.html" class="blog-card-min__title">Особенности часов с
-                  радиосинхронизацией</a>
-              </div>
-            </div>
-            <div class="blog-card-min">
-              <a href="article.html" class="blog-card-min__img"><img src="img/blog-min2.jpg" alt=""></a>
-              <div class="blog-card-min__body">
-                <div class="date">28.07.2023</div>
-                <a href="article.html" class="blog-card-min__title">Какие часы лучше:
-                  кварцевые или
-                  механические — отличия,
-                  плюсы, минусы</a>
-              </div>
-            </div>
-            <div class="blog-card-min">
-              <a href="article.html" class="blog-card-min__img"><img src="img/blog-min3.jpg" alt=""></a>
-              <div class="blog-card-min__body">
-                <div class="date">28.07.2023</div>
-                <a href="article.html" class="blog-card-min__title">Популярные модели
-                  бренда Tissot</a>
-              </div>
-            </div>
-          </div>
+					<div class="sidebar">
+						<div class="sidebar-box">
+							<div class="sidebar-box__title">Содержание</div>
+							<ul class="sidebar-box__menu my-ul">
+								<li><a href="#artile-section1" class="go_to">"Кварцевый механизм" в часах - что
+										это значит?</a></li>
+								<li><a href="#artile-section2" class="go_to">Как работают механические и кварцевые
+										часы: разница?</a></li>
+								<li><a href="#artile-section3" class="go_to">Кварц или механика с автоподзаводом:
+										что выбрать</a></li>
+								<li><a href="#artile-section4" class="go_to">Как понять, какие часы перед вами:
+										кварцевые часы или механические</a></li>
+								<li><a href="#artile-section5" class="go_to">Так что лучше выбрать: кварц или
+										механику?</a></li>
+								<li><a href="#artile-section6" class="go_to">Как работают механические и кварцевые
+										часы: разница?</a></li>
+								<li><a href="#artile-section7" class="go_to">Кварц или механика с автоподзаводом:
+										что выбрать</a></li>
+								<li><a href="#artile-section8" class="go_to">Как понять, какие часы перед вами:
+										кварцевые часы или механические</a></li>
+							</ul>
+						</div>
+						<div class="sidebar-box">
+							<div class="sidebar-box__title">Последние записи</div>
+							<div class="blog-card-min">
+								<a href="article.html" class="blog-card-min__img"><img src="img/blog-min1.jpg" alt=""></a>
+								<div class="blog-card-min__body">
+									<div class="date">28.07.2023</div>
+									<a href="article.html" class="blog-card-min__title">Особенности часов с
+										радиосинхронизацией</a>
+								</div>
+							</div>
+							<div class="blog-card-min">
+								<a href="article.html" class="blog-card-min__img"><img src="img/blog-min2.jpg" alt=""></a>
+								<div class="blog-card-min__body">
+									<div class="date">28.07.2023</div>
+									<a href="article.html" class="blog-card-min__title">Какие часы лучше:
+										кварцевые или
+										механические — отличия,
+										плюсы, минусы</a>
+								</div>
+							</div>
+							<div class="blog-card-min">
+								<a href="article.html" class="blog-card-min__img"><img src="img/blog-min3.jpg" alt=""></a>
+								<div class="blog-card-min__body">
+									<div class="date">28.07.2023</div>
+									<a href="article.html" class="blog-card-min__title">Популярные модели
+										бренда Tissot</a>
+								</div>
+							</div>
+						</div>
 
-          <div class="subscribe-blog">
-            <h3>Подпишись на полезные статьи</h3>
-            <div class="box-text">
-              <p>Для вас подбираем только самые
-                интересные материалы. Без спама!</p>
-            </div>
-            <form action="" method="post" class="subscribe-blog__form">
-              <div class="form-group">
-                <label><input type="text" placeholder="Email" required></label>
-                <button type="submit">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </button>
-              </div>
-              <label class="checkbox">
-                <input type="checkbox" checked name="checkbox">
-                <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Даю согласие на обработку
+						<div class="subscribe-blog">
+							<h3>Подпишись на полезные статьи</h3>
+							<div class="box-text">
+								<p>Для вас подбираем только самые
+									интересные материалы. Без спама!</p>
+							</div>
+							<form action="" method="post" class="subscribe-blog__form">
+								<div class="form-group">
+									<label><input type="text" placeholder="Email" required></label>
+									<button type="submit">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</button>
+								</div>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Даю согласие на обработку
 										<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
-              </label>
-            </form>
-          </div>
+								</label>
+							</form>
+						</div>
 
-          <a href="#" class="banner-blog"><img src="img/blog-banner.jpg" alt=""></a>
-        </div>
+						<a href="#" class="banner-blog"><img src="img/blog-banner.jpg" alt=""></a>
+					</div>
 
-      </div>
-    </div>
-  </div>
-</section>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<section class="articles-brand mb-100">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 mb-20">
-        <h2>Статьи по теме</h2>
-      </div>
+	<section class="articles-brand mb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mb-20">
+					<h2>Статьи по теме</h2>
+				</div>
 
-      <div class="col-12">
-        <div class="articles-slider">
-          <div class="slide">
-            <div class="blog-card">
-              <a href="article.html" class="blog-card__img"><img src="img/blog1.jpg" alt=""></a>
-              <div class="blog-card__body">
-                <div class="date">28.07.2023</div>
-                <a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
-                  механические — отличия, плюсы,
-                  минусы</a>
-                <a href="article-html" class="link-details text-decoration color-inherit">
-                  <span>Подробнее</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="blog-card">
-              <a href="article.html" class="blog-card__img"><img src="img/blog2.jpg" alt=""></a>
-              <div class="blog-card__body">
-                <div class="date">28.07.2023</div>
-                <a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
-                  механические — отличия, плюсы,
-                  минусы</a>
-                <a href="article-html" class="link-details text-decoration color-inherit">
-                  <span>Подробнее</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="blog-card">
-              <a href="article.html" class="blog-card__img"><img src="img/blog3.jpg" alt=""></a>
-              <div class="blog-card__body">
-                <div class="date">28.07.2023</div>
-                <a href="artile.html" class="blog-card__title">Как грамотно выбрать наручные
-                  часы? 12 советов экспертов</a>
-                <a href="article-html" class="link-details text-decoration color-inherit">
-                  <span>Подробнее</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="blog-card">
-              <a href="article.html" class="blog-card__img"><img src="img/blog4.jpg" alt=""></a>
-              <div class="blog-card__body">
-                <div class="date">28.07.2023</div>
-                <a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
-                  или сапфировое?</a>
-                <a href="article-html" class="link-details text-decoration color-inherit">
-                  <span>Подробнее</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="blog-card">
-              <a href="article.html" class="blog-card__img"><img src="img/blog5.jpg" alt=""></a>
-              <div class="blog-card__body">
-                <div class="date">28.07.2023</div>
-                <a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
-                  или сапфировое?</a>
-                <a href="article-html" class="link-details text-decoration color-inherit">
-                  <span>Подробнее</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+				<div class="col-12">
+					<div class="articles-slider">
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog1.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
+										механические — отличия, плюсы,
+										минусы</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog2.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
+										механические — отличия, плюсы,
+										минусы</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog3.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Как грамотно выбрать наручные
+										часы? 12 советов экспертов</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog4.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
+										или сапфировое?</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog5.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
+										или сапфировое?</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
 
-          <div class="slide">
-            <div class="blog-card">
-              <a href="article.html" class="blog-card__img"><img src="img/blog4.jpg" alt=""></a>
-              <div class="blog-card__body">
-                <div class="date">28.07.2023</div>
-                <a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
-                  или сапфировое?</a>
-                <a href="article-html" class="link-details text-decoration color-inherit">
-                  <span>Подробнее</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="blog-card">
-              <a href="article.html" class="blog-card__img"><img src="img/blog2.jpg" alt=""></a>
-              <div class="blog-card__body">
-                <div class="date">28.07.2023</div>
-                <a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
-                  механические — отличия, плюсы,
-                  минусы</a>
-                <a href="article-html" class="link-details text-decoration color-inherit">
-                  <span>Подробнее</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog4.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Минеральное стекло, пластиковое
+										или сапфировое?</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="blog-card">
+								<a href="article.html" class="blog-card__img"><img src="img/blog2.jpg" alt=""></a>
+								<div class="blog-card__body">
+									<div class="date">28.07.2023</div>
+									<a href="artile.html" class="blog-card__title">Какие часы лучше: кварцевые или
+										механические — отличия, плюсы,
+										минусы</a>
+									<a href="article-html" class="link-details text-decoration color-inherit">
+										<span>Подробнее</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<section class="subscribe-section bg-grey">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-wrap align-items-center">
-        <div class="subscribe-content">
-          <div class="subscribe-icon"><img src="img/email.svg" alt=""></div>
-          <div class="subscribe-text">
-            <h2>Будьте в курсе</h2>
-            <div class="box-text">
-              <p>Подпишитесь на последние обновления
-                и узнавайте о скидках и акциях первыми</p>
-            </div>
-          </div>
-        </div>
+	<section class="subscribe-section bg-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap align-items-center">
+					<div class="subscribe-content">
+						<div class="subscribe-icon"><img src="img/email.svg" alt=""></div>
+						<div class="subscribe-text">
+							<h2>Будьте в курсе</h2>
+							<div class="box-text">
+								<p>Подпишитесь на последние обновления
+									и узнавайте о скидках и акциях первыми</p>
+							</div>
+						</div>
+					</div>
 
-        <form action="" method="post" class="form-subdcribe">
-          <label><input type="text" placeholder="Введите ваш email" name="mail" required></label>
-          <button type="submit" class="btn btn-gradient">Подписаться</button>
-          <div class="consent">
-            <p>Нажимая «Подписаться» вы соглашаетесь с политикой обработки персональных данных</p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+					<form action="" method="post" class="form-subdcribe">
+						<label><input type="text" placeholder="Введите ваш email" name="mail" required></label>
+						<button type="submit" class="btn btn-gradient">Подписаться</button>
+						<div class="consent">
+							<p>Нажимая «Подписаться» вы соглашаетесь с политикой обработки персональных данных</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<footer>
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-3 mb-30">
-          <div class="footer-box">
-            <div class="footer-box__title">Информация</div>
-            <ul class="footer-menu my-ul">
-              <li><a href="about.html">О компании</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-              <li><a href="shops.html">Магазины</a></li>
-              <li><a href="question.html">Популярные вопросы</a></li>
-              <li><a href="loyalty.html">Программа лояльности</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 mb-30">
-          <div class="footer-box">
-            <div class="footer-box__title">Покупателям</div>
-            <ul class="footer-menu my-ul">
-              <li><a href="corporate.html">Корпоративным клиентам</a></li>
-              <li><a href="warranty.html">Международная гарантия</a></li>
-              <li><a href="complain.html">Пожаловаться директору</a></li>
-              <li><a href="payments.html">Оплата</a></li>
-              <li><a href="delivery.html">Бесплатная доставка</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 mb-30">
-          <div class="footer-box">
-            <div class="footer-box__title">Каталог</div>
-            <div class="row">
-              <div class="col-6">
-                <ul class="footer-menu my-ul">
-                  <li><a href="catalog.html">Maurice lacroix</a></li>
-                  <li><a href="catalog.html">Frederique constant</a></li>
-                  <li><a href="catalog.html">Tissot</a></li>
-                  <li><a href="catalog.html">Longines</a></li>
-                  <li><a href="catalog.html">Rado</a></li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <ul class="footer-menu my-ul">
-                  <li><a href="catalog.html">Victorinox</a></li>
-                  <li><a href="catalog.html">Wainer</a></li>
-                  <li><a href="catalog.html">Jaguar</a></li>
-                  <li><a href="catalog.html">Epos</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-3 mb-30">
-          <div class="footer-box">
-            <div class="footer-box__title">Мы в социальных сетях</div>
-            <ul class="list-social my-ul">
-              <li><a href="#">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#youtube"></use>
-                </svg>
-              </a></li>
-              <li><a href="#">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-              </a></li>
-              <li><a href="#">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#tg"></use>
-                </svg>
-              </a></li>
-              <li><a href="#">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
-                </svg>
-              </a></li>
-            </ul>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Информация</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="about.html">О компании</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="shops.html">Магазины</a></li>
+								<li><a href="question.html">Популярные вопросы</a></li>
+								<li><a href="loyalty.html">Программа лояльности</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Покупателям</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="corporate.html">Корпоративным клиентам</a></li>
+								<li><a href="warranty.html">Международная гарантия</a></li>
+								<li><a href="complain.html">Пожаловаться директору</a></li>
+								<li><a href="payments.html">Оплата</a></li>
+								<li><a href="delivery.html">Бесплатная доставка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Каталог</div>
+							<div class="row">
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Maurice lacroix</a></li>
+										<li><a href="catalog.html">Frederique constant</a></li>
+										<li><a href="catalog.html">Tissot</a></li>
+										<li><a href="catalog.html">Longines</a></li>
+										<li><a href="catalog.html">Rado</a></li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Victorinox</a></li>
+										<li><a href="catalog.html">Wainer</a></li>
+										<li><a href="catalog.html">Jaguar</a></li>
+										<li><a href="catalog.html">Epos</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Мы в социальных сетях</div>
+							<ul class="list-social my-ul">
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#youtube"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tg"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#twitter"></use>
+										</svg>
+									</a></li>
+							</ul>
 
-            <div class="address">
-              <p>Санкт-Петербург</p>
-            </div>
-            <a href="tel:+78122004178" class="phone">8 (812) 200-41-78</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <div class="copyright">Swiss-Style.Ru Copyright © 2006 - 2021 Магазин швейцарских часов в Санкт-Петербурге
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="box-text">
-            <p>Информация на сайте не является публичной афертой</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+							<div class="address">
+								<p>Санкт-Петербург</p>
+							</div>
+							<a href="tel:+78122004178" class="phone">8 (812) 200-41-78</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="copyright">Swiss-Style.Ru Copyright © 2006 - 2021 Магазин швейцарских часов в Санкт-Петербурге
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="box-text">
+							<p>Информация на сайте не является публичной афертой</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-<!-- Модальное окно -->
-<div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-title">Задать вопрос</div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="box-text">
-          <p>Задайте свой зопрос и наши специалисты
-            подготовят детальный ответ на него</p>
-        </div>
+	<!-- Модальное окно -->
+	<div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Задать вопрос</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Задайте свой зопрос и наши специалисты
+							подготовят детальный ответ на него</p>
+					</div>
 
-        <form action="" method="post" class="form-modal">
-          <label><input type="text" placeholder="Ваше имя" name="name"></label>
-          <label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
-          <label><textarea name="message" placeholder="Ваш вопрос"></textarea></label>
-          <label class="checkbox">
-            <input type="checkbox" checked name="checkbox">
-            <span class="checkbox-custom"></span>
-            <span class="checkbox-text">Даю согласие на обработку
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label><textarea name="message" placeholder="Ваш вопрос"></textarea></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
 								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
-          </label>
-          <button type="submit" class="btn btn-accent">Отправить заявку</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-title">Обратный звонок</div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="box-text">
-          <p>Оставьте заявку и наш специалист свяжется <br>
-            с вами в ближайшее время</p>
-        </div>
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Обратный звонок</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Оставьте заявку и наш специалист свяжется <br>
+							с вами в ближайшее время</p>
+					</div>
 
-        <form action="" method="post" class="form-modal">
-          <label><input type="text" placeholder="Ваше имя" name="name"></label>
-          <label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
-          <label class="checkbox">
-            <input type="checkbox" checked name="checkbox">
-            <span class="checkbox-custom"></span>
-            <span class="checkbox-text">Даю согласие на обработку
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
 								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
-          </label>
-          <button type="submit" class="btn btn-accent">Отправить заявку</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-title">Спасибо!</div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="box-text">
-          <p>Ваша зявка принята. Ожидайте звонка <br>
-            специалиста в ближайшее время.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Спасибо!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Ваша зявка принята. Ожидайте звонка <br>
+							специалиста в ближайшее время.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="congratulationsModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-title">Поздравляем!</div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="box-text">
-          <p>Вы подписаны на обновления нашего магазина.
-            Следите за новостями, чтобы не пропустить
-            уникальные предложения и скидки от нас!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+	<div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="congratulationsModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Поздравляем!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Вы подписаны на обновления нашего магазина.
+							Следите за новостями, чтобы не пропустить
+							уникальные предложения и скидки от нас!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <!-- <div class="modal-title">Поздравляем!</div> -->
-        <ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery nav-tabs-modal" id="myTab-modal" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="1-tab-modal" data-bs-toggle="tab" data-bs-target="#1-tab-pane-modal"
-                    type="button" role="tab" aria-controls="1-tab-pane-modal" aria-selected="true">Вход по смс
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="2-tab-modal" data-bs-toggle="tab" data-bs-target="#2-tab-pane-modal"
-                    type="button" role="tab" aria-controls="2-tab-pane-modal" aria-selected="false">Вход по email
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="3-tab-modal" data-bs-toggle="tab" data-bs-target="#3-tab-pane-modal"
-                    type="button" role="tab" aria-controls="3-tab-pane-modal" aria-selected="false">Регистрация
-            </button>
-          </li>
-        </ul>
+	<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- <div class="modal-title">Поздравляем!</div> -->
+					<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery nav-tabs-modal" id="myTab-modal" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="1-tab-modal" data-bs-toggle="tab" data-bs-target="#1-tab-pane-modal"
+								type="button" role="tab" aria-controls="1-tab-pane-modal" aria-selected="true">Вход по смс
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="2-tab-modal" data-bs-toggle="tab" data-bs-target="#2-tab-pane-modal"
+								type="button" role="tab" aria-controls="2-tab-pane-modal" aria-selected="false">Вход по email
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="3-tab-modal" data-bs-toggle="tab" data-bs-target="#3-tab-pane-modal"
+								type="button" role="tab" aria-controls="3-tab-pane-modal" aria-selected="false">Регистрация
+							</button>
+						</li>
+					</ul>
 
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
 
-        <div class="tab-content" id="myTabContent-modal">
-          <div class="tab-pane fade show active" id="1-tab-pane-modal" role="tabpanel" aria-labelledby="1-tab-modal"
-               tabindex="0">
-            <form action="" method="post" class="form-code">
-              <label>
-                <input type="text" placeholder="Введите номер телефона*" name="phone" required>
-              </label>
-              <button type="submit" class="btn btn-accent">Получить код</button>
-            </form>
-          </div>
-          <div class="tab-pane fade" id="2-tab-pane-modal" role="tabpanel" aria-labelledby="2-tab-modal" tabindex="0">
-            <form action="" method="post" class="form-modal">
-              <label>
-                <input type="text" placeholder="Email*" name="mail" required>
-              </label>
-              <label>
-                <input type="password" placeholder="Пароль*" name="password" required>
-              </label>
-              <div class="form-group">
-                <label class="checkbox">
-                  <input type="checkbox" checked name="checkbox">
-                  <span class="checkbox-custom"></span>
-                  <span class="checkbox-text">Запомнить меня</span>
-                </label>
+					<div class="tab-content" id="myTabContent-modal">
+						<div class="tab-pane fade show active" id="1-tab-pane-modal" role="tabpanel" aria-labelledby="1-tab-modal"
+							tabindex="0">
+							<form action="" method="post" class="form-code">
+								<label>
+									<input type="text" placeholder="Введите номер телефона*" name="phone" required>
+								</label>
+								<button type="submit" class="btn btn-accent">Получить код</button>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="2-tab-pane-modal" role="tabpanel" aria-labelledby="2-tab-modal" tabindex="0">
+							<form action="" method="post" class="form-modal">
+								<label>
+									<input type="text" placeholder="Email*" name="mail" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Пароль*" name="password" required>
+								</label>
+								<div class="form-group">
+									<label class="checkbox">
+										<input type="checkbox" checked name="checkbox">
+										<span class="checkbox-custom"></span>
+										<span class="checkbox-text">Запомнить меня</span>
+									</label>
 
-                <a href="#" class="color-accent link-password">Забыли пароль?</a>
-              </div>
-              <button type="submit" class="btn btn-accent">Войти</button>
-            </form>
-          </div>
-          <div class="tab-pane fade" id="3-tab-pane-modal" role="tabpanel" aria-labelledby="3-tab-modal" tabindex="0">
-            <form action="" method="post" class="form-modal form-registration">
-              <label>
-                <input type="text" placeholder="Ваше имя*" name="name" required>
-              </label>
-              <label>
-                <input type="text" placeholder="Email*" name="mail" required>
-              </label>
-              <label>
-                <input type="text" placeholder="Телефон*" name="phone" required>
-              </label>
-              <label>
-                <input type="password" placeholder="Пароль*" name="password" required>
-              </label>
-              <label>
-                <input type="password" placeholder="Повторите пароль*" name="double_password" required>
-              </label>
-              <div class="recapcha">Я не робот</div>
-              <label class="checkbox">
-                <input type="checkbox" checked name="checkbox">
-                <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a href="#"
-                                                                                                              target="_blank"
-                                                                                                              class="color-inherit text-decoration">политики
+									<a href="#" class="color-accent link-password">Забыли пароль?</a>
+								</div>
+								<button type="submit" class="btn btn-accent">Войти</button>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="3-tab-pane-modal" role="tabpanel" aria-labelledby="3-tab-modal" tabindex="0">
+							<form action="" method="post" class="form-modal form-registration">
+								<label>
+									<input type="text" placeholder="Ваше имя*" name="name" required>
+								</label>
+								<label>
+									<input type="text" placeholder="Email*" name="mail" required>
+								</label>
+								<label>
+									<input type="text" placeholder="Телефон*" name="phone" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Пароль*" name="password" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Повторите пароль*" name="double_password" required>
+								</label>
+								<div class="recapcha">Я не робот</div>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a href="#"
+											target="_blank" class="color-inherit text-decoration">политики
 											конфиденциальности</a> и даю согласие на обработку <a href="#" target="_blank"
-                                                                            class="color-inherit text-decoration">персональных данных</a></span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" checked name="checkbox">
-                <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Получать информацию об акциях и скидках</span>
-              </label>
-              <label class="checkbox">
-                <input type="checkbox" checked name="checkbox">
-                <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Зарегистрироваться в <a href="#" class="color-inherit text-decoration"
-                                                                    target="_blank">программе лояльности</a></span>
-              </label>
-              <button type="submit" class="btn btn-accent">Зарегистрироваться</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+											class="color-inherit text-decoration">персональных данных</a></span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Получать информацию об акциях и скидках</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Зарегистрироваться в <a href="#" class="color-inherit text-decoration"
+											target="_blank">программе лояльности</a></span>
+								</label>
+								<button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<!-- add plugins js-->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<!-- add plugins js end-->
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- add plugins js end-->
 
-<script src="js/common.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 

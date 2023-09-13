@@ -13,6 +13,7 @@
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -29,6 +30,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 d-flex align-items-center flex-wrap">
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
 						<a href="index.html" class="logo">
 							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
 								часов</span>
@@ -37,23 +44,70 @@
 							<label>
 								<input type="text" name="search" placeholder="Поиск">
 							</label>
-							<button type="submit"><svg class="svg-icon">
+							<button type="submit">
+								<svg class="svg-icon">
 									<use xlink:href="img/sprite.svg#search"></use>
-								</svg></button>
+								</svg>
+							</button>
 						</form>
 
 						<div class="dropdown dropdown-location">
-							<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false"
+								data-bs-auto-close="outside">
 								<span class="dropdown-location__icon"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#location"></use>
 									</svg></span>
 								Санкт-Петербург
 							</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Действие</a></li>
-								<li><a class="dropdown-item" href="#">Другое действие</a></li>
-								<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-							</ul>
+							<div class="dropdown-menu">
+								<div class="dropdown-menu-visible">
+									<div class="dropdown-menu-head">
+										<div class="dropdown-menu-title">
+											<div class="h3">Ваш город
+												<strong class="color-accent name-city">Санкт-Петербург</strong>
+											</div>
+										</div>
+									</div>
+
+									<div class="btn-group">
+										<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
+										<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
+									</div>
+								</div>
+
+								<div class="dropdown-menu-hidden">
+									<div class="dropdown-menu-head">
+										<form action="" method="post" class="form-search">
+											<label><input type="text" placeholder="Поиск города" name="search"></label>
+											<button type="submit"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg></button>
+										</form>
+									</div>
+									<div class="dropdown-menu-body">
+										<ul class="list-cities my-ul list-scroll">
+											<li><a href="#">Москва</a></li>
+											<li><a href="#" class="checked">Санкт-Петербург</a></li>
+											<li><a href="#">Казань</a></li>
+											<li><a href="#">Нижний Новгород</a></li>
+											<li><a href="#">Екатеренбург</a></li>
+											<li><a href="#">Самара</a></li>
+											<li><a href="#">Ростов-на-Дону</a></li>
+											<li><a href="#">Уфа</a></li>
+											<li><a href="#">Челябинск</a></li>
+											<li><a href="#">Саратов</a></li>
+											<li><a href="#">Самара</a></li>
+											<li><a href="#">Аксай</a></li>
+											<li><a href="#">Александров</a></li>
+											<li><a href="#">Александров Гай</a></li>
+											<li><a href="#">Александровск</a></li>
+											<li><a href="#">Алексеевка
+													(Самарская область)</a></li>
+											<li><a href="#">Баксан</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 
 						<div class="header-contacts">
@@ -78,7 +132,7 @@
 									</svg></span>
 								<span class="user-navigation-link__text">Избранное</span>
 							</a>
-							<a href="#" class="user-navigation-link">
+							<a href="#" class="user-navigation-link" data-bs-toggle="modal" data-bs-target="#entranceModal">
 								<span class="user-navigation-link__icon"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#user"></use>
 									</svg></span>
@@ -321,9 +375,9 @@
 								собственной курьерской службой, а по РФ лидером в отрасли
 								доставки, Курьерской службой СДЭК.</p>
 
-								<p>Также возможна оплата по безналичному расчету для физических и юридических лиц.</p>
+							<p>Также возможна оплата по безналичному расчету для физических и юридических лиц.</p>
 
-								<p>В наших магазинах мы принимаем к оплате любые типы пластиковых карт. Подробнее об оплате Вы можете
+							<p>В наших магазинах мы принимаем к оплате любые типы пластиковых карт. Подробнее об оплате Вы можете
 								узнать на странице
 								“Оплата”</p>
 						</div>
@@ -334,32 +388,32 @@
 		</div>
 	</section>
 
-<section class="subscribe-section bg-grey">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 d-flex flex-wrap align-items-center">
-				<div class="subscribe-content">
-					<div class="subscribe-icon"><img src="img/email.svg" alt=""></div>
-					<div class="subscribe-text">
-						<h2>Будьте в курсе</h2>
-						<div class="box-text">
-							<p>Подпишитесь на последние обновления
-								и узнавайте о скидках и акциях первыми</p>
+	<section class="subscribe-section bg-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap align-items-center">
+					<div class="subscribe-content">
+						<div class="subscribe-icon"><img src="img/email.svg" alt=""></div>
+						<div class="subscribe-text">
+							<h2>Будьте в курсе</h2>
+							<div class="box-text">
+								<p>Подпишитесь на последние обновления
+									и узнавайте о скидках и акциях первыми</p>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<form action="" method="post" class="form-subdcribe">
-					<label><input type="text" placeholder="Введите ваш email" name="mail" required></label>
-					<button type="submit" class="btn btn-gradient">Подписаться</button>
-					<div class="consent">
-						<p>Нажимая «Подписаться» вы соглашаетесь с политикой обработки персональных данных</p>
-					</div>
-				</form>
+					<form action="" method="post" class="form-subdcribe">
+						<label><input type="text" placeholder="Введите ваш email" name="mail" required></label>
+						<button type="submit" class="btn btn-gradient">Подписаться</button>
+						<div class="consent">
+							<p>Нажимая «Подписаться» вы соглашаетесь с политикой обработки персональных данных</p>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 	<footer>
 		<div class="footer-top">
@@ -472,8 +526,8 @@
 				<div class="modal-header">
 					<div class="modal-title">Задать вопрос</div>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
-						<use xlink:href="img/sprite.svg#close"></use>
-					</svg></button>
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
 				</div>
 				<div class="modal-body">
 					<div class="box-text">
@@ -504,8 +558,8 @@
 				<div class="modal-header">
 					<div class="modal-title">Обратный звонок</div>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
-						<use xlink:href="img/sprite.svg#close"></use>
-					</svg></button>
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
 				</div>
 				<div class="modal-body">
 					<div class="box-text">
@@ -535,8 +589,8 @@
 				<div class="modal-header">
 					<div class="modal-title">Спасибо!</div>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
-						<use xlink:href="img/sprite.svg#close"></use>
-					</svg></button>
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
 				</div>
 				<div class="modal-body">
 					<div class="box-text">
@@ -549,14 +603,14 @@
 	</div>
 
 	<div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="congratulationsModalLabel"
-			 aria-hidden="true">
+		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
 					<div class="modal-title">Поздравляем!</div>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
-						<use xlink:href="img/sprite.svg#close"></use>
-					</svg></button>
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
 				</div>
 				<div class="modal-body">
 					<div class="box-text">
@@ -577,27 +631,27 @@
 					<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery nav-tabs-modal" id="myTab-modal" role="tablist">
 						<li class="nav-item" role="presentation">
 							<button class="nav-link active" id="1-tab-modal" data-bs-toggle="tab" data-bs-target="#1-tab-pane-modal"
-											type="button" role="tab" aria-controls="1-tab-pane-modal" aria-selected="true">Вход по смс</button>
+								type="button" role="tab" aria-controls="1-tab-pane-modal" aria-selected="true">Вход по смс</button>
 						</li>
 						<li class="nav-item" role="presentation">
 							<button class="nav-link" id="2-tab-modal" data-bs-toggle="tab" data-bs-target="#2-tab-pane-modal"
-											type="button" role="tab" aria-controls="2-tab-pane-modal" aria-selected="false">Вход по email</button>
+								type="button" role="tab" aria-controls="2-tab-pane-modal" aria-selected="false">Вход по email</button>
 						</li>
 						<li class="nav-item" role="presentation">
 							<button class="nav-link" id="3-tab-modal" data-bs-toggle="tab" data-bs-target="#3-tab-pane-modal"
-											type="button" role="tab" aria-controls="3-tab-pane-modal" aria-selected="false">Регистрация</button>
+								type="button" role="tab" aria-controls="3-tab-pane-modal" aria-selected="false">Регистрация</button>
 						</li>
 					</ul>
 
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
-						<use xlink:href="img/sprite.svg#close"></use>
-					</svg></button>
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
 				</div>
 				<div class="modal-body">
 
 					<div class="tab-content" id="myTabContent-modal">
 						<div class="tab-pane fade show active" id="1-tab-pane-modal" role="tabpanel" aria-labelledby="1-tab-modal"
-								 tabindex="0">
+							tabindex="0">
 							<form action="" method="post" class="form-code">
 								<label>
 									<input type="text" placeholder="Введите номер телефона*" name="phone" required>
@@ -647,9 +701,9 @@
 									<input type="checkbox" checked name="checkbox">
 									<span class="checkbox-custom"></span>
 									<span class="checkbox-text">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a href="#"
-																																																								target="_blank" class="color-inherit text-decoration">политики
+											target="_blank" class="color-inherit text-decoration">политики
 											конфиденциальности</a> и даю согласие на обработку <a href="#" target="_blank"
-																																						class="color-inherit text-decoration">персональных данных</a></span>
+											class="color-inherit text-decoration">персональных данных</a></span>
 								</label>
 								<label class="checkbox">
 									<input type="checkbox" checked name="checkbox">
@@ -660,7 +714,7 @@
 									<input type="checkbox" checked name="checkbox">
 									<span class="checkbox-custom"></span>
 									<span class="checkbox-text">Зарегистрироваться в <a href="#" class="color-inherit text-decoration"
-																																			target="_blank">программе лояльности</a></span>
+											target="_blank">программе лояльности</a></span>
 								</label>
 								<button type="submit" class="btn btn-accent">Зарегистрироваться</button>
 							</form>
