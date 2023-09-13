@@ -14,6 +14,12 @@ $('.btn-burger').on('click', function () {
 	$('.header-bottom').fadeToggle();
 });
 
+$('.btn-edit-location').on('click', function (e) {
+	e.preventDefault();
+	$('.dropdown-menu-hidden').fadeIn();
+	$('.dropdown-menu-visible').fadeOut();
+});
+
 $('.home-slider').slick({
 	slidesToShow: 1,
 	dots: true,

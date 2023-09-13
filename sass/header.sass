@@ -54,6 +54,7 @@ header
 	max-width: 430px
 	width: 100%
 	[type="submit"]
+		@include d-flex
 		position: absolute
 		top: 50%
 		right: 19px
@@ -63,7 +64,6 @@ header
 		background: transparent
 		width: 15px
 		height: 15px
-		@include d-flex
 		fill: #333
 	label
 		margin: 0
@@ -81,6 +81,68 @@ header
 			width: 8px
 			height: 5px
 			margin: 0 0 0 7px
+	.dropdown-menu
+		min-width: 280px
+		padding: 10px 10px 20px
+		border: none
+		margin: 27px 0 0 !important
+		filter: drop-shadow(0px 0 5px rgba(29,29,27,.3))
+		&::before
+			content: ''
+			position: absolute
+			left: 10px
+			top: -20px
+			border-bottom: 21px solid #fff
+			border-left: 7px solid transparent
+			border-right: 7px solid transparent
+	.h3
+		font-weight: normal
+		font-size: 16px
+		strong
+			display: block
+			margin: 5px 0 0
+	.btn-group
+		width: 100%
+		justify-content: space-between
+		padding: 0 20px 10px
+		.btn
+			width: fit-content
+			margin: 0
+			flex: none
+	.dropdown-menu-title
+		padding: 20px 20px 0
+	.form-search
+		input
+			background: #f1f1f1
+			border: none
+			font-size: 13px
+			&::placeholder
+				color: #232323
+
+.list-cities
+	margin: 18px 0 0
+	font-size: 14px
+	min-height: 400px
+	li
+		margin: 0 0 11px
+		&:last-child
+			margin: 0
+		a
+			position: relative
+			color: #232323
+			padding: 0 0 0 20px
+			&:hover
+				color: $accent
+			&.checked
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 3px
+					width: 12px
+					height: 10px
+					background: url('../img/check.svg') no-repeat center
+					background-size: 100%
 
 .header-contacts
 	position: relative
@@ -192,10 +254,10 @@ header
 			&:first-child
 				transform: rotate(45deg)
 			&:last-child
-				transform: rotate(135deg)	
+				transform: rotate(135deg)
 			&:nth-child(2)
 				width: 0
 				height: 0
 
-
-	
+.dropdown-menu-hidden
+	display: none

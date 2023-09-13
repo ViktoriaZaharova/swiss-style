@@ -82,6 +82,15 @@ header.fixed .header-bottom {
   width: 100%;
 }
 .form-search [type=submit] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   top: 50%;
   right: 19px;
@@ -92,15 +101,6 @@ header.fixed .header-bottom {
   background: transparent;
   width: 15px;
   height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   fill: #333;
 }
 .form-search label {
@@ -129,6 +129,100 @@ header.fixed .header-bottom {
   width: 8px;
   height: 5px;
   margin: 0 0 0 7px;
+}
+.dropdown-location .dropdown-menu {
+  min-width: 280px;
+  padding: 10px 10px 20px;
+  border: none;
+  margin: 27px 0 0 !important;
+  -webkit-filter: drop-shadow(0px 0 5px rgba(29, 29, 27, 0.3));
+          filter: drop-shadow(0px 0 5px rgba(29, 29, 27, 0.3));
+}
+.dropdown-location .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: -20px;
+  border-bottom: 21px solid #fff;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+.dropdown-location .h3 {
+  font-weight: normal;
+  font-size: 16px;
+}
+.dropdown-location .h3 strong {
+  display: block;
+  margin: 5px 0 0;
+}
+.dropdown-location .btn-group {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px 10px;
+}
+.dropdown-location .btn-group .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.dropdown-location .dropdown-menu-title {
+  padding: 20px 20px 0;
+}
+.dropdown-location .form-search input {
+  background: #f1f1f1;
+  border: none;
+  font-size: 13px;
+}
+.dropdown-location .form-search input::-webkit-input-placeholder {
+  color: #232323;
+}
+.dropdown-location .form-search input::-moz-placeholder {
+  color: #232323;
+}
+.dropdown-location .form-search input:-ms-input-placeholder {
+  color: #232323;
+}
+.dropdown-location .form-search input::-ms-input-placeholder {
+  color: #232323;
+}
+.dropdown-location .form-search input::placeholder {
+  color: #232323;
+}
+
+.list-cities {
+  margin: 18px 0 0;
+  font-size: 14px;
+  min-height: 400px;
+}
+.list-cities li {
+  margin: 0 0 11px;
+}
+.list-cities li:last-child {
+  margin: 0;
+}
+.list-cities li a {
+  position: relative;
+  color: #232323;
+  padding: 0 0 0 20px;
+}
+.list-cities li a:hover {
+  color: #c21212;
+}
+.list-cities li a.checked::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 12px;
+  height: 10px;
+  background: url("../img/check.svg") no-repeat center;
+  background-size: 100%;
 }
 
 .header-contacts {
@@ -317,4 +411,8 @@ header.fixed .header-bottom {
 .btn-burger.click span:nth-child(2) {
   width: 0;
   height: 0;
+}
+
+.dropdown-menu-hidden {
+  display: none;
 }
