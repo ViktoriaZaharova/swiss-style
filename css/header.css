@@ -33,6 +33,25 @@ header.fixed .header-bottom {
   border-top: 1px solid #f1f1f1;
 }
 
+.header {
+  position: absolute;
+  border-bottom: 1px solid #f1f1f1;
+}
+.header.fixed {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.header.fixed .logo {
+  letter-spacing: 2.28px;
+  font-size: 12px;
+}
+.header.fixed .logo-icon {
+  max-width: 200px;
+}
+.header .header-contacts {
+  margin: 0 0 0 auto;
+}
+
 .header-top {
   padding: 14px 0;
   font-size: 13px;

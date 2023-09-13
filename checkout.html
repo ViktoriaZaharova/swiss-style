@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Швейцарский стиль - салон швейцарских часов</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+
+						<a href="index.html" class="logo">
+							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
+								часов</span>
+						</a>
+
+
+						<div class="header-contacts">
+							<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
+							<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
+							<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="page page-basket page-checkout">
+		<div class="container">
+
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-6">
+					<h1>Оформление заказа</h1>
+				</div>
+				<div class="col-12 col-lg-6">
+					<a href="#" class="color-inherit text-decoration link-page">Вернуться к покупкам</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap">
+					<div class="page-content page-content-reverse">
+						<div class="basket-product">
+							<a href="product.html" class="basket-product__photo"><img src="img/model2.png" alt=""></a>
+							<a href="product.html" class="basket-product__title">Longines L4.790.2.11.2</a>
+							<div class="basket-product__price">
+								<p>112500 руб.</p>
+							</div>
+							<div class="basket-product__quantity">
+								<p>1шт</p>
+							</div>
+							<div class="basket-product__sum">
+								<p>112500 руб.</p>
+							</div>
+
+						</div>
+						<div class="basket-product">
+							<a href="product.html" class="basket-product__photo"><img src="img/model2.png" alt=""></a>
+							<a href="product.html" class="basket-product__title">Longines L4.790.2.11.2</a>
+							<div class="basket-product__price">
+								<p>112500 руб.</p>
+							</div>
+							<div class="basket-product__quantity">
+								<p>1шт</p>
+							</div>
+							<div class="basket-product__sum">
+								<p>112500 руб.</p>
+							</div>
+
+						</div>
+						<div class="basket-product">
+							<a href="product.html" class="basket-product__photo"><img src="img/model2.png" alt=""></a>
+							<a href="product.html" class="basket-product__title">Longines L4.790.2.11.2</a>
+							<div class="basket-product__price">
+								<p>112500 руб.</p>
+							</div>
+							<div class="basket-product__quantity">
+								<p>1шт</p>
+							</div>
+							<div class="basket-product__sum">
+								<p>112500 руб.</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="sidebar">
+						<div class="total-basket">
+							<div class="total-basket__body">
+								<ul class="total-basket-list my-ul">
+									<li>
+										<p>Скидка</p>
+										<div class="total-basket-list__value">3560 руб.</div>
+									</li>
+									<li>
+										<p>Бонусы за заказ</p>
+										<div class="total-basket-list__value">112</div>
+									</li>
+								</ul>
+							</div>
+							<div class="total-basket__footer">
+								<ul class="total-basket-list my-ul">
+									<li>
+										<p>Итого</p>
+										<div class="total-sum">112500 руб.</div>
+									</li>
+								</ul>
+
+								<div class="btn-group">
+									<a href="#" class="btn btn-accent">Подтвердить заказ</a>
+									<a href="#" class="btn btn-light-grey">Оформить в расрочку</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="recipient-details">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Данные получателя</h2>
+					<div class="box-text">
+						<p>Войдите в личный кабинет чтобы получить 112 бонусов <br>
+							На основании введенных данных вы будете автоматически зарегистрированы в нашем магазине.</p>
+					</div>
+
+					<div class="recipient-details-contnt">
+						<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane"
+									type="button" role="tab" aria-controls="1-tab-pane" aria-selected="true">Вход по смс</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#2-tab-pane" type="button"
+									role="tab" aria-controls="2-tab-pane" aria-selected="false">Вход по email</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#3-tab-pane" type="button"
+									role="tab" aria-controls="3-tab-pane" aria-selected="false">Регистрация</button>
+							</li>
+						</ul>
+
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab"
+								tabindex="0">
+								<form action="" method="post" class="form-code">
+									<label>
+										<input type="text" placeholder="Введите номер телефона*" name="phone" required>
+									</label>
+									<button type="submit" class="btn btn-accent">Получить код</button>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
+								<form action="" method="post" class="form-modal">
+									<div class="row">
+										<div class="col-12 col-md-6">
+											<label>
+												<input type="text" placeholder="Email*" name="mail" required>
+											</label>
+										</div>
+										<div class="col-12 col-md-6">
+											<label>
+												<input type="password" placeholder="Пароль*" name="password" required>
+											</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="checkbox">
+											<input type="checkbox" checked name="checkbox">
+											<span class="checkbox-custom"></span>
+											<span class="checkbox-text">Запомнить меня</span>
+										</label>
+
+										<a href="#" class="color-accent link-password">Забыли пароль?</a>
+									</div>
+									<button type="submit" class="btn btn-accent">Войти</button>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="3-tab-pane" role="tabpanel" aria-labelledby="3-tab" tabindex="0">
+								<form action="" method="post" class="form-modal form-registration">
+									<div class="row">
+										<div class="col-12 col-md-6 col-lg-4 mb-15">
+											<label>
+												<input type="text" placeholder="Ваше имя*" name="name" required>
+											</label>
+										</div>
+										<div class="col-12 col-md-6 col-lg-4 mb-15">
+											<label>
+												<input type="text" placeholder="Email*" name="mail" required>
+											</label>
+										</div>
+										<div class="col-12 col-md-6 col-lg-4 mb-15">
+											<label>
+												<input type="text" placeholder="Телефон*" name="phone" required>
+											</label>
+										</div>
+										<div class="col-12 col-md-6 col-lg-4 mb-15">
+											<label>
+												<input type="password" placeholder="Пароль*" name="password" required>
+											</label>
+										</div>
+										<div class="col-12 col-md-6 col-lg-4 mb-15">
+											<label>
+												<input type="password" placeholder="Повторите пароль*" name="double_password" required>
+											</label>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="recapcha">Я не робот</div>
+										</div>
+										<div class="col-12 mb-30">
+											<label class="checkbox">
+												<input type="checkbox" checked name="checkbox">
+												<span class="checkbox-custom"></span>
+												<span class="checkbox-text">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a
+														href="#" target="_blank" class="color-inherit text-decoration">политики
+														конфиденциальности</a> и даю согласие на обработку <a href="#" target="_blank"
+														class="color-inherit text-decoration">персональных данных</a></span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" checked name="checkbox">
+												<span class="checkbox-custom"></span>
+												<span class="checkbox-text">Получать информацию об акциях и скидках</span>
+											</label>
+											<label class="checkbox">
+												<input type="checkbox" checked name="checkbox">
+												<span class="checkbox-custom"></span>
+												<span class="checkbox-text">Зарегистрироваться в <a href="#"
+														class="color-inherit text-decoration" target="_blank">программе лояльности</a></span>
+											</label>
+										</div>
+										<div class="col-12 col-md-6 col-lg-4">
+											<button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="your-data">
+							<div class="cabinet-subtitle">Ваши данные</div>
+							<form action="" method="post" class="form-cabinet">
+								<div class="row">
+									<div class="col-12 col-sm-6 col-md-4 mb-15">
+										<label><input type="text" placeholder="ФИО" name="name" value="Петрова Светлана Ивановна">
+											<span class="input-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#pencil"></use>
+												</svg></span>
+										</label>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 mb-15">
+										<label><input type="text" placeholder="Email" name="mail" required
+												value="petrova.svetlana.1982@gmail.com">
+											<span class="input-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#pencil"></use>
+												</svg></span>
+										</label>
+									</div>
+									<div class="col-12 col-sm-6 col-md-4 mb-15">
+										<label><input type="text" placeholder="Телефон*" name="phone" required value="+79213540895">
+											<span class="input-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#pencil"></use>
+												</svg></span>
+										</label>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="method-obtaining">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Способ получения</h2>
+					<div class="page-checkout-wrapper">
+						<ul class="nav nav-tabs nav-tabs-method" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="1-tab-method" data-bs-toggle="tab" data-bs-target="#1-tab-pane-method"
+									type="button" role="tab" aria-controls="1-tab-pane-method" aria-selected="true">
+									<span class="nav-tabs__title">Самовывоз</span>
+									<span class="nav-tabs__content">Товар в наличии, вы можете его забрать через
+										час после оформления заказа</span>
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="2-tab-method" data-bs-toggle="tab" data-bs-target="#2-tab-pane-method" type="button"
+									role="tab" aria-controls="2-tab-pane-method" aria-selected="false">
+								<span class="nav-tabs__title">Доставка курьером</span>
+								<span class="nav-tabs__content">Послезавтра, 04 августа, оплата после примерки,
+								бесплатно</span>
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="3-tab-method" data-bs-toggle="tab" data-bs-target="#3-tab-pane-method" type="button"
+									role="tab" aria-controls="3-tab-pane-method" aria-selected="false">
+								<span class="nav-tabs__title">Доставка в пункт выдачи</span>
+								<span class="nav-tabs__content">Послезавтра, 04 августа,бесплатно</span>
+								</button>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="1-tab-pane-method" role="tabpanel" aria-labelledby="1-tab-method"
+								tabindex="0">
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<ul class="list-pickup my-ul">
+											<li><p><strong>Санкт-Петербург</strong></p>
+											<span>ул. Савушкина д.126А, ТРК "Атлантик Сити", пом. А-37Б</span></li>
+											<li><strong>Часы работы</strong> <span>с 11.00 до 22.00, без выходных</span></li>
+											<li><strong>Тел.:</strong> <span>(812) 334-25-50</span></li>
+											<li><strong>Whatsapp:</strong> <span>+7(950)664-28-60</span></li>
+											<li><strong>E-mail:</strong> <span>atlantic@swiss-style.ru</span></li>
+										</ul>
+										<div class="reserve-box">
+											<img src="img/calendar.svg" alt="">
+											<p>Резерв для Вас сохранится в течение 5 дней.</p>
+										</div>
+									</div>
+									<div class="col-12 col-lg-6">
+										<div class="map-pickup" id="map"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="2-tab-pane-method" role="tabpanel" aria-labelledby="2-tab-method" tabindex="0">
+								<form action="" method="post" class="form-cabinet">
+									<div class="row">
+										<div class="col-12 col-sm-6 col-md-4 mb-15">
+											<label><input type="text" placeholder="Регион*" name="region" required>
+												<span class="input-icon"><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#pencil"></use>
+													</svg></span>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-15">
+											<label><input type="text" placeholder="Город*" name="city" required>
+												<span class="input-icon"><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#pencil"></use>
+													</svg></span>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-15">
+											<label><input type="text" placeholder="Улица*" name="street" required>
+												<span class="input-icon"><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#pencil"></use>
+													</svg></span>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-15">
+											<label><input type="text" placeholder="Дом*" name="house" required>
+												<span class="input-icon"><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#pencil"></use>
+													</svg></span>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-15">
+											<label><input type="text" placeholder="Квартира*" name="apartment" required>
+												<span class="input-icon"><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#pencil"></use>
+													</svg></span>
+											</label>
+										</div>
+										<div class="col-12 col-sm-6 col-md-4 mb-15">
+											<label><input type="text" placeholder="Этаж" name="floor">
+												<span class="input-icon"><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#pencil"></use>
+													</svg></span>
+											</label>
+										</div>
+										<div class="col-12 mb-15">
+											<label><textarea name="message" placeholder="Комметарии для курьера"></textarea></label>
+										</div>
+								
+										<div class="col-12">
+											<button type="submit" class="btn btn-accent" disabled="disabled">Сохранить</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="3-tab-pane-method" role="tabpanel" aria-labelledby="3-tab-method" tabindex="0">
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<ul class="list-pickup my-ul">
+											<li><p><strong>Пункт выдачи СДЭК в Санкт-Петербурге
+											</strong></p> <span>ул. Парашютная, 23, к. 1, пом. 21-Н</span></li>
+											<li><strong>Часы работы </strong><span>с 11.00 до 22.00, без выходных</span></li>
+										</ul>
+										<a href="#" class="btn btn-light-grey btn-edit">Изменить</a>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="checkout-payments">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Способ оплаты</h2>
+					<div class="page-checkout-wrapper">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-4 mb-15">
+								<label class="radio-payment">
+									<input type="radio" name="radio_payment" checked>
+									<span class="radio-payment__title">Оплата при получении</span>
+									<span class="radio-payment__content">Наличными или картой</span>
+								</label>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-15">
+								<label class="radio-payment">
+									<input type="radio" name="radio_payment">
+									<span class="radio-payment__title">Оплата онлайн</span>
+									<span class="radio-payment__content">Послезавтра, 04 августа, оплата после примерки,
+										бесплатно</span>
+								</label>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-15">
+								<label class="radio-payment">
+									<input type="radio" name="radio_payment">
+									<span class="radio-payment__title">Безналичная оплата для
+										юридических лиц</span>
+									<span class="radio-payment__content">Пришлем счет на оплату</span>
+								</label>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-15">
+								<label class="radio-payment">
+									<input type="radio" name="radio_payment">
+									<span class="radio-payment__title">Рассрочка 0%</span>
+									<span class="radio-payment__content">После оформления заказа вы будете
+										перенаправлены на сайт банка для заполнения
+										анкеты и выбора срока рассрочки</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<ul class="list-social my-ul">
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#youtube"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#vk"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#tg"></use>
+									</svg>
+								</a></li>
+							<li><a href="#">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#twitter"></use>
+									</svg>
+								</a></li>
+						</ul>
+					</div>
+
+					<div class="col-12">
+						<div class="copyright">Swiss-Style.Ru Copyright © 2006 - 2021 Магазин швейцарских часов в Санкт-Петербурге
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Задать вопрос</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Задайте свой зопрос и наши специалисты
+							подготовят детальный ответ на него</p>
+					</div>
+
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label><textarea name="message" placeholder="Ваш вопрос"></textarea></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
+								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Обратный звонок</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Оставьте заявку и наш специалист свяжется <br>
+							с вами в ближайшее время</p>
+					</div>
+
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
+								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Спасибо!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Ваша зявка принята. Ожидайте звонка <br>
+							специалиста в ближайшее время.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="congratulationsModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Поздравляем!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Вы подписаны на обновления нашего магазина.
+							Следите за новостями, чтобы не пропустить
+							уникальные предложения и скидки от нас!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- <div class="modal-title">Поздравляем!</div> -->
+					<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery nav-tabs-modal" id="myTab-modal" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="1-tab-modal" data-bs-toggle="tab" data-bs-target="#1-tab-pane-modal"
+								type="button" role="tab" aria-controls="1-tab-pane-modal" aria-selected="true">Вход по смс</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="2-tab-modal" data-bs-toggle="tab" data-bs-target="#2-tab-pane-modal"
+								type="button" role="tab" aria-controls="2-tab-pane-modal" aria-selected="false">Вход по email</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="3-tab-modal" data-bs-toggle="tab" data-bs-target="#3-tab-pane-modal"
+								type="button" role="tab" aria-controls="3-tab-pane-modal" aria-selected="false">Регистрация</button>
+						</li>
+					</ul>
+
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+
+					<div class="tab-content" id="myTabContent-modal">
+						<div class="tab-pane fade show active" id="1-tab-pane-modal" role="tabpanel" aria-labelledby="1-tab-modal"
+							tabindex="0">
+							<form action="" method="post" class="form-code">
+								<label>
+									<input type="text" placeholder="Введите номер телефона*" name="phone" required>
+								</label>
+								<button type="submit" class="btn btn-accent">Получить код</button>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="2-tab-pane-modal" role="tabpanel" aria-labelledby="2-tab-modal" tabindex="0">
+							<form action="" method="post" class="form-modal">
+								<label>
+									<input type="text" placeholder="Email*" name="mail" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Пароль*" name="password" required>
+								</label>
+								<div class="form-group">
+									<label class="checkbox">
+										<input type="checkbox" checked name="checkbox">
+										<span class="checkbox-custom"></span>
+										<span class="checkbox-text">Запомнить меня</span>
+									</label>
+
+									<a href="#" class="color-accent link-password">Забыли пароль?</a>
+								</div>
+								<button type="submit" class="btn btn-accent">Войти</button>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="3-tab-pane-modal" role="tabpanel" aria-labelledby="3-tab-modal" tabindex="0">
+							<form action="" method="post" class="form-modal form-registration">
+								<label>
+									<input type="text" placeholder="Ваше имя*" name="name" required>
+								</label>
+								<label>
+									<input type="text" placeholder="Email*" name="mail" required>
+								</label>
+								<label>
+									<input type="text" placeholder="Телефон*" name="phone" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Пароль*" name="password" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Повторите пароль*" name="double_password" required>
+								</label>
+								<div class="recapcha">Я не робот</div>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a href="#"
+											target="_blank" class="color-inherit text-decoration">политики
+											конфиденциальности</a> и даю согласие на обработку <a href="#" target="_blank"
+											class="color-inherit text-decoration">персональных данных</a></span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Получать информацию об акциях и скидках</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Зарегистрироваться в <a href="#" class="color-inherit text-decoration"
+											target="_blank">программе лояльности</a></span>
+								</label>
+								<button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+	<script src="js/map.js"></script>
+
+</body>
+
+</html>
