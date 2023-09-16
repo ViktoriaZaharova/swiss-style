@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 	<!-- add plugins css end -->
 	
 	<link rel="stylesheet" href="css/style.css">
@@ -2508,6 +2509,548 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade" id="oneClickModal" tabindex="-1" aria-labelledby="oneClickModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Купить в 1 клик</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Оставьте заявку на покупку товара в 1 клик <br>
+							и мы свяжемся с вами в бижайшее время</p>
+					</div>
+	
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
+								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Запросить фото часов на руке</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Укажите свой номер и мы направим вам <br>
+							фото часов на руке через Whatsapp</p>
+					</div>
+	
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
+								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="thanksOrderModal" tabindex="-1" aria-labelledby="thanksOrderModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Спасибо!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Ваш отзыв отправлен на модерацию. Обычно
+							проверка занимает не более 2х рабочих дней</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Оставьте свой отзыв</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="selected-product">
+						<div class="selected-product__photo"><img src="img/catalog-min1.jpg" alt=""></div>
+						<div class="selected-product__name">
+							<div class="article-product">T058.109.17.036.00
+							</div>
+							<div class="name-product">Tissot T-Classic Tradition Quartz</div>
+						</div>
+					</div>
+	
+					<form action="" method="post" class="form-modal">
+						<div class="grade-box">
+							<p>Ваша оценка</p>
+							<div class="radio-group star-rating">
+								<!-- <input type="radio" name="recipe-rating" id="recipe-star-0" value="" checked="true">
+												<label for="recipe-star-0"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#star"></use>
+												</svg><span class="fas fa-star"></span></label> -->
+								<input type="radio" name="recipe-rating" id="recipe-star-1" value="1" checked="true">
+								<label for="recipe-star-1">
+									<img src="img/star-2.svg" alt="">
+									<img src="img/star-1.svg" alt="" class="img-focus">
+								</label>
+								<input type="radio" name="recipe-rating" id="recipe-star-2" value="2" checked="true">
+								<label for="recipe-star-2">
+									<img src="img/star-2.svg" alt="">
+									<img src="img/star-1.svg" alt="" class="img-focus">
+								</label>
+								<input type="radio" name="recipe-rating" id="recipe-star-3" value="3" checked="true">
+								<label for="recipe-star-3">
+									<img src="img/star-2.svg" alt="">
+									<img src="img/star-1.svg" alt="" class="img-focus">
+								</label>
+								<input type="radio" name="recipe-rating" id="recipe-star-4" value="4">
+								<label for="recipe-star-4">
+									<img src="img/star-2.svg" alt="">
+									<img src="img/star-1.svg" alt="" class="img-focus">
+								</label>
+								<input type="radio" name="recipe-rating" id="recipe-star-5" value="5">
+								<label for="recipe-star-5">
+									<img src="img/star-2.svg" alt="">
+									<img src="img/star-1.svg" alt="" class="img-focus">
+								</label>
+							</div>
+						</div>
+	
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label><textarea name="message" placeholder="Достоинства"></textarea></label>
+						<label><textarea name="message" placeholder="Недостатки"></textarea></label>
+						<label><textarea name="message" placeholder="Комментарии"></textarea></label>
+	
+						<div class="form-box">
+							<div class="h3">Добавить фото</div>
+							<label class="label-file">
+								<input type="file" name="file">
+								<span class="label-file__icon"><img src="img/mode-landscape.svg" alt=""></span>
+								<span class="label-file__text"><a href="#" class="text-decoration color-inherit d-inline">Выберите</a>
+									или перетащите
+									фотографии сюда</span>
+							</label>
+						</div>
+	
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
+								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
+						</label>
+						<button type="submit" class="btn btn-accent">Оставить отзыв</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="productBasketModal" tabindex="-1" aria-labelledby="productBasketModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Товар добавлен в корзину</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="selected-product mb-30">
+						<div class="selected-product__photo"><img src="img/catalog-min1.jpg" alt=""></div>
+						<div class="selected-product__name">
+							<div class="article-product">T058.109.17.036.00
+							</div>
+							<div class="name-product">Tissot T-Classic Tradition Quartz</div>
+							<div class="price-wrapper">
+								<div class="price">112500₽</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="btn-group">
+						<a href="#" data-bs-dismiss="modal" aria-label="Закрыть" class="btn btn-light-grey">Продолжить покупки</a>
+						<a href="checkout.html" class="btn btn-accent">Оформить заказ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="analoguesModal" tabindex="-1" aria-labelledby="analoguesModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Модель недоступна для заказа</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Вы можете посмотреть похожие модели</p>
+					</div>
+				</div>
+	
+				<div class="analogues-slider">
+					<div class="slide">
+						<div class="product-card">
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">T058.109.17.036.00</div>
+								<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+	
+								<a href="#" class="btn-add-card">
+									Показать
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slide">
+						<div class="product-card">
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+	
+								<a href="#" class="btn-add-card">
+									Показать
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slide">
+						<div class="product-card">
+							<ul class="list-labels my-ul">
+								<li class="list-labels__sale">-25</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽<div class="old-price">112500₽</div>
+									</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+	
+								<a href="#" class="btn-add-card">
+									Показать
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slide">
+						<div class="product-card">
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+	
+								<a href="#" class="btn-add-card">
+									Показать
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slide">
+						<div class="product-card">
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">T058.109.17.036.00</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+	
+								<a href="#" class="btn-add-card">
+									Показать
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slide">
+						<div class="product-card">
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+	
+								<a href="#" class="btn-add-card">
+									Показать
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slide">
+						<div class="product-card">
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
+								</div>
+	
+								<a href="#" class="btn-add-card">
+									Показать
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="box-text text-center">
+					<p>или перейти в каталог <a href="catalog2.html" class="link-page d-inline-flex color-inherit">Tissot <svg
+								class="svg-icon">
+								<use xlink:href="img/sprite.svg#arrow-right"></use>
+							</svg></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="installmentPlanModal" tabindex="-1" aria-labelledby="installmentPlanModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Купить в рассрочку 0%</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-plan" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="4-tab-modal" data-bs-toggle="tab" data-bs-target="#4-tab-pane-modal"
+								type="button" role="tab" aria-controls="4-tab-pane-modal" aria-selected="true"><img src="img/bank1.png"
+									alt=""></button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="5-tab-modal" data-bs-toggle="tab" data-bs-target="#5-tab-pane-modal"
+								type="button" role="tab" aria-controls="5-tab-pane-modal" aria-selected="true"><img src="img/bank2.png"
+									alt=""></button>
+						</li>
+					</ul>
+	
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="4-tab-pane-modal" role="tabpanel" aria-labelledby="4-tab-modal"
+							tabindex="0">
+							<ul class="variable-installment-plan my-ul">
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">3 месяца</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">4 месяца</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">6 месяцев</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">10 месяцев</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">12 месяцев</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="5-tab-pane-modal" role="tabpanel" aria-labelledby="5-tab-modal" tabindex="0">
+							<ul class="variable-installment-plan my-ul">
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">3 месяца</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">4 месяца</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">6 месяцев</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">10 месяцев</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+								<li data-bs-toggle="modal" data-bs-target="#variablePlanModal">
+									<div class="time-plan">12 месяцев</div>
+									<div class="sum-plan"><strong>12979 руб.</strong> в месяц</div>
+									<div class="icon-arrow">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#next"></use>
+										</svg>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="variablePlanModal" tabindex="-1" aria-labelledby="variablePlanModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a href="#" class="link-prev-modal" data-bs-toggle="modal" data-bs-target="#installmentPlanModal"><svg
+							class="svg-icon">
+							<use xlink:href="img/sprite.svg#prev"></use>
+						</svg></a>
+					<div class="modal-title">Купить в рассрочку 0%</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+	
+					<div class="plan-choice">
+						<div class="bank-logo"><img src="img/bank1.png" alt=""></div>
+						<div class="plan-choice__body">
+							<p>4 месяца</p>
+							<p><strong>9 748 руб.</strong> в месяц</p>
+						</div>
+					</div>
+	
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
+								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>
@@ -2516,6 +3059,7 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>
