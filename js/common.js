@@ -76,6 +76,21 @@ $('.brands-slider').slick({
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });
 
+$('.product-gallery-preview').slick({
+	slidesToShow: 5,
+	vertical: true,
+	focusOnSelect: true,
+	asNavFor: '.product-gallery-slider',
+	prevArrow: '<button type="button" class="slick-prev slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+});
+
+$('.product-gallery-slider').slick({
+	slidesToShow: 1,
+	arrows: false,
+	asNavFor: '.product-gallery-preview',
+});
+
 // $('.categories-products-slider').slick({
 // 	slidesToShow: 1,
 // 	centerMode: true,
@@ -299,4 +314,9 @@ $('.link-details-order').on('click', function (e) {
 		$this.html('Все детали заказа +');
 		content.slideUp();
 	}
+});
+
+
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
 });

@@ -241,6 +241,15 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
 }
 
+.btn-border {
+  border: solid 1px #f1f1f1;
+  color: #232323;
+}
+.btn-border:hover {
+  background: #f1f1f1;
+  color: #c21212;
+}
+
 .btn-group {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -309,6 +318,27 @@ ul, ol {
   width: 36px;
   height: 36px;
   background: #f1f1f1;
+}
+
+.list-dots-accent li {
+  position: relative;
+  padding: 0 0 0 15px;
+}
+.list-dots-accent li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c21212;
+}
+
+.column-3 {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
 }
 
 .container {
@@ -504,6 +534,7 @@ h3 {
   color: #232323;
   font-size: 14px;
   position: relative;
+  margin: 0;
 }
 .nav-tabs .nav-link::before {
   content: "";
@@ -626,6 +657,26 @@ h3 {
   background: #fff;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.vertical-slider .slick-arrow {
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  top: auto;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding: 10px;
+}
+.vertical-slider .slick-arrow svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.vertical-slider .slick-prev {
+  top: -15px;
+}
+.vertical-slider .slick-next {
+  bottom: -15px;
 }
 
 .slick-next {
@@ -1141,4 +1192,30 @@ h3 {
   border-right: 20px solid #fff;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
+}
+
+.list-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.list-star li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 31px;
+  margin: 0 9px 0 0;
+}
+.list-star li:last-child {
+  margin: 0;
 }

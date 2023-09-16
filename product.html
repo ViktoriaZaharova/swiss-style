@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Швейцарский стиль - салон швейцарских часов</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<a href="index.html" class="logo">
+							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
+								часов</span>
+						</a>
+						<form action="" method="post" class="form-search">
+							<label>
+								<input type="text" name="search" placeholder="Поиск">
+							</label>
+							<button type="submit">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</form>
+
+						<div class="dropdown dropdown-location">
+							<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false"
+								data-bs-auto-close="outside">
+								<span class="dropdown-location__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg></span>
+								Санкт-Петербург
+							</a>
+							<div class="dropdown-menu">
+								<div class="dropdown-menu-visible">
+									<div class="dropdown-menu-head">
+										<div class="dropdown-menu-title">
+											<div class="h3">Ваш город
+												<strong class="color-accent name-city">Санкт-Петербург</strong>
+											</div>
+										</div>
+									</div>
+
+									<div class="btn-group">
+										<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
+										<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
+									</div>
+								</div>
+
+								<div class="dropdown-menu-hidden">
+									<div class="dropdown-menu-head">
+										<form action="" method="post" class="form-search">
+											<label><input type="text" placeholder="Поиск города" name="search"></label>
+											<button type="submit"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg></button>
+										</form>
+									</div>
+									<div class="dropdown-menu-body">
+										<ul class="list-cities my-ul list-scroll">
+											<li><a href="#">Москва</a></li>
+											<li><a href="#" class="checked">Санкт-Петербург</a></li>
+											<li><a href="#">Казань</a></li>
+											<li><a href="#">Нижний Новгород</a></li>
+											<li><a href="#">Екатеренбург</a></li>
+											<li><a href="#">Самара</a></li>
+											<li><a href="#">Ростов-на-Дону</a></li>
+											<li><a href="#">Уфа</a></li>
+											<li><a href="#">Челябинск</a></li>
+											<li><a href="#">Саратов</a></li>
+											<li><a href="#">Самара</a></li>
+											<li><a href="#">Аксай</a></li>
+											<li><a href="#">Александров</a></li>
+											<li><a href="#">Александров Гай</a></li>
+											<li><a href="#">Александровск</a></li>
+											<li><a href="#">Алексеевка
+													(Самарская область)</a></li>
+											<li><a href="#">Баксан</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header-contacts">
+							<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
+							<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
+							<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
+						</div>
+
+						<div class="user-navigation">
+							<a href="comparison.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#balance"></use>
+									</svg>
+									<span class="user-navigation-link__value">5</span>
+								</span>
+								<span class="user-navigation-link__text">Сравнение</span>
+
+							</a>
+							<a href="favorites.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Избранное</span>
+							</a>
+							<a href="#" class="user-navigation-link" data-bs-toggle="modal" data-bs-target="#entranceModal">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#user"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Вход</span>
+							</a>
+							<a href="basket.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg>
+									<span class="user-navigation-link__value">18</span>
+								</span>
+								<span class="user-navigation-link__text">Корзина</span>
+
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<ul class="navbar-nav nav-menu my-ul">
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Мужские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Женские
+									часы</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Аксесуары</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Действие</a></li>
+									<li><a class="dropdown-item" href="#">Другое действие</a></li>
+									<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="stock.html" class="nav-link">Акции</a>
+							</li>
+							<li class="nav-item">
+								<a href="new.html" class="nav-link">Новинки</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav nav-menu-user my-ul">
+							<li class="nav-item">
+								<a href="how-to-buy.html" class="nav-link">Как купить</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Рассрочка 0%</a>
+							</li>
+							<li class="nav-item">
+								<a href="blog.html" class="nav-link">Блог</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="page page-product">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav aria-label="breadcrumb" class="nav-breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item"><a href="catalog.html">Часы</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Longines L4.790.2.11.2</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<h1>Longines L4.790.2.11.2</h1>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="official-representative">
+						<div class="official-representative__body">
+							<p>Официальный
+								представитель</p>
+						</div>
+						<div class="official-representative__logo">
+							<img src="img/brand-logo3.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="product-gallery">
+						<div class="product-gallery-min">
+							<div class="product-gallery-preview vertical-slider">
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min1.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min2.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min3.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min4.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min1.jpg" alt=""></div>
+								</div>
+							</div>
+
+							<a href="https://youtu.be/t6yssNQ-fzU?si=H-9t7Q3wCGc5hhVf" class="btn-play" data-fancybox="video"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#play"></use>
+								</svg></a>
+						</div>
+
+						<div class="product-gallery-max">
+							<div class="product-additionally">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+
+								<a href="#" data-bs-toggle="modal" data-bs-target="#photoModal" class="btn-photo">
+									<span class="btn-photo__icon"><img src="img/watch3.svg" alt=""></span>
+									<span class="btn-photo__text">Запрос фото
+										на руке</span>
+								</a>
+
+								<ul class="product-card__nav my-ul">
+									<li><a href="#"><img src="img/compare-1.svg" alt="">
+											<img src="img/compare-2.svg" alt="" class="icon-hover">
+										</a></li>
+									<li><a href="#"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#heart-2"></use>
+											</svg>
+											<svg class="svg-icon icon-hover">
+												<use xlink:href="img/sprite.svg#heart-1"></use>
+											</svg>
+										</a></li>
+								</ul>
+							</div>
+
+							<div class="product-gallery-slider">
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min1.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min2.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min3.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min4.jpg" alt=""></div>
+								</div>
+								<div class="slide">
+									<div class="product-gallery__item"><img src="img/product-min1.jpg" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-xl-2">
+					<div class="product-characteristics">
+						<div class="product-characteristics-box">
+							<div class="box-text">
+								<p><strong>Коллекция T-SPORT <br>
+										Tissot T-Sport Gent XL collection</strong></p>
+							</div>
+						</div>
+						<div class="product-characteristics-box">
+							<div class="box-text">
+								<p><strong>T116.410.16.047.00</strong>
+									<span>( alt. ref. T1164101604700 )</span>
+								</p>
+							</div>
+						</div>
+						<div class="product-characteristics-box">
+							<div class="h3">Характеристики</div>
+							<ul class="list-characteristics my-ul mb-20">
+								<li>
+									<strong>Пол:</strong>
+									<span>Мужсские</span>
+								</li>
+								<li>
+									<strong>Механизм:</strong>
+									<span>Механический</span>
+								</li>
+								<li>
+									<strong>Корпус:</strong>
+									<span>Золото</span>
+								</li>
+								<li>
+									<strong>Стекло:</strong>
+									<span>Сапфировое</span>
+								</li>
+							</ul>
+							<a href="#characteristics" class="color-inherit text-decoration go_to">Посмотреть все</a>
+						</div>
+						<div class="product-characteristics-box">
+							<div class="h3">комплектации товара</div>
+							<ul class="list-dots-accent my-ul">
+								<li>Часы</li>
+								<li>Фирменная коробка</li>
+								<li>Инструкция</li>
+								<li>Электроная гарантия</li>
+								<li>Фирменный пакет</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 col-xl-4">
+					<div class="product-information-wrapper">
+						<div class="product-information">
+							<div class="product-information__head">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+								</div>
+								<div class="availability availability-in-stock">
+									<span>В наличии</span>
+								</div>
+							</div>
+							<div class="product-information__body">
+								<ul class="prices-details my-ul">
+									<li>
+										<p>Рассрочка без %</p>
+										<span>от 8961руб./мес.</span>
+									</li>
+									<li>
+										<p>Начислим бонусов</p>
+										<span>61</span>
+									</li>
+								</ul>
+							</div>
+							<div class="product-information__footer">
+								<div class="btn-group">
+									<a href="#" class="btn btn-accent btn-add-basket">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg>
+										<span>В корзину</span>
+									</a>
+									<a href="#" class="btn btn-border" data-bs-toggle="modal" data-bs-target="#oneClickModal">Купить в 1
+										клик</a>
+								</div>
+
+								<a href="#" class="btn btn-light-grey" data-bs-toggle="modal"
+									data-bs-target="#installmentPlanModal">Оформить в рассрочку</a>
+							</div>
+						</div>
+
+						<div class="product-information-delivery">
+							<div class="product-information-delivery-box">
+								<div class="product-information-delivery-box__icon"><img src="img/big-box.svg" alt=""></div>
+								<div class="product-information-delivery-box__body">
+									<p>Бесплатная доставка курьером в
+										<select name="select" class="select-my">
+											<option value="г.Санкт-Петербург">г.Санкт-Петербург</option>
+											<option value="г.Москва">г.Москва</option>
+											<option value="г.Санкт-Петербург">г.Санкт-Петербург</option>
+										</select>
+									</p>
+								</div>
+							</div>
+							<div class="product-information-delivery-box">
+								<div class="product-information-delivery-box__icon"><img src="img/big-box.svg" alt=""></div>
+								<div class="product-information-delivery-box__body">
+									<p>Самовывоз из <a href="#" class="color-inherit text-decoration d-inline">345 пунктов выдачи</a> </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="advantages-product">
+							<div class="row">
+								<div class="col-5">
+									<div class="advantages-box">
+										<div class="advantages-box__icon"><img src="img/branding.svg" alt=""></div>
+										<div class="advantages-box__text">
+											<p>Работаем более 20 лет</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-7">
+									<div class="advantages-box">
+										<div class="advantages-box__icon"><img src="img/truck.svg" alt=""></div>
+										<div class="advantages-box__text">
+											<p>Быстрая <br>доставка</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="advantages-box">
+										<div class="advantages-box__icon"><img src="img/diploma.svg" alt=""></div>
+										<div class="advantages-box__text">
+											<p>Гарантия <br>от 2-х лет</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-7">
+									<div class="advantages-box">
+										<div class="advantages-box__icon"><img src="img/badge.svg" alt=""></div>
+										<div class="advantages-box__text">
+											<p>Только <br>оригинальный товар</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div id="characteristics" class="product-details-characteristics">
+						<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery nav-tabs-product" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane"
+									type="button" role="tab" aria-controls="1-tab-pane" aria-selected="true">О товаре</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#2-tab-pane" type="button"
+									role="tab" aria-controls="2-tab-pane" aria-selected="false">Доставка</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#3-tab-pane" type="button"
+									role="tab" aria-controls="3-tab-pane" aria-selected="false">Оплата</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#4-tab-pane" type="button"
+									role="tab" aria-controls="4-tab-pane" aria-selected="false">Ремешки и браслеты</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="5-tab" data-bs-toggle="tab" data-bs-target="#5-tab-pane" type="button"
+									role="tab" aria-controls="5-tab-pane" aria-selected="false">Гарантия и возврат</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="6-tab" data-bs-toggle="tab" data-bs-target="#6-tab-pane" type="button"
+									role="tab" aria-controls="6-tab-pane" aria-selected="false">Отзывы</button>
+							</li>
+						</ul>
+
+						<div class="tab-content tab-content-delivery tab-content-product">
+							<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab"
+								tabindex="0">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="details-characteristics">
+											<div class="h3">Характеристики</div>
+											<div class="row">
+												<div class="col-12 col-sm-4">
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+													</ul>
+												</div>
+												<div class="col-12 col-sm-4">
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+														<li>
+															<strong>Корпус:</strong>
+															<span>Золото</span>
+														</li>
+														<li>
+															<strong>Стекло:</strong>
+															<span>Сапфировое</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+													</ul>
+												</div>
+												<div class="col-12 col-sm-4">
+													<ul class="list-characteristics my-ul">
+														<li>
+															<strong>Пол:</strong>
+															<span>Мужсские</span>
+														</li>
+														<li>
+															<strong>Механизм:</strong>
+															<span>Механический</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="description-product">
+											<div class="h3">Описание</div>
+											<div class="box-text">
+												<p>Женские кварцевые часы. Калибр механизма Ronda 585. Центральные часовая, минутная и секундная
+													стрелки. Апертура даты в позиции 6 часов. Черный циферблат. Круглый корпус выполнен из
+													нержавеющей стали. Диаметр корпуса составляет 36 мм. Стальной браслет, раскладывающаяся
+													застежка. Устойчивое к возникновению царапин сапфировое стекло. Водостойкость WR 100 (плавание
+													без погружения).</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
+								<div class="box-text">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis facilis, eaque ullam
+										voluptates soluta maxime distinctio aperiam fugiat neque dolorum omnis quae earum. Atque maiores
+										reiciendis autem cumque necessitatibus.</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis facilis, eaque ullam
+										voluptates soluta maxime distinctio aperiam fugiat neque dolorum omnis quae earum. Atque maiores
+										reiciendis autem cumque necessitatibus.</p>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="3-tab-pane" role="tabpanel" aria-labelledby="3-tab" tabindex="0">
+								<div class="box-text">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis facilis, eaque ullam
+										voluptates soluta maxime distinctio aperiam fugiat neque dolorum omnis quae earum. Atque maiores
+										reiciendis autem cumque necessitatibus.</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis facilis, eaque ullam
+										voluptates soluta maxime distinctio aperiam fugiat neque dolorum omnis quae earum. Atque maiores
+										reiciendis autem cumque necessitatibus.</p>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="4-tab-pane" role="tabpanel" aria-labelledby="4-tab" tabindex="0">
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/not-image.jpg" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/not-image.jpg" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/not-image.jpg" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/not-image.jpg" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/not-image.jpg" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+								<div class="product-card product-card-row">
+									<a href="product.html" class="product-card__img"><img src="img/not-image.jpg" alt=""></a>
+									<div class="product-card__body">
+										<a href="product.html" class="product-card__name">Ремешок синий, имитация крокодила, 15/12,
+											стальная пряжка, DolceVita Classic</a>
+										<div class="article">T058.109.17.036.00</div>
+									</div>
+									<div class="product-card__footer">
+										<div class="price-wrapper">
+											<p>цена</p>
+											<div class="price">по запросу</div>
+										</div>
+
+										<a href="#" class="btn btn-add-card">Купить</a>
+									</div>
+								</div>
+
+								<a href="#" class="btn btn-toggle btn-light-grey">Показать еще</a>
+							</div>
+							<div class="tab-pane fade" id="5-tab-pane" role="tabpanel" aria-labelledby="5-tab" tabindex="0">
+								<div class="box-text">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis facilis, eaque ullam
+										voluptates soluta maxime distinctio aperiam fugiat neque dolorum omnis quae earum. Atque maiores
+										reiciendis autem cumque necessitatibus.</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta corporis facilis, eaque ullam
+										voluptates soluta maxime distinctio aperiam fugiat neque dolorum omnis quae earum. Atque maiores
+										reiciendis autem cumque necessitatibus.</p>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="6-tab-pane" role="tabpanel" aria-labelledby="6-tab" tabindex="0">
+								<div class="row">
+									<div class="col-12 col-lg-8 col-md-7">
+										<div class="reviews-card">
+											<div class="reviews-card__head">
+												<div class="reviews-card__name">Александр</div>
+												<div class="date">24 октября 2022</div>
+												<ul class="list-star my-ul">
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+												</ul>
+											</div>
+											
+											<div class="reviews-card__body">
+												<div class="reviews-card-box">
+													<div class="h3">Достоинства</div>
+													<div class="box-text"><p>Запас хода до 80 часов, водонепроницаемость до 300м., керамический безель.</p></div>
+												</div>
+												<div class="reviews-card-box">
+													<div class="h3">Недостатки</div>
+													<div class="box-text">
+														<p>Нет</p>
+													</div>
+												</div>
+												<div class="reviews-card-box">
+													<div class="h3">Комментарий</div>
+													<div class="box-text">
+														<p>Удобнейшая модель для дайвинга, а благодаря раздвижному браслету можно надевать на костюм. Удобный светящийся циферблат,
+														который отлично
+														виден в ночное время.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="reviews-card">
+											<div class="reviews-card__head">
+												<div class="reviews-card__name">Александр</div>
+												<div class="date">24 октября 2022</div>
+												<ul class="list-star my-ul">
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+												</ul>
+											</div>
+										
+											<div class="reviews-card__body">
+												<div class="reviews-card-box">
+													<div class="h3">Достоинства</div>
+													<div class="box-text">
+														<p>Запас хода до 80 часов, водонепроницаемость до 300м., керамический безель.</p>
+													</div>
+												</div>
+												<div class="reviews-card-box">
+													<div class="h3">Недостатки</div>
+													<div class="box-text">
+														<p>Нет</p>
+													</div>
+												</div>
+												<div class="reviews-card-box">
+													<div class="h3">Комментарий</div>
+													<div class="box-text">
+														<p>Удобнейшая модель для дайвинга, а благодаря раздвижному браслету можно надевать на костюм. Удобный светящийся
+															циферблат,
+															который отлично
+															виден в ночное время.</p>
+													</div>
+												</div>
+												<div class="reviews-card-box">
+													<div class="h3">Фото от клиента</div>
+													<div class="gallery-reviews">
+														<a href="img/photo-reviews1.jpg" class="gallery-reviews__item" data-fancybox="reviews"><img
+																src="img/photo-reviews1.jpg" alt=""></a>
+														<a href="img/photo-reviews2.jpg" class="gallery-reviews__item" data-fancybox="reviews"><img
+																src="img/photo-reviews2.jpg" alt=""></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="reviews-card">
+											<div class="reviews-card__head">
+												<div class="reviews-card__name">Александр</div>
+												<div class="date">24 октября 2022</div>
+												<ul class="list-star my-ul">
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+												</ul>
+											</div>
+										
+											<div class="reviews-card__body">
+												<div class="reviews-card-box">
+													<div class="h3">Достоинства</div>
+													<div class="box-text">
+														<p>Запас хода до 80 часов, водонепроницаемость до 300м., керамический безель.</p>
+													</div>
+												</div>
+												<div class="reviews-card-box">
+													<div class="h3">Недостатки</div>
+													<div class="box-text">
+														<p>Нет</p>
+													</div>
+												</div>
+												<div class="reviews-card-box">
+													<div class="h3">Комментарий</div>
+													<div class="box-text">
+														<p>Удобнейшая модель для дайвинга, а благодаря раздвижному браслету можно надевать на костюм. Удобный светящийся
+															циферблат,
+															который отлично
+															виден в ночное время.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<a href="#" class="btn btn-light-grey btn-load-reviews">Показать еще</a>
+									</div>
+									<div class="col-12 col-lg-4 col-md-5">
+										<div class="rating-product">
+											<div class="rating-product__total">
+												<ul class="list-star my-ul">
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+													<li><img src="img/star-1.svg" alt=""></li>
+												</ul>
+												<div class="total-value">5</div>
+											</div>
+											<ul class="list-rating-details my-ul">
+												<li>
+													<p>5 звёзд</p>
+													<div class="line-rating">
+														<div class="line-rating__bg w100"></div>
+													</div>
+													<span>2</span>
+												</li>
+												<li>
+													<p>4 звезды</p>
+													<div class="line-rating">
+														<div class="line-rating__bg"></div>
+													</div>
+													<span>0</span>
+												</li>
+												<li>
+													<p>3 звезды</p>
+													<div class="line-rating">
+														<div class="line-rating__bg"></div>
+													</div>
+													<span>0</span>
+												</li>
+												<li>
+													<p>2 звезды</p>
+													<div class="line-rating">
+														<div class="line-rating__bg"></div>
+													</div>
+													<span>0</span>
+												</li>
+												<li>
+													<p>1 звезда</p>
+													<div class="line-rating">
+														<div class="line-rating__bg"></div>
+													</div>
+													<span>0</span>
+												</li>
+											</ul>
+											<a href="#" class="btn btn-light-grey" data-bs-target="#reviewsModal" data-bs-toggle="modal">Оставить отзыв</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="similar-products">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Похожие товары</h2>
+				</div>
+				<div class="col-12">
+					<ul class="list-similar my-ul">
+						<li><a href="product.html">Часы для женщин</a></li>
+						<li><a href="product.html">Часы с кварцевым механизмом</a></li>
+						<li><a href="product.html">Наручные часы Tisot для женщин</a></li>
+						<li><a href="product.html">Кварцевые наручные часы Tisot</a></li>
+						<li><a href="product.html">Женские наручные кварцевые часы</a></li>
+						<li><a href="product.html">Часы с сапфировым стеклом</a></li>
+						<li><a href="product.html">Часы из нержавеющей стали</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="viewed mb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Товары из этой коллекции</h2>
+				</div>
+
+				<div class="col-12">
+					<div class="products-slider">
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">T058.109.17.036.00</div>
+									<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__sale">-25</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽<div class="old-price">112500₽</div>
+										</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">T058.109.17.036.00</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="viewed mb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Вы недавно смотрели</h2>
+				</div>
+
+				<div class="col-12">
+					<div class="products-slider">
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">T058.109.17.036.00</div>
+									<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__sale">-25</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽<div class="old-price">112500₽</div>
+										</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">T058.109.17.036.00</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="slide">
+							<div class="product-card">
+								<ul class="list-labels my-ul">
+									<li class="list-labels__new">Новинка</li>
+								</ul>
+								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+								<div class="product-card__body">
+									<div class="article">L4.790.2.11.2</div>
+								</div>
+								<div class="product-card__footer">
+									<div class="price-wrapper">
+										<div class="price">112500₽</div>
+										<div class="loan-price">от 8961₽ в мес.</div>
+									</div>
+
+									<a href="#" class="btn-add-card"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#basket"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subscribe-section bg-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap align-items-center">
+					<div class="subscribe-content">
+						<div class="subscribe-icon"><img src="img/email.svg" alt=""></div>
+						<div class="subscribe-text">
+							<h2>Будьте в курсе</h2>
+							<div class="box-text">
+								<p>Подпишитесь на последние обновления
+									и узнавайте о скидках и акциях первыми</p>
+							</div>
+						</div>
+					</div>
+
+					<form action="" method="post" class="form-subdcribe">
+						<label><input type="text" placeholder="Введите ваш email" name="mail" required></label>
+						<button type="submit" class="btn btn-gradient">Подписаться</button>
+						<div class="consent">
+							<p>Нажимая «Подписаться» вы соглашаетесь с политикой обработки персональных данных</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Информация</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="about.html">О компании</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="shops.html">Магазины</a></li>
+								<li><a href="question.html">Популярные вопросы</a></li>
+								<li><a href="loyalty.html">Программа лояльности</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Покупателям</div>
+							<ul class="footer-menu my-ul">
+								<li><a href="corporate.html">Корпоративным клиентам</a></li>
+								<li><a href="warranty.html">Международная гарантия</a></li>
+								<li><a href="complain.html">Пожаловаться директору</a></li>
+								<li><a href="payments.html">Оплата</a></li>
+								<li><a href="delivery.html">Бесплатная доставка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Каталог</div>
+							<div class="row">
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Maurice lacroix</a></li>
+										<li><a href="catalog.html">Frederique constant</a></li>
+										<li><a href="catalog.html">Tissot</a></li>
+										<li><a href="catalog.html">Longines</a></li>
+										<li><a href="catalog.html">Rado</a></li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul class="footer-menu my-ul">
+										<li><a href="catalog.html">Victorinox</a></li>
+										<li><a href="catalog.html">Wainer</a></li>
+										<li><a href="catalog.html">Jaguar</a></li>
+										<li><a href="catalog.html">Epos</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="footer-box">
+							<div class="footer-box__title">Мы в социальных сетях</div>
+							<ul class="list-social my-ul">
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#youtube"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#tg"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#twitter"></use>
+										</svg>
+									</a></li>
+							</ul>
+
+							<div class="address">
+								<p>Санкт-Петербург</p>
+							</div>
+							<a href="tel:+78122004178" class="phone">8 (812) 200-41-78</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6">
+						<div class="copyright">Swiss-Style.Ru Copyright © 2006 - 2021 Магазин швейцарских часов в Санкт-Петербурге
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="box-text">
+							<p>Информация на сайте не является публичной афертой</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальное окно -->
+	<div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Задать вопрос</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Задайте свой зопрос и наши специалисты
+							подготовят детальный ответ на него</p>
+					</div>
+
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label><textarea name="message" placeholder="Ваш вопрос"></textarea></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
+								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Обратный звонок</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Оставьте заявку и наш специалист свяжется <br>
+							с вами в ближайшее время</p>
+					</div>
+
+					<form action="" method="post" class="form-modal">
+						<label><input type="text" placeholder="Ваше имя" name="name"></label>
+						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
+						<label class="checkbox">
+							<input type="checkbox" checked name="checkbox">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Даю согласие на обработку
+								<a href="#" class="color-inherit text-decoration" target="_blank">персональных данных</a></span>
+						</label>
+						<button type="submit" class="btn btn-accent">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Спасибо!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Ваша зявка принята. Ожидайте звонка <br>
+							специалиста в ближайшее время.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="congratulationsModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Поздравляем!</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text">
+						<p>Вы подписаны на обновления нашего магазина.
+							Следите за новостями, чтобы не пропустить
+							уникальные предложения и скидки от нас!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- <div class="modal-title">Поздравляем!</div> -->
+					<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery nav-tabs-modal" id="myTab-modal" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="1-tab-modal" data-bs-toggle="tab" data-bs-target="#1-tab-pane-modal"
+								type="button" role="tab" aria-controls="1-tab-pane-modal" aria-selected="true">Вход по смс</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="2-tab-modal" data-bs-toggle="tab" data-bs-target="#2-tab-pane-modal"
+								type="button" role="tab" aria-controls="2-tab-pane-modal" aria-selected="false">Вход по email</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="3-tab-modal" data-bs-toggle="tab" data-bs-target="#3-tab-pane-modal"
+								type="button" role="tab" aria-controls="3-tab-pane-modal" aria-selected="false">Регистрация</button>
+						</li>
+					</ul>
+
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+
+					<div class="tab-content" id="myTabContent-modal">
+						<div class="tab-pane fade show active" id="1-tab-pane-modal" role="tabpanel" aria-labelledby="1-tab-modal"
+							tabindex="0">
+							<form action="" method="post" class="form-code">
+								<label>
+									<input type="text" placeholder="Введите номер телефона*" name="phone" required>
+								</label>
+								<button type="submit" class="btn btn-accent">Получить код</button>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="2-tab-pane-modal" role="tabpanel" aria-labelledby="2-tab-modal" tabindex="0">
+							<form action="" method="post" class="form-modal">
+								<label>
+									<input type="text" placeholder="Email*" name="mail" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Пароль*" name="password" required>
+								</label>
+								<div class="form-group">
+									<label class="checkbox">
+										<input type="checkbox" checked name="checkbox">
+										<span class="checkbox-custom"></span>
+										<span class="checkbox-text">Запомнить меня</span>
+									</label>
+
+									<a href="#" class="color-accent link-password">Забыли пароль?</a>
+								</div>
+								<button type="submit" class="btn btn-accent">Войти</button>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="3-tab-pane-modal" role="tabpanel" aria-labelledby="3-tab-modal" tabindex="0">
+							<form action="" method="post" class="form-modal form-registration">
+								<label>
+									<input type="text" placeholder="Ваше имя*" name="name" required>
+								</label>
+								<label>
+									<input type="text" placeholder="Email*" name="mail" required>
+								</label>
+								<label>
+									<input type="text" placeholder="Телефон*" name="phone" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Пароль*" name="password" required>
+								</label>
+								<label>
+									<input type="password" placeholder="Повторите пароль*" name="double_password" required>
+								</label>
+								<div class="recapcha">Я не робот</div>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Настоящим подтверждаю, что я ознакомлен и согласен с условиями <a href="#"
+											target="_blank" class="color-inherit text-decoration">политики
+											конфиденциальности</a> и даю согласие на обработку <a href="#" target="_blank"
+											class="color-inherit text-decoration">персональных данных</a></span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Получать информацию об акциях и скидках</span>
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" checked name="checkbox">
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Зарегистрироваться в <a href="#" class="color-inherit text-decoration"
+											target="_blank">программе лояльности</a></span>
+								</label>
+								<button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
