@@ -233,10 +233,10 @@ ul, ol
 			width: 5px
 			height: 5px
 			border-radius: 50%
-			background: $accent	
+			background: $accent
 
 .column-3
-	column-count: 3				
+	column-count: 3
 
 .container
 	max-width: 1450px
@@ -283,6 +283,9 @@ ul, ol
 
 .d-inline
 	display: inline
+
+.d-inline-flex
+	display: inline-flex	
 
 .font-700
 	font-weight: bold
@@ -465,7 +468,7 @@ h3
 	fill: #232323
 	&:hover, &:focus
 		fill: $accent
-		background: #fff		
+		background: #fff
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
 
 .vertical-slider
@@ -481,7 +484,7 @@ h3
 	.slick-prev
 		top: -15px
 	.slick-next
-		bottom: -15px				
+		bottom: -15px
 
 .slick-next
 	right: 18px
@@ -858,3 +861,57 @@ h3
 		margin: 0 9px 0 0
 		&:last-child
 			margin: 0
+
+.radio-group
+	display: flex
+
+.star-rating
+	margin: 0 0 0 18px
+	position: relative
+	input
+		display: none
+	.img-focus
+		display: none
+
+.star-rating label
+	width: 32px
+	height: 32px
+	margin: 0 9px 0 0
+	position: relative
+	fill: #FCEFCA
+	z-index: 1
+	@include d-flex
+	cursor: pointer
+	&:last-child
+		margin: 0
+	img
+		display: none
+	.img-focus
+		display: block
+
+.star-rating input:checked + label ~ label
+	img
+		display: block
+	.img-focus
+		display: none
+
+.label-file
+	width: 100%
+	cursor: pointer
+	border: dashed 1px #c4c4c4
+	background-color: #fff
+	display: flex
+	align-items: center
+	padding: 33px 60px
+	font-size: 14px
+	input
+		display: none
+	&__icon
+		width: 31px
+		min-width: 31px
+		height: 32px
+		@include d-flex
+		margin: 0 15px 0 0
+	&__body
+
+

@@ -47,6 +47,16 @@ $('.comparison-slider').slick({
 	nextArrow: '<button type="button" class="slick-next slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });
 
+$('.modal').on('shown.bs.modal', function () {
+	$('.analogues-slider').slick({
+		slidesToShow: 3,
+		prevArrow: '<button type="button" class="slick-prev slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+	});
+});
+
+
+
 $('.article-catalog-slider').slick({
 	slidesToShow: 4,
 	arrows: false,
@@ -146,6 +156,7 @@ rev.slick({
 		return "";
 	}
 });
+
 
 
 // активная ссылка меню

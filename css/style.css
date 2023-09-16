@@ -402,6 +402,12 @@ ul, ol {
   display: inline;
 }
 
+.d-inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .font-700 {
   font-weight: bold;
 }
@@ -1218,4 +1224,89 @@ h3 {
 }
 .list-star li:last-child {
   margin: 0;
+}
+
+.radio-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.star-rating {
+  margin: 0 0 0 18px;
+  position: relative;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating .img-focus {
+  display: none;
+}
+
+.star-rating label {
+  width: 32px;
+  height: 32px;
+  margin: 0 9px 0 0;
+  position: relative;
+  fill: #FCEFCA;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.star-rating label:last-child {
+  margin: 0;
+}
+.star-rating label img {
+  display: none;
+}
+.star-rating label .img-focus {
+  display: block;
+}
+
+.star-rating input:checked + label ~ label img {
+  display: block;
+}
+.star-rating input:checked + label ~ label .img-focus {
+  display: none;
+}
+
+.label-file {
+  width: 100%;
+  cursor: pointer;
+  border: dashed 1px #c4c4c4;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 33px 60px;
+  font-size: 14px;
+}
+.label-file input {
+  display: none;
+}
+.label-file__icon {
+  width: 31px;
+  min-width: 31px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 15px 0 0;
 }
