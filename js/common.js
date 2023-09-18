@@ -4,6 +4,7 @@ $('[name="phone"]').mask('+7 (999) 999-99-99');
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 200) {
 		$('header').addClass('fixed');
+		$('header .form-search.open').fadeOut().removeClass('open');
 	} else {
 		$('header').removeClass('fixed');
 	}
@@ -12,6 +13,16 @@ $(window).scroll(function () {
 $('.btn-burger').on('click', function () {
 	$(this).toggleClass('click');
 	$('.header-bottom').fadeToggle();
+	$('header .form-search.open').fadeOut().removeClass('open');
+});
+
+$('.btn-search').on('click', function (e) {
+	e.preventDefault();
+	$('header .form-search').fadeToggle().toggleClass('open');
+});
+
+$('header .dropdown-menu .dropdown .dropdown-toggle').on('click', function (e) {
+	e.stopPropagation();
 });
 
 $('.btn-edit-location').on('click', function (e) {
@@ -365,3 +376,5 @@ $(document).ready(function () {
 Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });
+
+

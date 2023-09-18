@@ -1,16 +1,309 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1350px)
+	.nav-menu-user li, .nav-menu li
+		margin: 0 40px 0 0
+
+	.user-navigation-link
+		margin: 0 20px 0 0
+
+	header .form-search
+		max-width: 350px
+
+	.corporate-home
+		padding: 100px 50px
+
 @media only screen and (max-width: 1200px)
+	body
+		padding: 123px 0 0
+
+	.btn-burger
+		padding: 0
+		width: 19px
+		min-width: 19px
+		height: 14px
+		background: transparent
+		border-radius: 0
+		margin: 0 17px 0 0
+		&.click
+			span
+				top: 6px
+
+	header
+		.phone
+			font-size: 16px
+		.form-search
+			max-width: 250px
+		.logo-text
+			display: none
+
+	.header-bottom
+		font-size: 15px
+
+	.logo
+		max-width: 133px
+
+	.logo-icon
+		max-width: none
+
+	.user-navigation-link
+		margin: 0 10px 0 0
+
+	.nav-menu-user li, .nav-menu li
+		margin: 0 25px 0 0
+
+	.dropdown-toggle:after
+		margin: 0 0 0 6px
+
+	footer
+		padding: 30px 0
+
+	.corporate-home
+		padding: 70px 50px
+		margin: 0 0 30px
+
+	.corporate-home-advantages
+		margin: 30px 0 0
+		justify-content: flex-start
+		&-box
+			width: 33.33%
+			margin: 0 0 20px
+
+	.about-advabtages-box
+		&__icon
+			margin: 0 0 20px
+
+	h3
+		font-size: 24px
+
+	.corporate-box
+		margin: 0 0 30px
+		ul li
+		margin: 0 0 15px
+
+	.page
+		margin: 0 0 60px
 
 @media only screen and (max-width: 992px)
+	body
+		padding: 118px 0 0
+
+	header
+		.form-search
+			display: none
+			order: 1
+			margin: 10px 0 0
+			max-width: none
+			z-index: 3
+			background: #fff
+		.btn-search
+			display: flex
+			margin: 0 0 0 auto
+		.nav-menu
+			width: calc(100% - 19px)
+			li
+				margin: 0 auto 0 0
+
+	.header-contacts
+		margin: 0 20px
+
+	.dropdown-location
+		margin: 0 0 0 auto
+
+	.nav-menu
+		.dropdown-menu
+			.dropdown-menu
+				position: relative !important
+				min-width: 100%
+				box-shadow: none
+				padding: 0
+				top: 0 !important
+				transform: none !important
+			&__footer
+				display: block
+				width: 100%
+			.dropdown-toggle
+				&.show
+					&:after
+						transform: none
+		.nav-item
+			margin: 0
+			width: 100%
+
+	.dropdown-catalog
+		position: inherit
+		> .dropdown-menu
+			display: none
+			border-top: 1px solid #fff
+			position: absolute
+			top: 12px !important
+			padding: 10px 15px
+			background: #f1f1f1
+			min-width: 100%
+			left: 0
+			flex-wrap: wrap
+			&.show
+				display: flex
+			.nav-link
+				padding: 11px 0
+				width: 100%
+				font-size: 15px
+				&:after
+					margin: 0 0 0 auto
+			> .dropdown-menu-list
+				width: 100%
+				flex-direction: column
+				align-items: flex-start
+
+	.sidebar
+		max-width: none
+		display: flex
+		align-items: stretch
+		flex-wrap: wrap
+		justify-content: space-between
+
+	.sidebar-box
+		width: 49%
+		margin: 0
+
+	.page-content
+		width: 100%
+		padding: 0
+		margin: 30px 0 0
+
+	h1
+		font-size: 30px
+		margin: 0 0 24px
+
+	.corporate-home
+		padding: 30px
+
+	.subscribe-section
+		margin: 40px 0 0
+		padding: 30px 0
+		h2
+			margin: 0 0 4px
+
+	.subscribe-content
+		width: 100%
+
+	.subscribe-icon
+		max-width: 50px
+		margin: 10px 20px 0 0
+
+	.subscribe-text
+		max-width: none
+
+	.form-subdcribe
+		width: 100%
+		padding: 0
+		margin: 20px 0 0
+
+	.footer-box__title, .footer-menu li
+		margin: 0 0 13px
 
 @media only screen and (max-width: 768px)
+	body
+		padding: 110px 0 0
+
+	.user-navigation-link
+		margin: 0 15px 0 0
+		&__text
+			display: none
+
+	header
+		.phone
+			font-size: 14px
+		
+
+	h1
+		font-size: 22px
+
+	.footer-bottom
+		font-size: 11px
+
+
+
+@media only screen and (max-width: 670px)
+	.dropdown-location
+		display: none
+
+	header
+		.logo
+			margin: 0 auto 0 0
+
+	.corporate-home-advantages-box
+		width: 50%
+
 
 @media only screen and (max-width: 576px)
+	.list-social li a
+		width: 39px
+		height: 39px
+		min-width: 39px
+		padding: 10px
+
+	.footer-bottom
+		margin: 20px 0 0
+		.box-text
+			text-align: left
+			margin: 10px 0 0
+
+	.header-contacts
+		margin: 0 15px 0 0
+		display: flex
+		align-items: center
+		padding: 0
+		.link
+			display: none
+
+	.whatsapp-link
+		position: relative
+		top: 0
+		right: 0	
+		margin: 0 0 0 14px	
+
+	.phone
+		span
+			display: none
+		&:hover
+			.svg-icon
+				fill: #c21212
+		.svg-icon
+			display: flex
+			width: 17px
+			height: 19px
+			fill: #232323
+
+	.about-advabtages-box__body
+		max-width: none
+
+	.mb-40
+		margin-bottom: 30px
+
+	.form-subdcribe 
+		label
+			width: 100%
+		button
+			width: 100%
+			margin: 10px 0 0
+			max-width: none
+
+	.sidebar-box
+		padding: 20px
+
+	.sidebar-box__menu li
+		margin: 0 0 10px			
 
 @media only screen and (max-width: 480px)
+	.corporate-home-advantages-box
+		width: 100%
+		br
+			display: none
+		&__body
+			max-width: none
 
 @media only screen and (max-width: 420px)
 
-@media only screen and (max-width: 370px)	
+@media only screen and (max-width: 370px)

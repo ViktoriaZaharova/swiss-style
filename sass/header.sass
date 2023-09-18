@@ -24,6 +24,8 @@ header
 			display: none
 			background: #fff
 			border-top: 1px solid #f1f1f1
+	.btn-search
+		display: none		
 
 .header
 	position: absolute
@@ -36,7 +38,7 @@ header
 		.logo-icon
 			max-width: 200px
 	.header-contacts
-		margin: 0 0 0 auto		
+		margin: 0 0 0 auto
 
 .header-top
 	padding: 14px 0
@@ -125,6 +127,7 @@ header
 	.dropdown-menu-title
 		padding: 20px 20px 0
 	.form-search
+		max-width: 430px
 		input
 			background: #f1f1f1
 			border: none
@@ -181,6 +184,8 @@ header
 	font-weight: bold
 	&:hover
 		color: $accent
+	.svg-icon
+		display: none
 
 .user-navigation
 	display: flex
@@ -234,6 +239,85 @@ header
 		margin: 0 70px 0 0
 		&:last-child
 			margin: 0
+
+.nav-menu
+	.dropdown-menu
+		box-shadow: 0px 0 10px 0 rgba(29, 29, 27, 0.07)
+		border: none
+		border-radius: 0
+		background: #f1f1f1
+		min-width: 500px
+		top: 12px !important
+		font-size: 13px
+		padding: 20px 15px 0
+		margin: 0 !important
+		&__footer
+			position: relative
+			display: none
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				top: 0
+				transform: translate(-50%,0)
+				width: calc(100% + 30px)
+				height: 1px
+				background: #fff
+		.h3
+			font-size: 13px
+			font-weight: bold
+			margin: 0 0 7px
+		.dropdown-item
+			padding: 3px 0
+			&:hover
+				background: transparent
+				color: $accent
+
+.nav-link-all
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 20px auto
+	border-bottom: 2px solid $accent
+	font-size: 15px
+	color: #232323
+	svg
+		width: 13px
+		height: 9px
+		margin: 0 0 0 9px
+		@include d-flex
+		fill: #232323
+
+.dropdown-catalog
+	> .dropdown-menu
+		position: relative
+		display: flex
+		align-items: center
+		background: transparent
+		padding: 0
+		font-size: 16px
+		box-shadow: none
+		top: 0 !important
+		min-width: auto
+		> .dropdown-menu-list
+			flex-wrap: nowrap
+			flex-direction: row
+			align-items: center
+
+.dropdown-menu-list
+	display: flex
+	align-items: start
+	flex-direction: column
+
+.btn-search
+	width: 19px
+	height: 19px
+	fill: #232323
+	align-items: center
+	justify-content: center
+	
+	&:hover
+		fill: $accent
 
 .nav-menu-user
 	margin: 0 0 0 auto
