@@ -112,6 +112,12 @@ footer .address {
   margin: 20px auto 0;
 }
 
+.modal {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0;
+}
+
 .modal-backdrop {
   background: #232323;
 }
@@ -266,6 +272,9 @@ footer .address {
 }
 #entranceModal .modal-body {
   padding: 40px;
+}
+#entranceModal .form-modal {
+  margin: 0;
 }
 
 .nav-tabs-modal {

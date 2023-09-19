@@ -378,6 +378,8 @@
 	&:hover
 		background: $grey
 		fill: $accent
+	span
+		display: none	
 
 // categories
 .categories
@@ -892,7 +894,8 @@
 		padding: 25px 0 0
 		border-top: 1px solid #f1f1f1
 		.btn-group
-			margin: 24px 0 0
+			width: 100%
+			margin: 24px auto 0
 			.btn
 				font-size: 16px
 				width: 100%
@@ -1101,6 +1104,7 @@
 
 // catalog page
 .articles-slider
+	overflow: hidden
 	.slide
 		padding: 0 18.5px
 	.slick-list
@@ -1379,7 +1383,7 @@
 
 .article-navigation
 	position: sticky
-	top: 80px
+	top: 130px
 	z-index: 3	
 
 .article-image
@@ -1436,6 +1440,9 @@
 		min-width: 28px
 	.information-box__body
 		width: calc(100% - 28px)
+
+// .articles-brand
+// 	overflow: hidden		
 
 .link-page
 	display: flex
@@ -1494,8 +1501,10 @@
 		margin: 0 0 28px
 	.tab-content
 		padding: 40px 0 0
+	.form-modal
+		margin: 0	
 
-.recipient-details-contnt
+.recipient-details-content
 	width: calc(100% - 300px)
 	padding: 0 30px 0 0
 	margin: 38px 0 0

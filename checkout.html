@@ -39,7 +39,12 @@
 
 
 						<div class="header-contacts">
-							<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
+							<a href="tel:+78122004173" class="phone">
+								<span>8 (812) 200-41-73</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+							</a>
 							<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
 							<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
 						</div>
@@ -53,10 +58,10 @@
 		<div class="container">
 
 			<div class="row align-items-center">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-7">
 					<h1>Оформление заказа</h1>
 				</div>
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-5">
 					<a href="#" class="color-inherit text-decoration link-page">Вернуться к покупкам</a>
 				</div>
 			</div>
@@ -151,8 +156,8 @@
 							На основании введенных данных вы будете автоматически зарегистрированы в нашем магазине.</p>
 					</div>
 
-					<div class="recipient-details-contnt">
-						<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery" id="myTab" role="tablist">
+					<div class="recipient-details-content">
+						<ul class="nav nav-tabs nav-tabs-v2 nav-tabs-delivery" role="tablist">
 							<li class="nav-item" role="presentation">
 								<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane"
 									type="button" role="tab" aria-controls="1-tab-pane" aria-selected="true">Вход по смс</button>
@@ -167,7 +172,7 @@
 							</li>
 						</ul>
 
-						<div class="tab-content" id="myTabContent">
+						<div class="tab-content">
 							<div class="tab-pane fade show active" id="1-tab-pane" role="tabpanel" aria-labelledby="1-tab"
 								tabindex="0">
 								<form action="" method="post" class="form-code">
@@ -180,7 +185,7 @@
 							<div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
 								<form action="" method="post" class="form-modal">
 									<div class="row">
-										<div class="col-12 col-md-6">
+										<div class="col-12 col-md-6 mb-15">
 											<label>
 												<input type="text" placeholder="Email*" name="mail" required>
 											</label>
@@ -231,7 +236,7 @@
 												<input type="password" placeholder="Повторите пароль*" name="double_password" required>
 											</label>
 										</div>
-										<div class="col-12 col-md-6">
+										<div class="col-12 col-lg-6">
 											<div class="recapcha">Я не робот</div>
 										</div>
 										<div class="col-12 mb-30">

@@ -43,7 +43,46 @@ $('.products-slider').slick({
 	slidesToShow: 6,
 	slidesToScroll: 2,
 	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 2000,
 	dots: true,
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 5,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
 });
 
 $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -58,6 +97,13 @@ $('.comparison-slider').slick({
 	nextArrow: '<button type="button" class="slick-next slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });
 
+$('.characteristics-slider').slick({
+	slidesToShow: 6,
+	arrows: false,
+	asNavFor: '.comparison-slider',
+});
+
+
 $('.modal').on('shown.bs.modal', function () {
 	$('.analogues-slider').slick({
 		slidesToShow: 3,
@@ -66,19 +112,37 @@ $('.modal').on('shown.bs.modal', function () {
 	});
 });
 
-
-
 $('.article-catalog-slider').slick({
 	slidesToShow: 4,
 	arrows: false,
 	dots: true,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
 });
 
-$('.characteristics-slider').slick({
-	slidesToShow: 6,
-	arrows: false,
-	asNavFor: '.comparison-slider',
-});
 
 $('.articles-slider').slick({
 	slidesToShow: 5,
@@ -87,6 +151,36 @@ $('.articles-slider').slick({
 	dots: true,
 	autoplay: true,
 	autoplaySpeed: 2000,
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
 });
 
 $('.brands-slider').slick({

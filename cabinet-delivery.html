@@ -13,205 +13,336 @@
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https ://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 	<!-- add plugins css end -->
-	
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
-	</head>
-	
-	<body>
-	
-		<header>
-			<div class="header-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 d-flex align-items-center flex-wrap">
-							<div class="btn-burger">
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-	
-							<a href="index.html" class="logo">
-								<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
-									часов</span>
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<a href="index.html" class="logo">
+							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
+								часов</span>
+						</a>
+						<form action="" method="post" class="form-search">
+							<label>
+								<input type="text" name="search" placeholder="Поиск">
+							</label>
+							<button type="submit">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</form>
+
+						<div class="dropdown dropdown-location">
+							<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false"
+								data-bs-auto-close="outside">
+								<span class="dropdown-location__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg></span>
+								Санкт-Петербург
 							</a>
-							<form action="" method="post" class="form-search">
-								<label>
-									<input type="text" name="search" placeholder="Поиск">
-								</label>
-								<button type="submit">
-									<svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#search"></use>
-									</svg>
-								</button>
-							</form>
-	
-							<div class="dropdown dropdown-location">
-								<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false"
-									data-bs-auto-close="outside">
-									<span class="dropdown-location__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#location"></use>
-										</svg></span>
-									Санкт-Петербург
-								</a>
-								<div class="dropdown-menu">
-									<div class="dropdown-menu-visible">
-										<div class="dropdown-menu-head">
-											<div class="dropdown-menu-title">
-												<div class="h3">Ваш город
-													<strong class="color-accent name-city">Санкт-Петербург</strong>
-												</div>
+							<div class="dropdown-menu">
+								<div class="dropdown-menu-visible">
+									<div class="dropdown-menu-head">
+										<div class="dropdown-menu-title">
+											<div class="h3">Ваш город
+												<strong class="color-accent name-city">Санкт-Петербург</strong>
 											</div>
 										</div>
-	
-										<div class="btn-group">
-											<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
-											<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
-										</div>
 									</div>
-	
-									<div class="dropdown-menu-hidden">
-										<div class="dropdown-menu-head">
-											<form action="" method="post" class="form-search">
-												<label><input type="text" placeholder="Поиск города" name="search"></label>
-												<button type="submit"><svg class="svg-icon">
-														<use xlink:href="img/sprite.svg#search"></use>
-													</svg></button>
-											</form>
+
+									<div class="btn-group">
+										<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
+										<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
+									</div>
+								</div>
+
+								<div class="dropdown-menu-hidden">
+									<div class="dropdown-menu-head">
+										<form action="" method="post" class="form-search">
+											<label><input type="text" placeholder="Поиск города" name="search"></label>
+											<button type="submit"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg></button>
+										</form>
+									</div>
+									<div class="dropdown-menu-body">
+										<ul class="list-cities my-ul list-scroll">
+											<li><a href="#">Москва</a></li>
+											<li><a href="#" class="checked">Санкт-Петербург</a></li>
+											<li><a href="#">Казань</a></li>
+											<li><a href="#">Нижний Новгород</a></li>
+											<li><a href="#">Екатеренбург</a></li>
+											<li><a href="#">Самара</a></li>
+											<li><a href="#">Ростов-на-Дону</a></li>
+											<li><a href="#">Уфа</a></li>
+											<li><a href="#">Челябинск</a></li>
+											<li><a href="#">Саратов</a></li>
+											<li><a href="#">Самара</a></li>
+											<li><a href="#">Аксай</a></li>
+											<li><a href="#">Александров</a></li>
+											<li><a href="#">Александров Гай</a></li>
+											<li><a href="#">Александровск</a></li>
+											<li><a href="#">Алексеевка
+													(Самарская область)</a></li>
+											<li><a href="#">Баксан</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="header-contacts">
+							<a href="tel:+78122004173" class="phone">
+								<span>8 (812) 200-41-73</span>
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+							</a>
+							<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
+							<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">
+								<span>обратный звонок</span>
+							</a>
+						</div>
+
+						<div class="user-navigation">
+							<a href="comparison.html" class="user-navigation-link d-none d-sm-flex">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#balance"></use>
+									</svg>
+									<span class="user-navigation-link__value">5</span>
+								</span>
+								<span class="user-navigation-link__text">Сравнение</span>
+
+							</a>
+							<a href="favorites.html" class="user-navigation-link d-none d-sm-flex">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Избранное</span>
+							</a>
+							<a href="#" class="user-navigation-link d-none d-sm-flex" data-bs-toggle="modal"
+								data-bs-target="#entranceModal">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#user"></use>
+									</svg></span>
+								<span class="user-navigation-link__text">Вход</span>
+							</a>
+							<a href="basket.html" class="user-navigation-link">
+								<span class="user-navigation-link__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket"></use>
+									</svg>
+									<span class="user-navigation-link__value">18</span>
+								</span>
+								<span class="user-navigation-link__text">Корзина</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex align-items-center flex-wrap">
+						<ul class="navbar-nav nav-menu my-ul">
+							<li class="nav-item dropdown dropdown-catalog">
+								<a href="#" class="nav-link dropdown-toggle d-flex d-lg-none" data-bs-toggle="dropdown">Каталог</a>
+								<div class="dropdown-menu">
+									<ul class="dropdown-menu-list my-ul">
+										<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Мужские
+												часы</a>
+											<div class="dropdown-menu">
+												<div class="row">
+													<div class="col-12 col-sm-6 mb-20">
+														<div class="h3">Механизм</div>
+														<ul class="dropdown-menu-list my-ul">
+															<li><a class="dropdown-item" href="catalog.html">Кварцевые</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Механические</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Электронные</a></li>
+														</ul>
+													</div>
+													<div class="col-12 col-sm-6 mb-20">
+														<div class="h3">Корпус</div>
+														<ul class="dropdown-menu-list my-ul">
+															<li><a class="dropdown-item" href="catalog2.html">Золотые</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">Стальные</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">Керамические</a></li>
+														</ul>
+													</div>
+													<div class="col-12 col-sm-6 mb-20">
+														<div class="h3">Вид</div>
+														<ul class="dropdown-menu-list my-ul">
+															<li><a class="dropdown-item" href="catalog.html">С автоподводом</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Скелетоны</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Классические</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Автоматические</a></li>
+														</ul>
+													</div>
+													<div class="col-12 col-sm-6 mb-20">
+														<div class="h3">Функционал и оформление</div>
+														<ul class="dropdown-menu-list my-ul">
+															<li><a class="dropdown-item" href="catalog2.html">С хронографом</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">С лунным календарем</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">Многофункциональные</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">С бриллиантами</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">Водонепронецаемые</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Женские
+												часы</a>
+											<div class="dropdown-menu">
+												<div class="row">
+													<div class="col-12 col-sm-6 mb-20">
+														<div class="h3">Механизм</div>
+														<ul class="dropdown-menu-list my-ul">
+															<li><a class="dropdown-item" href="catalog.html">Кварцевые</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Механические</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Электронные</a></li>
+														</ul>
+													</div>
+													<div class="col-12 col-sm-6 mb-20">
+														<div class="h3">Корпус</div>
+														<ul class="dropdown-menu-list my-ul">
+															<li><a class="dropdown-item" href="catalog2.html">Золотые</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">Стальные</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">Керамические</a></li>
+														</ul>
+													</div>
+													<div class="col-12 col-sm-6 mb-20">
+														<div class="h3">Вид</div>
+														<ul class="dropdown-menu-list my-ul">
+															<li><a class="dropdown-item" href="catalog.html">С автоподводом</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Скелетоны</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Классические</a></li>
+															<li><a class="dropdown-item" href="catalog.html">Автоматические</a></li>
+														</ul>
+													</div>
+													<div class="col-12 col-sm-6 mb-20">
+														<div class="h3">Функционал и оформление</div>
+														<ul class="dropdown-menu-list my-ul">
+															<li><a class="dropdown-item" href="catalog2.html">С хронографом</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">С лунным календарем</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">Многофункциональные</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">С бриллиантами</a></li>
+															<li><a class="dropdown-item" href="catalog2.html">Водонепронецаемые</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="nav-item">
+											<a href="#" class="nav-link">Аксесуары</a>
+										</li>
+									</ul>
+									<div class="dropdown-menu__footer">
+										<a href="catalog.html" class="nav-link-all">
+											<span>Смотреть все часы</span>
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
+								<div class="dropdown-menu">
+									<div class="row">
+										<div class="col-12 colsmd-6 mb-20">
+											<div class="h3">Механизм</div>
+											<ul class="dropdown-menu-list my-ul">
+												<li><a class="dropdown-item" href="catalog.html">Кварцевые</a></li>
+												<li><a class="dropdown-item" href="catalog.html">Механические</a></li>
+												<li><a class="dropdown-item" href="catalog.html">Электронные</a></li>
+											</ul>
 										</div>
-										<div class="dropdown-menu-body">
-											<ul class="list-cities my-ul list-scroll">
-												<li><a href="#">Москва</a></li>
-												<li><a href="#" class="checked">Санкт-Петербург</a></li>
-												<li><a href="#">Казань</a></li>
-												<li><a href="#">Нижний Новгород</a></li>
-												<li><a href="#">Екатеренбург</a></li>
-												<li><a href="#">Самара</a></li>
-												<li><a href="#">Ростов-на-Дону</a></li>
-												<li><a href="#">Уфа</a></li>
-												<li><a href="#">Челябинск</a></li>
-												<li><a href="#">Саратов</a></li>
-												<li><a href="#">Самара</a></li>
-												<li><a href="#">Аксай</a></li>
-												<li><a href="#">Александров</a></li>
-												<li><a href="#">Александров Гай</a></li>
-												<li><a href="#">Александровск</a></li>
-												<li><a href="#">Алексеевка
-														(Самарская область)</a></li>
-												<li><a href="#">Баксан</a></li>
+										<div class="col-12 col-sm-6 mb-20">
+											<div class="h3">Корпус</div>
+											<ul class="dropdown-menu-list my-ul">
+												<li><a class="dropdown-item" href="catalog2.html">Золотые</a></li>
+												<li><a class="dropdown-item" href="catalog2.html">Стальные</a></li>
+												<li><a class="dropdown-item" href="catalog2.html">Керамические</a></li>
+											</ul>
+										</div>
+										<div class="col-12 col-sm-6 mb-20">
+											<div class="h3">Вид</div>
+											<ul class="dropdown-menu-list my-ul">
+												<li><a class="dropdown-item" href="catalog.html">С автоподводом</a></li>
+												<li><a class="dropdown-item" href="catalog.html">Скелетоны</a></li>
+												<li><a class="dropdown-item" href="catalog.html">Классические</a></li>
+												<li><a class="dropdown-item" href="catalog.html">Автоматические</a></li>
+											</ul>
+										</div>
+										<div class="col-12 col-sm-6 mb-20">
+											<div class="h3">Функционал и оформление</div>
+											<ul class="dropdown-menu-list my-ul">
+												<li><a class="dropdown-item" href="catalog2.html">С хронографом</a></li>
+												<li><a class="dropdown-item" href="catalog2.html">С лунным календарем</a></li>
+												<li><a class="dropdown-item" href="catalog2.html">Многофункциональные</a></li>
+												<li><a class="dropdown-item" href="catalog2.html">С бриллиантами</a></li>
+												<li><a class="dropdown-item" href="catalog2.html">Водонепронецаемые</a></li>
 											</ul>
 										</div>
 									</div>
 								</div>
-							</div>
-	
-							<div class="header-contacts">
-								<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
-								<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
-								<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
-							</div>
-	
-							<div class="user-navigation">
-								<a href="comparison.html" class="user-navigation-link">
-									<span class="user-navigation-link__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#balance"></use>
-										</svg>
-										<span class="user-navigation-link__value">5</span>
-									</span>
-									<span class="user-navigation-link__text">Сравнение</span>
-	
-								</a>
-								<a href="favorites.html" class="user-navigation-link">
-									<span class="user-navigation-link__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#heart"></use>
-										</svg></span>
-									<span class="user-navigation-link__text">Избранное</span>
-								</a>
-								<a href="#" class="user-navigation-link" data-bs-toggle="modal" data-bs-target="#entranceModal">
-									<span class="user-navigation-link__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#user"></use>
-										</svg></span>
-									<span class="user-navigation-link__text">Вход</span>
-								</a>
-								<a href="basket.html" class="user-navigation-link">
-									<span class="user-navigation-link__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg>
-										<span class="user-navigation-link__value">18</span>
-									</span>
-									<span class="user-navigation-link__text">Корзина</span>
-	
-								</a>
-							</div>
-						</div>
+							</li>
+							<li class="nav-item d-block d-lg-none">
+								<a href="stock.html" class="nav-link">Скидки</a>
+							</li>
+							<li class="nav-item d-none d-lg-block">
+								<a href="stock.html" class="nav-link">Акции</a>
+							</li>
+							<li class="nav-item d-none d-lg-block">
+								<a href="new.html" class="nav-link">Новинки</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav nav-menu-user my-ul d-none d-lg-flex">
+							<li class="nav-item">
+								<a href="how-to-buy.html" class="nav-link">Как купить</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Рассрочка 0%</a>
+							</li>
+							<li class="nav-item">
+								<a href="blog.html" class="nav-link">Блог</a>
+							</li>
+						</ul>
+
+						<a href="#" class="btn-search"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></a>
 					</div>
 				</div>
 			</div>
-	
-			<div class="header-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 d-flex align-items-center flex-wrap">
-							<ul class="navbar-nav nav-menu my-ul">
-								<li class="nav-item dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Мужские
-										часы</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Действие</a></li>
-										<li><a class="dropdown-item" href="#">Другое действие</a></li>
-										<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-									</ul>
-								</li>
-								<li class="nav-item dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Женские
-										часы</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Действие</a></li>
-										<li><a class="dropdown-item" href="#">Другое действие</a></li>
-										<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Аксесуары</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Действие</a></li>
-										<li><a class="dropdown-item" href="#">Другое действие</a></li>
-										<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a href="stock.html" class="nav-link">Акции</a>
-								</li>
-								<li class="nav-item">
-									<a href="new.html" class="nav-link">Новинки</a>
-								</li>
-							</ul>
-	
-							<ul class="navbar-nav nav-menu-user my-ul">
-								<li class="nav-item">
-									<a href="how-to-buy.html" class="nav-link">Как купить</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Рассрочка 0%</a>
-								</li>
-								<li class="nav-item">
-									<a href="blog.html" class="nav-link">Блог</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+		</div>
+	</header>
 
 	<section class="page page-cabinet">
 		<div class="container">
@@ -247,44 +378,44 @@
 							<div class="row">
 								<div class="col-12 col-sm-6 col-md-4 mb-15">
 									<label><input type="text" placeholder="Регион*" name="region" required>
-									<span class="input-icon"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#pencil"></use>
-									</svg></span>
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
 									</label>
 								</div>
 								<div class="col-12 col-sm-6 col-md-4 mb-15">
 									<label><input type="text" placeholder="Город*" name="city" required>
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
 									</label>
 								</div>
 								<div class="col-12 col-sm-6 col-md-4 mb-15">
 									<label><input type="text" placeholder="Улица*" name="street" required>
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
 									</label>
 								</div>
 								<div class="col-12 col-sm-6 col-md-4 mb-15">
 									<label><input type="text" placeholder="Дом*" name="house" required>
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
 									</label>
 								</div>
 								<div class="col-12 col-sm-6 col-md-4 mb-15">
 									<label><input type="text" placeholder="Квартира*" name="apartment" required>
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
 									</label>
 								</div>
 								<div class="col-12 col-sm-6 col-md-4 mb-15">
 									<label><input type="text" placeholder="Этаж" name="floor">
-									<span class="input-icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#pencil"></use>
-										</svg></span>
+										<span class="input-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#pencil"></use>
+											</svg></span>
 									</label>
 								</div>
 								<div class="col-12 mb-15">
@@ -302,32 +433,32 @@
 		</div>
 	</section>
 
-<section class="subscribe-section bg-grey">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 d-flex flex-wrap align-items-center">
-				<div class="subscribe-content">
-					<div class="subscribe-icon"><img src="img/email.svg" alt=""></div>
-					<div class="subscribe-text">
-						<h2>Будьте в курсе</h2>
-						<div class="box-text">
-							<p>Подпишитесь на последние обновления
-								и узнавайте о скидках и акциях первыми</p>
+	<section class="subscribe-section bg-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-wrap align-items-center">
+					<div class="subscribe-content">
+						<div class="subscribe-icon"><img src="img/email.svg" alt=""></div>
+						<div class="subscribe-text">
+							<h2>Будьте в курсе</h2>
+							<div class="box-text">
+								<p>Подпишитесь на последние обновления
+									и узнавайте о скидках и акциях первыми</p>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<form action="" method="post" class="form-subdcribe">
-					<label><input type="text" placeholder="Введите ваш email" name="mail" required></label>
-					<button type="submit" class="btn btn-gradient">Подписаться</button>
-					<div class="consent">
-						<p>Нажимая «Подписаться» вы соглашаетесь с политикой обработки персональных данных</p>
-					</div>
-				</form>
+					<form action="" method="post" class="form-subdcribe">
+						<label><input type="text" placeholder="Введите ваш email" name="mail" required></label>
+						<button type="submit" class="btn btn-gradient">Подписаться</button>
+						<div class="consent">
+							<p>Нажимая «Подписаться» вы соглашаетесь с политикой обработки персональных данных</p>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 	<footer>
 		<div class="footer-top">
@@ -448,7 +579,7 @@
 						<p>Задайте свой зопрос и наши специалисты
 							подготовят детальный ответ на него</p>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
@@ -465,7 +596,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -480,7 +611,7 @@
 						<p>Оставьте заявку и наш специалист свяжется <br>
 							с вами в ближайшее время</p>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
@@ -496,7 +627,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -515,7 +646,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="congratulationsModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -536,7 +667,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -556,13 +687,13 @@
 								type="button" role="tab" aria-controls="3-tab-pane-modal" aria-selected="false">Регистрация</button>
 						</li>
 					</ul>
-	
+
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
 							<use xlink:href="img/sprite.svg#close"></use>
 						</svg></button>
 				</div>
 				<div class="modal-body">
-	
+
 					<div class="tab-content" id="myTabContent-modal">
 						<div class="tab-pane fade show active" id="1-tab-pane-modal" role="tabpanel" aria-labelledby="1-tab-modal"
 							tabindex="0">
@@ -587,7 +718,7 @@
 										<span class="checkbox-custom"></span>
 										<span class="checkbox-text">Запомнить меня</span>
 									</label>
-	
+
 									<a href="#" class="color-accent link-password">Забыли пароль?</a>
 								</div>
 								<button type="submit" class="btn btn-accent">Войти</button>
@@ -653,7 +784,7 @@
 						<p>Оставьте заявку на покупку товара в 1 клик <br>
 							и мы свяжемся с вами в бижайшее время</p>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
@@ -669,7 +800,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -684,7 +815,7 @@
 						<p>Укажите свой номер и мы направим вам <br>
 							фото часов на руке через Whatsapp</p>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
 						<label class="checkbox">
@@ -699,8 +830,9 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="modal fade" id="thanksOrderModal" tabindex="-1" aria-labelledby="thanksOrderModalLabel" aria-hidden="true">
+
+	<div class="modal fade" id="thanksOrderModal" tabindex="-1" aria-labelledby="thanksOrderModalLabel"
+		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -718,7 +850,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -737,7 +869,7 @@
 							<div class="name-product">Tissot T-Classic Tradition Quartz</div>
 						</div>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<div class="grade-box">
 							<p>Ваша оценка</p>
@@ -773,13 +905,13 @@
 								</label>
 							</div>
 						</div>
-	
+
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
 						<label><textarea name="message" placeholder="Достоинства"></textarea></label>
 						<label><textarea name="message" placeholder="Недостатки"></textarea></label>
 						<label><textarea name="message" placeholder="Комментарии"></textarea></label>
-	
+
 						<div class="form-box">
 							<div class="h3">Добавить фото</div>
 							<label class="label-file">
@@ -790,7 +922,7 @@
 									фотографии сюда</span>
 							</label>
 						</div>
-	
+
 						<label class="checkbox">
 							<input type="checkbox" checked name="checkbox">
 							<span class="checkbox-custom"></span>
@@ -803,7 +935,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="productBasketModal" tabindex="-1" aria-labelledby="productBasketModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -826,7 +958,7 @@
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="btn-group">
 						<a href="#" data-bs-dismiss="modal" aria-label="Закрыть" class="btn btn-light-grey">Продолжить покупки</a>
 						<a href="checkout.html" class="btn btn-accent">Оформить заказ</a>
@@ -835,7 +967,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="analoguesModal" tabindex="-1" aria-labelledby="analoguesModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -850,7 +982,7 @@
 						<p>Вы можете посмотреть похожие модели</p>
 					</div>
 				</div>
-	
+
 				<div class="analogues-slider">
 					<div class="slide">
 						<div class="product-card">
@@ -864,14 +996,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<ul class="list-labels my-ul">
@@ -886,14 +1018,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<ul class="list-labels my-ul">
@@ -909,14 +1041,14 @@
 									</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
@@ -928,14 +1060,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<ul class="list-labels my-ul">
@@ -950,14 +1082,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
@@ -969,14 +1101,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<ul class="list-labels my-ul">
@@ -991,7 +1123,7 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
@@ -999,7 +1131,7 @@
 						</div>
 					</div>
 				</div>
-	
+
 				<div class="box-text text-center">
 					<p>или перейти в каталог <a href="catalog2.html" class="link-page d-inline-flex color-inherit">Tissot <svg
 								class="svg-icon">
@@ -1009,7 +1141,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="installmentPlanModal" tabindex="-1" aria-labelledby="installmentPlanModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -1033,7 +1165,7 @@
 									alt=""></button>
 						</li>
 					</ul>
-	
+
 					<div class="tab-content">
 						<div class="tab-pane fade show active" id="4-tab-pane-modal" role="tabpanel" aria-labelledby="4-tab-modal"
 							tabindex="0">
@@ -1135,12 +1267,12 @@
 							</ul>
 						</div>
 					</div>
-	
+
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="variablePlanModal" tabindex="-1" aria-labelledby="variablePlanModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -1156,7 +1288,7 @@
 						</svg></button>
 				</div>
 				<div class="modal-body">
-	
+
 					<div class="plan-choice">
 						<div class="bank-logo"><img src="img/bank1.png" alt=""></div>
 						<div class="plan-choice__body">
@@ -1164,7 +1296,7 @@
 							<p><strong>9 748 руб.</strong> в месяц</p>
 						</div>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
@@ -1180,7 +1312,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>

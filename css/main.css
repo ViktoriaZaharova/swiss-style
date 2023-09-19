@@ -565,6 +565,9 @@
   background: #f1f1f1;
   fill: #c21212;
 }
+.btn-add-card span {
+  display: none;
+}
 
 .categories {
   margin: 0 0 40px;
@@ -1364,7 +1367,8 @@
   border-top: 1px solid #f1f1f1;
 }
 .total-basket__footer .btn-group {
-  margin: 24px 0 0;
+  width: 100%;
+  margin: 24px auto 0;
 }
 .total-basket__footer .btn-group .btn {
   font-size: 16px;
@@ -1697,6 +1701,9 @@
 }
 .order-box-list li span {
   margin: 0 0 0 5px;
+}
+.articles-slider {
+  overflow: hidden;
 }
 .articles-slider .slide {
   padding: 0 18.5px;
@@ -2093,7 +2100,7 @@
 
 .article-navigation {
   position: sticky;
-  top: 80px;
+  top: 130px;
   z-index: 3;
 }
 
@@ -2269,8 +2276,11 @@
 .recipient-details .tab-content {
   padding: 40px 0 0;
 }
+.recipient-details .form-modal {
+  margin: 0;
+}
 
-.recipient-details-contnt {
+.recipient-details-content {
   width: calc(100% - 300px);
   padding: 0 30px 0 0;
   margin: 38px 0 0;
