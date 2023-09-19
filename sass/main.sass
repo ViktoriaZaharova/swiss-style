@@ -16,9 +16,11 @@
 	&__icon
 		@include d-flex
 		width: 30px
-		height: 35px
+		height: 38px
 		min-width: 30px
 		margin: 0 12px 0 0
+		img
+			max-height: 100%
 
 // categories-products
 .categories-products
@@ -78,16 +80,14 @@
 	width: 100%
 	height: 185px
 	padding: 10px 34px 0
-	// margin: 0 -12%
 	.slick-list
-		// padding: 10% 15% !important
 	.slick-track
 		max-width: 100% !important
 		transform: translate3d(0, 0, 0) !important
 		perspective: 100px
 	.slick-arrow
 		background: transparent
-		border-radius: none
+		border-radius: 0
 		fill: #232323
 		opacity: 0
 		&:hover
@@ -219,6 +219,8 @@
 		display: flex
 		align-items: center
 		padding: 25px 24px
+		left: 0
+		top: 0
 		li
 			margin: 0 14px 0 0
 			&:last-child

@@ -29,9 +29,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 30px;
-  height: 35px;
+  height: 38px;
   min-width: 30px;
   margin: 0 12px 0 0;
+}
+.advantages-box__icon img {
+  max-height: 100%;
 }
 
 .categories-products {
@@ -121,7 +124,7 @@
 }
 .categories-products-slider .slick-arrow {
   background: transparent;
-  border-radius: none;
+  border-radius: 0;
   fill: #232323;
   opacity: 0;
 }
@@ -313,6 +316,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 25px 24px;
+  left: 0;
+  top: 0;
 }
 .product-card__nav li {
   margin: 0 14px 0 0;
