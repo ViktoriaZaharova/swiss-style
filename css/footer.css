@@ -116,6 +116,7 @@ footer .address {
   -webkit-box-shadow: none;
           box-shadow: none;
   margin: 0;
+  padding: 0 !important;
 }
 
 .modal-backdrop {

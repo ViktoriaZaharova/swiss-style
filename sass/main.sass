@@ -4,6 +4,10 @@
 .home
 	margin: 30px 0 0
 
+.home-slider
+	.slick-arrow
+		top: 47%
+
 .advantages
 	margin: 70px 0 40px
 
@@ -380,6 +384,7 @@
 	&:hover
 		background: $grey
 		fill: $accent
+		color: #232323
 	span
 		display: none	
 
@@ -411,6 +416,11 @@
 .seo-section
 	h2
 		margin: 0 0 22px
+	.image
+		img
+			width: 100%
+	ul
+		margin: 20px 0		
 
 // popular brands
 .popular-brands
@@ -1726,7 +1736,7 @@
 			width: auto
 			height: auto
 			max-height: 100%
-			object-fit: none
+			object-fit: contain
 
 .product-additionally
 	position: absolute

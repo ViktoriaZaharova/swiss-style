@@ -140,6 +140,18 @@
 		&:last-child
 			margin: 0 0 9px
 
+	.page-warranty .information-box
+		padding: 20px 30px
+
+	.product-information-wrapper
+		max-width: none
+
+	.product-information
+		max-width: none
+
+	.product-information-delivery
+		margin: 30px 0 20px
+
 @media only screen and (max-width: 992px)
 	body
 		padding: 118px 0 0
@@ -311,11 +323,14 @@
 				fill: #232323
 			span
 				display: block
-			&.in-basket
+			&.in-basket, &:hover, &:focus
 				background: #c21212
 				color: #fff
 				.svg-icon
 					fill: #fff
+
+	.m-70
+		margin: 50px 0
 
 	.page-blog
 		.sidebar-box
@@ -392,9 +407,63 @@
 
 	.popular-models
 		.nav-tabs
-			margin: 10px 0 0				
+			margin: 10px 0 0
+
+	.seo-section, .popular-brands
+		h2
+			margin: 0 0 20px
+
+	.popular-brands-wrapper
+		margin: 30px 0 0
+		justify-content: flex-start
+
+	.popular-brands-box
+		margin: 0 0 20px
+		width: 25%
+
+	.popular-brands-link
+		margin: 0 0 30px
+
+	.page-warranty .information-box
+		padding: 15px 20px
+		&__icon
+			width: 40px
+			min-width: 40px
+			height: 40px
+		&__body
+			width: calc( 100% - 40px )
+			p
+				margin: 0 0 15px
+
+	.warranty-box
+		margin: 0 0 30px
+
+	.acordion-question .accordion-item
+		padding: 0 0 20px
+		margin: 0 0 20px
+
+	.product-characteristics
+		padding: 0
+
+	.product-card-row
+		flex-wrap: wrap
+		.product-card__footer
+			width: 100%
+			margin: 10px 0 0
+			display: flex
+			align-items: center
+			justify-content: space-between
+		.btn-add-card
+			width: fit-content
+			margin: 0
+		.product-card__body
+			width: calc(100% - 40px)
+			padding: 0 0 0 20px
 
 @media only screen and (max-width: 768px)
+	.nav-tabs .nav-item
+		margin: 0 30px 0 0
+
 	body
 		padding: 110px 0 0
 
@@ -458,6 +527,52 @@
 	.advantages-box
 		width: 50%
 
+	.brands
+		margin: 0 0 30px
+
+	.slick-dots
+		margin: 20px 0 0
+
+	.question-information-box
+		margin: 30px 0 0
+
+	.product-gallery
+		margin: 0 0 30px
+
+	.product-gallery-max
+		padding: 0 0 0 20px
+
+	.product-gallery-slider .product-gallery__item
+		height: 500px
+
+	.product-characteristics-box
+		margin: 0 0 15px
+		.h3
+			margin: 0 0 10px
+		ul
+			li
+				margin: 0 0 10px
+
+	.official-representative
+		margin: 0 0 20px
+
+	.description-product
+		margin: 20px 0 0
+
+	.details-characteristics
+		border: none
+
+	.tab-content-product .h3
+		margin: 0 0 10px
+
+	.reviews-card
+		margin: 0 0 20px
+		padding: 0 0 20px
+
+	.rating-product
+		max-width: none
+		margin: 0 0 20px
+
 @media only screen and (max-width: 670px)
 	.dropdown-location
 		display: none
@@ -475,7 +590,21 @@
 	.contacts-box
 		width: 50%
 
+	.popular-brands-box
+		width: 33.33%
+		padding: 0 10px
+
+	.popular-brands-link
+		margin: 0 auto 20px
+
 @media only screen and (max-width: 576px)
+	.nav-tabs
+		.nav-item
+			width: 100%
+			margin: 0 0 5px
+			&:last-child
+				margin: 0
+
 	.list-social li a
 		width: 39px
 		height: 39px
@@ -638,7 +767,53 @@
 		right: 10px
 
 	.categories-products-box
-		width: calc(50% - 9px)	
+		width: calc(50% - 9px)
+
+	.home-slider .slick-arrow
+		width: 30px
+		height: 30px
+		min-width: 30px
+		padding: 8px
+
+	.banner-payments
+		margin: 0 0 20px
+
+	.modal-dialog
+		margin: 10px auto
+
+	.modal-content
+		padding: 30px
+
+	.product-information-wrapper
+		margin: 30px 0 0
+
+	.btn-photo
+		font-size: 11px
+
+	.product-information
+		padding: 20px
+
+	.reviews-card
+		&__name
+			width: 100%
+			margin: 0 0 5px
+		.date
+			margin: 0 5px 0 0
+		&__body
+			margin: 20px 0 0
+			
+	.list-similar 
+		font-size: 14px
+		li 
+			margin: 0 5px 5px 0
+			&:last-child
+				margin: 0 0 5px
+			a
+				padding: 5px 10px	
+				justify-content: flex-start
+
+	.similar-products
+		margin: 0 0 40px					
 
 @media only screen and (max-width: 480px)
 	.corporate-home-advantages-box
@@ -678,7 +853,23 @@
 		width: 100%
 
 	.categories-products-box
-		width: 100%	
+		width: 100%
+
+	.product-information .btn-group .btn
+		width: 100%
+		margin: 0 0 10px
+		flex: none
+
+	.product-gallery-slider .product-gallery__item
+		height: 420px
+
+	.list-similar 
+		li 
+			width: 100%
+			margin: 0 0 5px
+			a
+				width: 100%
+
 
 @media only screen and (max-width: 420px)
 	.nav-tabs-delivery

@@ -271,7 +271,16 @@ $('.product-gallery-preview').slick({
 	focusOnSelect: true,
 	asNavFor: '.product-gallery-slider',
 	prevArrow: '<button type="button" class="slick-prev slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+	nextArrow: '<button type="button" class="slick-next slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 4,
+				vertical: true,
+			}
+		}
+	]
 });
 
 $('.product-gallery-slider').slick({
