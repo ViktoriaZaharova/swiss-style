@@ -34,6 +34,19 @@
 		&__body
 			font-size: 15px
 
+	.product-card__head
+		.product-card__img
+			max-width: 124px
+			height: 154px
+
+	.product-card-v2
+		.list-characteristics
+			padding: 15px 0 0 10px
+			width: calc(100% - 124px)
+
+	.page
+		margin: 0 0 100px
+
 @media only screen and (max-width: 1200px)
 	body
 		padding: 123px 0 0
@@ -151,6 +164,17 @@
 
 	.product-information-delivery
 		margin: 30px 0 20px
+
+	.products-row-catalog-v2 .product-card
+		width: 50%
+
+	.product-card-v2
+		.product-card__body
+			overflow: hidden
+			min-height: 45px
+			max-height: 45px
+			&::before
+				display: block	
 
 @media only screen and (max-width: 992px)
 	body
@@ -460,6 +484,54 @@
 			width: calc(100% - 40px)
 			padding: 0 0 0 20px
 
+	.sidebar-catalog
+		display: none
+		width: 100%
+		position: fixed
+		left: 0
+		top: 0
+		background: #fff
+		z-index: 5
+		padding: 15px
+		height: 100%
+		overflow-y: auto
+		&__head
+			display: flex
+		.btn-group
+			.btn
+				width: calc(50% - 7.5px)
+				margin: 0 auto 0 0
+				flex: none
+				&:last-child
+					margin: 0
+
+	.logo-brand
+		margin: 10px 0 0
+
+	.nav-tabs-catalog
+		justify-content: flex-end
+
+	.products-row-catalog-v2
+		.product-card
+			width: 33.33%
+
+	.product-card-v2
+		padding: 10px	
+		.product-card__footer
+			flex-wrap: nowrap
+		.btn-add-card
+			width: fit-content
+			margin: 0 0 0 auto
+			padding: 10px 20px	
+
+	.sorting-box
+		p
+			display: none			
+
+@media only screen and (max-width: 850px)
+	.products-row-catalog-v2 .product-card
+		width: 50%
+
 @media only screen and (max-width: 768px)
 	.nav-tabs .nav-item
 		margin: 0 30px 0 0
@@ -572,6 +644,9 @@
 	.rating-product
 		max-width: none
 		margin: 0 0 20px
+
+	.products-row-catalog-v2 .product-card
+		width: 50%	
 
 @media only screen and (max-width: 670px)
 	.dropdown-location
@@ -694,9 +769,9 @@
 		.page-item
 			margin: 0 10px 0 0
 		.page-link
-			width: 40px
-			height: 40px
-			min-width: 40px
+			width: 36px
+			height: 36px
+			min-width: 36px
 			font-size: 14px
 
 	.blog-card__img
@@ -741,6 +816,7 @@
 		width: 50%
 
 	.product-card
+		font-size: 14px
 		&__img
 			height: 200px
 		&__nav
@@ -801,19 +877,40 @@
 			margin: 0 5px 0 0
 		&__body
 			margin: 20px 0 0
-			
-	.list-similar 
+
+	.list-similar
 		font-size: 14px
-		li 
+		li
 			margin: 0 5px 5px 0
 			&:last-child
 				margin: 0 0 5px
 			a
-				padding: 5px 10px	
+				padding: 5px 10px
 				justify-content: flex-start
 
 	.similar-products
-		margin: 0 0 40px					
+		margin: 0 0 40px
+
+	.products-row-catalog-v2 .product-card
+		width: 100%	
+		.product-card__body
+			min-height: 35px
+			max-height: 35px
+
+	.nav-tabs-catalog
+		.nav-item
+			width: fit-content
+			margin: 0 19px 0 0
+			&:last-child
+				margin: 0		
+
+	.sidebar-catalog
+		.btn
+			font-size: 14px
+			padding: 10px
+
+	.filter-mobile
+		margin: 0 auto 0 0					
 
 @media only screen and (max-width: 480px)
 	.corporate-home-advantages-box
@@ -863,13 +960,12 @@
 	.product-gallery-slider .product-gallery__item
 		height: 420px
 
-	.list-similar 
-		li 
+	.list-similar
+		li
 			width: 100%
 			margin: 0 0 5px
 			a
 				width: 100%
-
 
 @media only screen and (max-width: 420px)
 	.nav-tabs-delivery

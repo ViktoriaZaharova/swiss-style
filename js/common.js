@@ -289,15 +289,6 @@ $('.product-gallery-slider').slick({
 	asNavFor: '.product-gallery-preview',
 });
 
-// $('.categories-products-slider').slick({
-// 	slidesToShow: 1,
-// 	centerMode: true,
-// 	variableWidth: true,
-// 	// infinite: false,
-// 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
-// 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
-// });
-
 var rev = $(".categories-products-slider");
 rev
 	.on("init", function (event, slick, currentSlide) {
@@ -554,4 +545,12 @@ Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });
 
+$('.filter-mobile').on('click', function (e) {
+	e.preventDefault();
+	$('.sidebar-catalog').fadeIn();
+});
+
+$('.sidebar-catalog__close').on('click', function () {
+	$('.sidebar-catalog').fadeOut();
+});
 

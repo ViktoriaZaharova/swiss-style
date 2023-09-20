@@ -266,13 +266,16 @@
 
 .product-card-v2
 	padding: 20px
+	display: flex
+	flex-direction: column
 	.list-characteristics
 		font-size: 14px
 		width: calc(100% - 170px)
 		padding: 40px 0 0 30px
 	.product-card__body
-		max-height: none
+		max-height: 45px
 		overflow: visible
+		margin: 0 0 auto
 		&::before
 			display: none
 	.btn-add-card
@@ -386,7 +389,7 @@
 		fill: $accent
 		color: #232323
 	span
-		display: none	
+		display: none
 
 // categories
 .categories
@@ -420,7 +423,7 @@
 		img
 			width: 100%
 	ul
-		margin: 20px 0		
+		margin: 20px 0
 
 // popular brands
 .popular-brands
@@ -1287,28 +1290,31 @@
 		background: url('../img/angle-down.svg') no-repeat center
 		background-size: 100%
 
-.sidebar-catalog__close
-	display: none
-	align-items: center
-	justify-content: center
-	cursor: pointer
-	width: 24px
-	height: 24px
-	position: absolute
-	right: 10px
-	top: 10px
-	&::before, &::after
-		content: ''
-		position: absolute
-		top: 0
-		left: 10px
-		width: 2px
-		height: 100%
-		background: $accent
-	&::before
-		transform: rotate(45deg)
-	&::after
-		transform: rotate(135deg)
+.sidebar-catalog
+	&__head
+		width: 100%
+		display: none
+		align-items: center
+		margin: 0 0 20px
+	&__title
+		font-weight: bold
+	&__close
+		@include d-flex
+		cursor: pointer
+		width: 30px
+		height: 30px
+		margin: 0 0 0 auto
+		fill: #232323
+		padding: 10px
+		border-radius: 50%
+		background: #f1f1f1
+		transition: .3s
+		&:hover
+			background: $accent
+			fill: #fff
+	.btn-group
+		width: 100%
+		margin: 30px 0 0		
 
 // question
 .acordion-question
@@ -1396,7 +1402,7 @@
 .article-navigation
 	position: sticky
 	top: 130px
-	z-index: 3	
+	z-index: 3
 
 .article-image
 	width: 100%
@@ -1514,7 +1520,7 @@
 	.tab-content
 		padding: 40px 0 0
 	.form-modal
-		margin: 0	
+		margin: 0
 
 .recipient-details-content
 	width: calc(100% - 300px)
@@ -1980,9 +1986,9 @@
 		justify-content: space-between
 		font-weight: bold
 	.list-rating-details
-		margin: 20px 0	
+		margin: 20px 0
 	.btn
-		width: 100%	
+		width: 100%
 
 .list-rating-details
 	width: 100%
@@ -2015,7 +2021,7 @@
 		height: 100%
 		background: $accent
 	.w100
-		width: 100%	
+		width: 100%
 
 .reviews-card
 	width: 100%
@@ -2039,7 +2045,7 @@
 			margin: 0 3px 0 0
 	.date
 		font-size: 14px
-		margin: 0 13px 0 auto			
+		margin: 0 13px 0 auto
 	&__name
 		font-weight: bold
 	&__body
@@ -2048,10 +2054,10 @@
 	&-box
 		margin: 0 0 20px
 		&:last-child
-			margin: 0		
+			margin: 0
 	.h3
 		text-transform: none
-		margin: 0 0 5px		
+		margin: 0 0 5px
 
 .gallery-reviews
 	width: 100%
@@ -2069,4 +2075,3 @@
 			width: 100%
 			height: 100%
 			object-fit: cover
-

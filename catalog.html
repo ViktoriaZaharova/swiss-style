@@ -16,16 +16,16 @@
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 	<!-- add plugins css end -->
-	
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
-	</head>
-	
-	<body>
-	
+</head>
+
+<body>
+
 	<header>
 		<div class="header-top">
 			<div class="container">
@@ -36,7 +36,7 @@
 							<span></span>
 							<span></span>
 						</div>
-	
+
 						<a href="index.html" class="logo">
 							<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
 								часов</span>
@@ -51,7 +51,7 @@
 								</svg>
 							</button>
 						</form>
-	
+
 						<div class="dropdown dropdown-location">
 							<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false"
 								data-bs-auto-close="outside">
@@ -69,13 +69,13 @@
 											</div>
 										</div>
 									</div>
-	
+
 									<div class="btn-group">
 										<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
 										<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
 									</div>
 								</div>
-	
+
 								<div class="dropdown-menu-hidden">
 									<div class="dropdown-menu-head">
 										<form action="" method="post" class="form-search">
@@ -110,7 +110,7 @@
 								</div>
 							</div>
 						</div>
-	
+
 						<div class="header-contacts">
 							<a href="tel:+78122004173" class="phone">
 								<span>8 (812) 200-41-73</span>
@@ -123,7 +123,7 @@
 								<span>обратный звонок</span>
 							</a>
 						</div>
-	
+
 						<div class="user-navigation">
 							<a href="comparison.html" class="user-navigation-link d-none d-sm-flex">
 								<span class="user-navigation-link__icon"><svg class="svg-icon">
@@ -132,7 +132,7 @@
 									<span class="user-navigation-link__value">5</span>
 								</span>
 								<span class="user-navigation-link__text">Сравнение</span>
-	
+
 							</a>
 							<a href="favorites.html" class="user-navigation-link d-none d-sm-flex">
 								<span class="user-navigation-link__icon"><svg class="svg-icon">
@@ -160,7 +160,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="header-bottom">
 			<div class="container">
 				<div class="row">
@@ -322,7 +322,7 @@
 								<a href="new.html" class="nav-link">Новинки</a>
 							</li>
 						</ul>
-	
+
 						<ul class="navbar-nav nav-menu-user my-ul d-none d-lg-flex">
 							<li class="nav-item">
 								<a href="how-to-buy.html" class="nav-link">Как купить</a>
@@ -334,7 +334,7 @@
 								<a href="blog.html" class="nav-link">Блог</a>
 							</li>
 						</ul>
-	
+
 						<a href="#" class="btn-search"><svg class="svg-icon">
 								<use xlink:href="img/sprite.svg#search"></use>
 							</svg></a>
@@ -366,7 +366,13 @@
 			<div class="row">
 				<div class="col-12 d-flex flex-wrap">
 					<div class="sidebar sidebar-catalog">
-						<div class="sidebar-catalog__close"></div>
+						<div class="sidebar-catalog__head">
+							<div class="sidebar-catalog__title">Фильтры</div>
+							<div class="sidebar-catalog__close"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg></div>
+						</div>
+
 						<form action="" method="post" class="form-filter">
 
 							<div class="accordion accordion-flush accordion-catalog">
@@ -879,19 +885,23 @@
 								</div>
 							</div>
 
-							<a href="#" class="btn btn-light-grey btn-clear">
-								<svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#clear"></use>
-								</svg>
-								<span>Сбросить фильтры</span>
-							</a>
+							<div class="btn-group">
+								<a href="#" class="btn btn-light-grey btn-clear">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#clear"></use>
+									</svg>
+									<span class="d-none d-sm-block">Сбросить фильтры</span>
+									<span class="d-block d-sm-none">Сбросить</span>
+								</a>
+								<a href="#" class="btn btn-light-grey d-flex d-lg-none">Показать (125)</a>
+							</div>
 						</form>
 
-						<a href="#" class="banner-catalog"><img src="img/banner-catalog.jpg" alt=""></a>
+						<a href="#" class="banner-catalog d-none d-lg-block"><img src="img/banner-catalog.jpg" alt=""></a>
 					</div>
 
 					<div class="page-content">
-						<div class="row align-items-center mb-40">
+						<div class="row align-items-center mb-40 d-none d-sm-flex">
 							<div class="col-12 col-lg-10">
 								<div class="box-text">
 									<p><strong>Tissot</strong> — марка швейцарских часов, основанная в 1853 году Шарль-Фелисьеном Тиссо в
@@ -965,16 +975,26 @@
 						</div>
 
 						<div class="row">
-							<div class="col-12 col-sm-6">
+							<div class="col-9 d-flex align-items-center">
+								<a href="#" class="filter-mobile d-flex d-lg-none">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#filter"></use>
+									</svg>
+									<span>Фильтры</span>
+								</a>
+
 								<div class="sorting-box">
 									<p>Сортировать:</p>
+									<svg class="svg-icon d-flex d-lg-none">
+										<use xlink:href="img/sprite.svg#sorting"></use>
+									</svg>
 									<select name="select" class="select-my">
-										<option value="по цене">по цене</option>
-										<option value="по алфавиту">по алфавиту</option>
+										<option value="По цене">По цене</option>
+										<option value="По алфавиту">По алфавиту</option>
 									</select>
 								</div>
 							</div>
-							<div class="col-12 col-sm-6">
+							<div class="col-3">
 								<ul class="nav nav-tabs nav-tabs-catalog" id="myTab" role="tablist">
 									<li class="nav-item" role="presentation">
 										<button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane"
@@ -1010,7 +1030,7 @@
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
 															<use xlink:href="img/sprite.svg#basket2"></use>
-														</svg></a>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1028,8 +1048,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1048,8 +1068,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1064,8 +1084,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1081,8 +1101,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1097,8 +1117,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1112,9 +1132,9 @@
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
 
-													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+													<a href="#" class="btn-add-card in-basket"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>В корзине</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1129,8 +1149,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1146,8 +1166,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1165,8 +1185,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1185,8 +1205,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1201,8 +1221,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1218,8 +1238,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1234,8 +1254,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1250,8 +1270,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1266,8 +1286,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 										</div>
@@ -1313,8 +1333,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1353,8 +1373,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1392,8 +1412,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1432,8 +1452,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1474,9 +1494,9 @@
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
 
-													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+													<a href="#" class="btn-add-card in-basket"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>В корзине</span></a>
 												</div>
 											</div>
 
@@ -1518,8 +1538,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card product-card-v2">
@@ -1560,8 +1580,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1600,8 +1620,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1639,8 +1659,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1679,8 +1699,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1722,8 +1742,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1765,8 +1785,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card product-card-v2">
@@ -1807,8 +1827,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1847,8 +1867,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1886,8 +1906,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1926,8 +1946,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -1969,8 +1989,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 
@@ -2012,8 +2032,8 @@
 													</div>
 
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 										</div>
@@ -2268,8 +2288,8 @@
 									</div>
 
 									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
+											<use xlink:href="img/sprite.svg#basket2"></use>
+										</svg><span>Купить</span></a>
 								</div>
 							</div>
 						</div>
@@ -2290,8 +2310,8 @@
 									</div>
 
 									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
+											<use xlink:href="img/sprite.svg#basket2"></use>
+										</svg><span>Купить</span></a>
 								</div>
 							</div>
 						</div>
@@ -2313,8 +2333,8 @@
 									</div>
 
 									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
+											<use xlink:href="img/sprite.svg#basket2"></use>
+										</svg><span>Купить</span></a>
 								</div>
 							</div>
 						</div>
@@ -2332,8 +2352,8 @@
 									</div>
 
 									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
+											<use xlink:href="img/sprite.svg#basket2"></use>
+										</svg><span>Купить</span></a>
 								</div>
 							</div>
 						</div>
@@ -2354,8 +2374,8 @@
 									</div>
 
 									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
+											<use xlink:href="img/sprite.svg#basket2"></use>
+										</svg><span>Купить</span></a>
 								</div>
 							</div>
 						</div>
@@ -2373,8 +2393,8 @@
 									</div>
 
 									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
+											<use xlink:href="img/sprite.svg#basket2"></use>
+										</svg><span>Купить</span></a>
 								</div>
 							</div>
 						</div>
@@ -2395,8 +2415,8 @@
 									</div>
 
 									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
+											<use xlink:href="img/sprite.svg#basket2"></use>
+										</svg><span>Купить</span></a>
 								</div>
 							</div>
 						</div>
@@ -2552,7 +2572,7 @@
 						<p>Задайте свой зопрос и наши специалисты
 							подготовят детальный ответ на него</p>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
@@ -2569,7 +2589,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -2584,7 +2604,7 @@
 						<p>Оставьте заявку и наш специалист свяжется <br>
 							с вами в ближайшее время</p>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
@@ -2600,7 +2620,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -2619,7 +2639,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="congratulationsModal" tabindex="-1" aria-labelledby="congratulationsModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -2640,7 +2660,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -2660,13 +2680,13 @@
 								type="button" role="tab" aria-controls="3-tab-pane-modal" aria-selected="false">Регистрация</button>
 						</li>
 					</ul>
-	
+
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
 							<use xlink:href="img/sprite.svg#close"></use>
 						</svg></button>
 				</div>
 				<div class="modal-body">
-	
+
 					<div class="tab-content" id="myTabContent-modal">
 						<div class="tab-pane fade show active" id="1-tab-pane-modal" role="tabpanel" aria-labelledby="1-tab-modal"
 							tabindex="0">
@@ -2691,7 +2711,7 @@
 										<span class="checkbox-custom"></span>
 										<span class="checkbox-text">Запомнить меня</span>
 									</label>
-	
+
 									<a href="#" class="color-accent link-password">Забыли пароль?</a>
 								</div>
 								<button type="submit" class="btn btn-accent">Войти</button>
@@ -2757,7 +2777,7 @@
 						<p>Оставьте заявку на покупку товара в 1 клик <br>
 							и мы свяжемся с вами в бижайшее время</p>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
@@ -2773,7 +2793,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -2788,7 +2808,7 @@
 						<p>Укажите свой номер и мы направим вам <br>
 							фото часов на руке через Whatsapp</p>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
 						<label class="checkbox">
@@ -2803,8 +2823,9 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="modal fade" id="thanksOrderModal" tabindex="-1" aria-labelledby="thanksOrderModalLabel" aria-hidden="true">
+
+	<div class="modal fade" id="thanksOrderModal" tabindex="-1" aria-labelledby="thanksOrderModalLabel"
+		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -2822,7 +2843,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -2841,7 +2862,7 @@
 							<div class="name-product">Tissot T-Classic Tradition Quartz</div>
 						</div>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<div class="grade-box">
 							<p>Ваша оценка</p>
@@ -2877,13 +2898,13 @@
 								</label>
 							</div>
 						</div>
-	
+
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
 						<label><textarea name="message" placeholder="Достоинства"></textarea></label>
 						<label><textarea name="message" placeholder="Недостатки"></textarea></label>
 						<label><textarea name="message" placeholder="Комментарии"></textarea></label>
-	
+
 						<div class="form-box">
 							<div class="h3">Добавить фото</div>
 							<label class="label-file">
@@ -2894,7 +2915,7 @@
 									фотографии сюда</span>
 							</label>
 						</div>
-	
+
 						<label class="checkbox">
 							<input type="checkbox" checked name="checkbox">
 							<span class="checkbox-custom"></span>
@@ -2907,7 +2928,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="productBasketModal" tabindex="-1" aria-labelledby="productBasketModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -2930,7 +2951,7 @@
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="btn-group">
 						<a href="#" data-bs-dismiss="modal" aria-label="Закрыть" class="btn btn-light-grey">Продолжить покупки</a>
 						<a href="checkout.html" class="btn btn-accent">Оформить заказ</a>
@@ -2939,7 +2960,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="analoguesModal" tabindex="-1" aria-labelledby="analoguesModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
@@ -2954,7 +2975,7 @@
 						<p>Вы можете посмотреть похожие модели</p>
 					</div>
 				</div>
-	
+
 				<div class="analogues-slider">
 					<div class="slide">
 						<div class="product-card">
@@ -2968,14 +2989,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<ul class="list-labels my-ul">
@@ -2990,14 +3011,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<ul class="list-labels my-ul">
@@ -3013,14 +3034,14 @@
 									</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
@@ -3032,14 +3053,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<ul class="list-labels my-ul">
@@ -3054,14 +3075,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
@@ -3073,14 +3094,14 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
 							</div>
 						</div>
 					</div>
-	
+
 					<div class="slide">
 						<div class="product-card">
 							<ul class="list-labels my-ul">
@@ -3095,7 +3116,7 @@
 									<div class="price">112500₽</div>
 									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-	
+
 								<a href="#" class="btn-add-card">
 									Показать
 								</a>
@@ -3103,7 +3124,7 @@
 						</div>
 					</div>
 				</div>
-	
+
 				<div class="box-text text-center">
 					<p>или перейти в каталог <a href="catalog2.html" class="link-page d-inline-flex color-inherit">Tissot <svg
 								class="svg-icon">
@@ -3113,7 +3134,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="installmentPlanModal" tabindex="-1" aria-labelledby="installmentPlanModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -3137,7 +3158,7 @@
 									alt=""></button>
 						</li>
 					</ul>
-	
+
 					<div class="tab-content">
 						<div class="tab-pane fade show active" id="4-tab-pane-modal" role="tabpanel" aria-labelledby="4-tab-modal"
 							tabindex="0">
@@ -3239,12 +3260,12 @@
 							</ul>
 						</div>
 					</div>
-	
+
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal fade" id="variablePlanModal" tabindex="-1" aria-labelledby="variablePlanModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -3260,7 +3281,7 @@
 						</svg></button>
 				</div>
 				<div class="modal-body">
-	
+
 					<div class="plan-choice">
 						<div class="bank-logo"><img src="img/bank1.png" alt=""></div>
 						<div class="plan-choice__body">
@@ -3268,7 +3289,7 @@
 							<p><strong>9 748 руб.</strong> в месяц</p>
 						</div>
 					</div>
-	
+
 					<form action="" method="post" class="form-modal">
 						<label><input type="text" placeholder="Ваше имя" name="name"></label>
 						<label><input type="text" placeholder="Ваш телефон" name="phone" required></label>
@@ -3292,7 +3313,7 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<!-- add plugins js end-->
 
 	<script src="js/common.js"></script>

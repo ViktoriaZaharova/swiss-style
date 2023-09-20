@@ -26,192 +26,323 @@
 	
 	<body>
 	
-		<header>
-			<div class="header-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 d-flex align-items-center flex-wrap">
-							<div class="btn-burger">
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-	
-							<a href="index.html" class="logo">
-								<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
-									часов</span>
-							</a>
-							<form action="" method="post" class="form-search">
-								<label>
-									<input type="text" name="search" placeholder="Поиск">
-								</label>
-								<button type="submit">
-									<svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#search"></use>
-									</svg>
-								</button>
-							</form>
-	
-							<div class="dropdown dropdown-location">
-								<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false"
-									data-bs-auto-close="outside">
-									<span class="dropdown-location__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#location"></use>
-										</svg></span>
-									Санкт-Петербург
-								</a>
-								<div class="dropdown-menu">
-									<div class="dropdown-menu-visible">
-										<div class="dropdown-menu-head">
-											<div class="dropdown-menu-title">
-												<div class="h3">Ваш город
-													<strong class="color-accent name-city">Санкт-Петербург</strong>
-												</div>
-											</div>
-										</div>
-	
-										<div class="btn-group">
-											<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
-											<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
-										</div>
-									</div>
-	
-									<div class="dropdown-menu-hidden">
-										<div class="dropdown-menu-head">
-											<form action="" method="post" class="form-search">
-												<label><input type="text" placeholder="Поиск города" name="search"></label>
-												<button type="submit"><svg class="svg-icon">
-														<use xlink:href="img/sprite.svg#search"></use>
-													</svg></button>
-											</form>
-										</div>
-										<div class="dropdown-menu-body">
-											<ul class="list-cities my-ul list-scroll">
-												<li><a href="#">Москва</a></li>
-												<li><a href="#" class="checked">Санкт-Петербург</a></li>
-												<li><a href="#">Казань</a></li>
-												<li><a href="#">Нижний Новгород</a></li>
-												<li><a href="#">Екатеренбург</a></li>
-												<li><a href="#">Самара</a></li>
-												<li><a href="#">Ростов-на-Дону</a></li>
-												<li><a href="#">Уфа</a></li>
-												<li><a href="#">Челябинск</a></li>
-												<li><a href="#">Саратов</a></li>
-												<li><a href="#">Самара</a></li>
-												<li><a href="#">Аксай</a></li>
-												<li><a href="#">Александров</a></li>
-												<li><a href="#">Александров Гай</a></li>
-												<li><a href="#">Александровск</a></li>
-												<li><a href="#">Алексеевка
-														(Самарская область)</a></li>
-												<li><a href="#">Баксан</a></li>
-											</ul>
+<header>
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<div class="btn-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+					<a href="index.html" class="logo">
+						<span class="logo-icon"><img src="img/logo.png" alt=""></span><span class="logo-text">салон швейцарских
+							часов</span>
+					</a>
+					<form action="" method="post" class="form-search">
+						<label>
+							<input type="text" name="search" placeholder="Поиск">
+						</label>
+						<button type="submit">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+
+					<div class="dropdown dropdown-location">
+						<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown" aria-expanded="false"
+							data-bs-auto-close="outside">
+							<span class="dropdown-location__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#location"></use>
+								</svg></span>
+							Санкт-Петербург
+						</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-menu-visible">
+								<div class="dropdown-menu-head">
+									<div class="dropdown-menu-title">
+										<div class="h3">Ваш город
+											<strong class="color-accent name-city">Санкт-Петербург</strong>
 										</div>
 									</div>
 								</div>
+
+								<div class="btn-group">
+									<a href="#" class="btn btn-accent btn-close-dropdown">Да</a>
+									<a href="#" class="btn btn-light-grey btn-edit-location">Нет, изменить</a>
+								</div>
 							</div>
-	
-							<div class="header-contacts">
-								<a href="tel:+78122004173" class="phone">8 (812) 200-41-73</a>
-								<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
-								<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">обратный звонок</a>
-							</div>
-	
-							<div class="user-navigation">
-								<a href="comparison.html" class="user-navigation-link">
-									<span class="user-navigation-link__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#balance"></use>
-										</svg>
-										<span class="user-navigation-link__value">5</span>
-									</span>
-									<span class="user-navigation-link__text">Сравнение</span>
-	
-								</a>
-								<a href="favorites.html" class="user-navigation-link">
-									<span class="user-navigation-link__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#heart"></use>
-										</svg></span>
-									<span class="user-navigation-link__text">Избранное</span>
-								</a>
-								<a href="#" class="user-navigation-link" data-bs-toggle="modal" data-bs-target="#entranceModal">
-									<span class="user-navigation-link__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#user"></use>
-										</svg></span>
-									<span class="user-navigation-link__text">Вход</span>
-								</a>
-								<a href="basket.html" class="user-navigation-link">
-									<span class="user-navigation-link__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg>
-										<span class="user-navigation-link__value">18</span>
-									</span>
-									<span class="user-navigation-link__text">Корзина</span>
-	
-								</a>
+
+							<div class="dropdown-menu-hidden">
+								<div class="dropdown-menu-head">
+									<form action="" method="post" class="form-search">
+										<label><input type="text" placeholder="Поиск города" name="search"></label>
+										<button type="submit"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#search"></use>
+											</svg></button>
+									</form>
+								</div>
+								<div class="dropdown-menu-body">
+									<ul class="list-cities my-ul list-scroll">
+										<li><a href="#">Москва</a></li>
+										<li><a href="#" class="checked">Санкт-Петербург</a></li>
+										<li><a href="#">Казань</a></li>
+										<li><a href="#">Нижний Новгород</a></li>
+										<li><a href="#">Екатеренбург</a></li>
+										<li><a href="#">Самара</a></li>
+										<li><a href="#">Ростов-на-Дону</a></li>
+										<li><a href="#">Уфа</a></li>
+										<li><a href="#">Челябинск</a></li>
+										<li><a href="#">Саратов</a></li>
+										<li><a href="#">Самара</a></li>
+										<li><a href="#">Аксай</a></li>
+										<li><a href="#">Александров</a></li>
+										<li><a href="#">Александров Гай</a></li>
+										<li><a href="#">Александровск</a></li>
+										<li><a href="#">Алексеевка
+												(Самарская область)</a></li>
+										<li><a href="#">Баксан</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-	
-			<div class="header-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 d-flex align-items-center flex-wrap">
-							<ul class="navbar-nav nav-menu my-ul">
-								<li class="nav-item dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Мужские
-										часы</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Действие</a></li>
-										<li><a class="dropdown-item" href="#">Другое действие</a></li>
-										<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-									</ul>
-								</li>
-								<li class="nav-item dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Женские
-										часы</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Действие</a></li>
-										<li><a class="dropdown-item" href="#">Другое действие</a></li>
-										<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Аксесуары</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Действие</a></li>
-										<li><a class="dropdown-item" href="#">Другое действие</a></li>
-										<li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-									</ul>
-								</li>
-								<li class="nav-item">
-									<a href="stock.html" class="nav-link">Акции</a>
-								</li>
-								<li class="nav-item">
-									<a href="new.html" class="nav-link">Новинки</a>
-								</li>
-							</ul>
-	
-							<ul class="navbar-nav nav-menu-user my-ul">
-								<li class="nav-item">
-									<a href="how-to-buy.html" class="nav-link">Как купить</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link">Рассрочка 0%</a>
-								</li>
-								<li class="nav-item">
-									<a href="blog.html" class="nav-link">Блог</a>
-								</li>
-							</ul>
-						</div>
+
+					<div class="header-contacts">
+						<a href="tel:+78122004173" class="phone">
+							<span>8 (812) 200-41-73</span>
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+						</a>
+						<a href="#" class="whatsapp-link"><img src="img/whatsapp.svg" alt=""></a>
+						<a href="#" class="link" data-bs-toggle="modal" data-bs-target="#callbackModal">
+							<span>обратный звонок</span>
+						</a>
+					</div>
+
+					<div class="user-navigation">
+						<a href="comparison.html" class="user-navigation-link d-none d-sm-flex">
+							<span class="user-navigation-link__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#balance"></use>
+								</svg>
+								<span class="user-navigation-link__value">5</span>
+							</span>
+							<span class="user-navigation-link__text">Сравнение</span>
+
+						</a>
+						<a href="favorites.html" class="user-navigation-link d-none d-sm-flex">
+							<span class="user-navigation-link__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#heart"></use>
+								</svg></span>
+							<span class="user-navigation-link__text">Избранное</span>
+						</a>
+						<a href="#" class="user-navigation-link d-none d-sm-flex" data-bs-toggle="modal"
+							data-bs-target="#entranceModal">
+							<span class="user-navigation-link__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#user"></use>
+								</svg></span>
+							<span class="user-navigation-link__text">Вход</span>
+						</a>
+						<a href="basket.html" class="user-navigation-link">
+							<span class="user-navigation-link__icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+								<span class="user-navigation-link__value">18</span>
+							</span>
+							<span class="user-navigation-link__text">Корзина</span>
+						</a>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</div>
+
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<ul class="navbar-nav nav-menu my-ul">
+						<li class="nav-item dropdown dropdown-catalog">
+							<a href="#" class="nav-link dropdown-toggle d-flex d-lg-none" data-bs-toggle="dropdown">Каталог</a>
+							<div class="dropdown-menu">
+								<ul class="dropdown-menu-list my-ul">
+									<li class="nav-item dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Мужские
+											часы</a>
+										<div class="dropdown-menu">
+											<div class="row">
+												<div class="col-12 col-sm-6 mb-20">
+													<div class="h3">Механизм</div>
+													<ul class="dropdown-menu-list my-ul">
+														<li><a class="dropdown-item" href="catalog.html">Кварцевые</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Механические</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Электронные</a></li>
+													</ul>
+												</div>
+												<div class="col-12 col-sm-6 mb-20">
+													<div class="h3">Корпус</div>
+													<ul class="dropdown-menu-list my-ul">
+														<li><a class="dropdown-item" href="catalog2.html">Золотые</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">Стальные</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">Керамические</a></li>
+													</ul>
+												</div>
+												<div class="col-12 col-sm-6 mb-20">
+													<div class="h3">Вид</div>
+													<ul class="dropdown-menu-list my-ul">
+														<li><a class="dropdown-item" href="catalog.html">С автоподводом</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Скелетоны</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Классические</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Автоматические</a></li>
+													</ul>
+												</div>
+												<div class="col-12 col-sm-6 mb-20">
+													<div class="h3">Функционал и оформление</div>
+													<ul class="dropdown-menu-list my-ul">
+														<li><a class="dropdown-item" href="catalog2.html">С хронографом</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">С лунным календарем</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">Многофункциональные</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">С бриллиантами</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">Водонепронецаемые</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="nav-item dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Женские
+											часы</a>
+										<div class="dropdown-menu">
+											<div class="row">
+												<div class="col-12 col-sm-6 mb-20">
+													<div class="h3">Механизм</div>
+													<ul class="dropdown-menu-list my-ul">
+														<li><a class="dropdown-item" href="catalog.html">Кварцевые</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Механические</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Электронные</a></li>
+													</ul>
+												</div>
+												<div class="col-12 col-sm-6 mb-20">
+													<div class="h3">Корпус</div>
+													<ul class="dropdown-menu-list my-ul">
+														<li><a class="dropdown-item" href="catalog2.html">Золотые</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">Стальные</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">Керамические</a></li>
+													</ul>
+												</div>
+												<div class="col-12 col-sm-6 mb-20">
+													<div class="h3">Вид</div>
+													<ul class="dropdown-menu-list my-ul">
+														<li><a class="dropdown-item" href="catalog.html">С автоподводом</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Скелетоны</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Классические</a></li>
+														<li><a class="dropdown-item" href="catalog.html">Автоматические</a></li>
+													</ul>
+												</div>
+												<div class="col-12 col-sm-6 mb-20">
+													<div class="h3">Функционал и оформление</div>
+													<ul class="dropdown-menu-list my-ul">
+														<li><a class="dropdown-item" href="catalog2.html">С хронографом</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">С лунным календарем</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">Многофункциональные</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">С бриллиантами</a></li>
+														<li><a class="dropdown-item" href="catalog2.html">Водонепронецаемые</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a href="#" class="nav-link">Аксесуары</a>
+									</li>
+								</ul>
+								<div class="dropdown-menu__footer">
+									<a href="catalog.html" class="nav-link-all">
+										<span>Смотреть все часы</span>
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#arrow-right"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Бренды</a>
+							<div class="dropdown-menu">
+								<div class="row">
+									<div class="col-12 colsmd-6 mb-20">
+										<div class="h3">Механизм</div>
+										<ul class="dropdown-menu-list my-ul">
+											<li><a class="dropdown-item" href="catalog.html">Кварцевые</a></li>
+											<li><a class="dropdown-item" href="catalog.html">Механические</a></li>
+											<li><a class="dropdown-item" href="catalog.html">Электронные</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-sm-6 mb-20">
+										<div class="h3">Корпус</div>
+										<ul class="dropdown-menu-list my-ul">
+											<li><a class="dropdown-item" href="catalog2.html">Золотые</a></li>
+											<li><a class="dropdown-item" href="catalog2.html">Стальные</a></li>
+											<li><a class="dropdown-item" href="catalog2.html">Керамические</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-sm-6 mb-20">
+										<div class="h3">Вид</div>
+										<ul class="dropdown-menu-list my-ul">
+											<li><a class="dropdown-item" href="catalog.html">С автоподводом</a></li>
+											<li><a class="dropdown-item" href="catalog.html">Скелетоны</a></li>
+											<li><a class="dropdown-item" href="catalog.html">Классические</a></li>
+											<li><a class="dropdown-item" href="catalog.html">Автоматические</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-sm-6 mb-20">
+										<div class="h3">Функционал и оформление</div>
+										<ul class="dropdown-menu-list my-ul">
+											<li><a class="dropdown-item" href="catalog2.html">С хронографом</a></li>
+											<li><a class="dropdown-item" href="catalog2.html">С лунным календарем</a></li>
+											<li><a class="dropdown-item" href="catalog2.html">Многофункциональные</a></li>
+											<li><a class="dropdown-item" href="catalog2.html">С бриллиантами</a></li>
+											<li><a class="dropdown-item" href="catalog2.html">Водонепронецаемые</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item d-block d-lg-none">
+							<a href="stock.html" class="nav-link">Скидки</a>
+						</li>
+						<li class="nav-item d-none d-lg-block">
+							<a href="stock.html" class="nav-link">Акции</a>
+						</li>
+						<li class="nav-item d-none d-lg-block">
+							<a href="new.html" class="nav-link">Новинки</a>
+						</li>
+					</ul>
+
+					<ul class="navbar-nav nav-menu-user my-ul d-none d-lg-flex">
+						<li class="nav-item">
+							<a href="how-to-buy.html" class="nav-link">Как купить</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Рассрочка 0%</a>
+						</li>
+						<li class="nav-item">
+							<a href="blog.html" class="nav-link">Блог</a>
+						</li>
+					</ul>
+
+					<a href="#" class="btn-search"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#search"></use>
+						</svg></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 
 	<section class="page page-catalog">
 		<div class="container">
@@ -234,536 +365,543 @@
 
 			<div class="row">
 				<div class="col-12 d-flex flex-wrap">
-					<div class="sidebar sidebar-catalog">
-						<div class="sidebar-catalog__close"></div>
-						<form action="" method="post" class="form-filter">
-
-							<div class="accordion accordion-flush accordion-catalog">
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
-											aria-expanded="true" aria-controls="collapse1">
-											Цена
-										</button>
-									</div>
-									<div id="collapse1" class="accordion-collapse collapse show">
-										<div class="accordion-body">
-											<div class="range_val">
-												<input type="text" name="dec" class="dec1">
-												<span class="line">-</span>
-												<input type="text" name="dec" class="dec2">
-											</div>
-											<div class="slider-range"></div>
-										</div>
-									</div>
+				<div class="sidebar sidebar-catalog">
+					<div class="sidebar-catalog__head">
+						<div class="sidebar-catalog__title">Фильтры</div>
+						<div class="sidebar-catalog__close"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg></div>
+					</div>
+				
+					<form action="" method="post" class="form-filter">
+				
+						<div class="accordion accordion-flush accordion-catalog">
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+										aria-expanded="true" aria-controls="collapse1">
+										Цена
+									</button>
 								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
-											aria-expanded="false" aria-controls="collapse2">
-											Пол
-										</button>
-									</div>
-									<div id="collapse2" class="accordion-collapse collapse show">
-										<div class="accordion-body">
-											<ul class="list-checkbox-catalog my-ul">
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox1">
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#boy"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Мужсские</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox1" checked>
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#girl"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Женские</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox1">
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#unisex"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Унисекс</span>
-													</label>
-												</li>
-											</ul>
+								<div id="collapse1" class="accordion-collapse collapse show">
+									<div class="accordion-body">
+										<div class="range_val">
+											<input type="text" name="dec" class="dec1">
+											<span class="line">-</span>
+											<input type="text" name="dec" class="dec2">
 										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
-											aria-expanded="false" aria-controls="collapse3">
-											По типу механизма
-										</button>
-									</div>
-									<div id="collapse3" class="accordion-collapse collapse show">
-										<div class="accordion-body">
-											<ul class="list-checkbox-catalog my-ul">
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox2">
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#quarz"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Кварцевый</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox2">
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#cog-wheel"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Механический</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox2">
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#stopwatch"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Электронный</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
-											aria-expanded="false" aria-controls="collapse4">
-											Стекло
-										</button>
-									</div>
-									<div id="collapse4" class="accordion-collapse collapse show">
-										<div class="accordion-body">
-											<ul class="list-checkbox-catalog my-ul">
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox3">
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#sapphire"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Сапфировое</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox3">
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#gem"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Минеральное</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox-catalog">
-														<input type="checkbox" name="checkbox3">
-														<span class="checkbox-catalog__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#watch-glass"></use>
-															</svg></span>
-														<span class="checkbox-catalog__text">Хезалитовое</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
-											aria-expanded="false" aria-controls="collapse5">
-											Корпус
-										</button>
-									</div>
-									<div id="collapse5" class="accordion-collapse collapse show">
-										<div class="accordion-body">
-											<ul class="list-checkbox list-scroll my-ul">
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Сталь</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Керамика</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4" checked>
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Золото</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Титан</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Латунь</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Серебро</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Алюминий</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Сталь</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Сталь</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Сталь</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Сталь</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox4">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Сталь</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-											data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-											Водонепроницаемость
-										</button>
-									</div>
-									<div id="collapse6" class="accordion-collapse collapse">
-										<div class="accordion-body">
-											<ul class="list-checkbox list-scroll my-ul">
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="radio" name="checkbox5">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Да</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="radio" name="checkbox5">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Нет</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-											data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-											Форма
-										</button>
-									</div>
-									<div id="collapse7" class="accordion-collapse collapse">
-										<div class="accordion-body">
-											<ul class="list-checkbox list-scroll my-ul">
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox6">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Да</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox6">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Нет</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-											data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-											Применение
-										</button>
-									</div>
-									<div id="collapse8" class="accordion-collapse collapse">
-										<div class="accordion-body">
-											<ul class="list-checkbox list-scroll my-ul">
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox7">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Да</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox7">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Нет</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-											data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-											Функционал
-										</button>
-									</div>
-									<div id="collapse9" class="accordion-collapse collapse">
-										<div class="accordion-body">
-											<ul class="list-checkbox list-scroll my-ul">
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox8">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Да</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox8">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Нет</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-											data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-											Оформление
-										</button>
-									</div>
-									<div id="collapse10" class="accordion-collapse collapse">
-										<div class="accordion-body">
-											<ul class="list-checkbox list-scroll my-ul">
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox9">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Да</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox9">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Нет</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button" type="button" data-bs-toggle="collapse"
-											data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-											Цвет циферблата
-										</button>
-									</div>
-									<div id="collapse11" class="accordion-collapse collapse show">
-										<div class="accordion-body">
-											<ul class="list-checkbox list-scroll my-ul">
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-white"></span>
-														<span class="checkbox-text">Белый</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-rhodium"></span>
-														<span class="checkbox-text">Родий</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10" checked>
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-silver"></span>
-														<span class="checkbox-text">Серебристый</span>
-													</label>
-													<a href="#" class="tooltip-result">
-														<span class="text-decoration">Показать</span> <strong>125</strong> товаров
-													</a>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-blue"></span>
-														<span class="checkbox-text">Синий</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-ivory"></span>
-														<span class="checkbox-text">Слоновая кость</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-black"></span>
-														<span class="checkbox-text">Черный</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-anthracite"></span>
-														<span class="checkbox-text">Антрацит</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-blue"></span>
-														<span class="checkbox-text">Синий</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="checkbox" name="checkbox10">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-color checkbox-color-ivory"></span>
-														<span class="checkbox-text">Слоновая кость</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="accordion-item">
-									<div class="accordion-header">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-											data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-											Функционал
-										</button>
-									</div>
-									<div id="collapse12" class="accordion-collapse collapse">
-										<div class="accordion-body">
-											<ul class="list-checkbox list-scroll my-ul">
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="radio" name="checkbox8">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Да</span>
-													</label>
-												</li>
-												<li>
-													<label class="checkbox checkbox-v2">
-														<input type="radio" name="checkbox8">
-														<span class="checkbox-custom"></span>
-														<span class="checkbox-text">Нет</span>
-													</label>
-												</li>
-											</ul>
-										</div>
+										<div class="slider-range"></div>
 									</div>
 								</div>
 							</div>
-
-
-
-
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+										aria-expanded="false" aria-controls="collapse2">
+										Пол
+									</button>
+								</div>
+								<div id="collapse2" class="accordion-collapse collapse show">
+									<div class="accordion-body">
+										<ul class="list-checkbox-catalog my-ul">
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox1">
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#boy"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Мужсские</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox1" checked>
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#girl"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Женские</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox1">
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#unisex"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Унисекс</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+										aria-expanded="false" aria-controls="collapse3">
+										По типу механизма
+									</button>
+								</div>
+								<div id="collapse3" class="accordion-collapse collapse show">
+									<div class="accordion-body">
+										<ul class="list-checkbox-catalog my-ul">
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox2">
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#quarz"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Кварцевый</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox2">
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#cog-wheel"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Механический</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox2">
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#stopwatch"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Электронный</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+										aria-expanded="false" aria-controls="collapse4">
+										Стекло
+									</button>
+								</div>
+								<div id="collapse4" class="accordion-collapse collapse show">
+									<div class="accordion-body">
+										<ul class="list-checkbox-catalog my-ul">
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox3">
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#sapphire"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Сапфировое</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox3">
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#gem"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Минеральное</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-catalog">
+													<input type="checkbox" name="checkbox3">
+													<span class="checkbox-catalog__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#watch-glass"></use>
+														</svg></span>
+													<span class="checkbox-catalog__text">Хезалитовое</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+										aria-expanded="false" aria-controls="collapse5">
+										Корпус
+									</button>
+								</div>
+								<div id="collapse5" class="accordion-collapse collapse show">
+									<div class="accordion-body">
+										<ul class="list-checkbox list-scroll my-ul">
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Сталь</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Керамика</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4" checked>
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Золото</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Титан</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Латунь</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Серебро</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Алюминий</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Сталь</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Сталь</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Сталь</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Сталь</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox4">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Сталь</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+										aria-expanded="false" aria-controls="collapse6">
+										Водонепроницаемость
+									</button>
+								</div>
+								<div id="collapse6" class="accordion-collapse collapse">
+									<div class="accordion-body">
+										<ul class="list-checkbox list-scroll my-ul">
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="radio" name="checkbox5">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Да</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="radio" name="checkbox5">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Нет</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
+										aria-expanded="false" aria-controls="collapse7">
+										Форма
+									</button>
+								</div>
+								<div id="collapse7" class="accordion-collapse collapse">
+									<div class="accordion-body">
+										<ul class="list-checkbox list-scroll my-ul">
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox6">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Да</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox6">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Нет</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8"
+										aria-expanded="false" aria-controls="collapse8">
+										Применение
+									</button>
+								</div>
+								<div id="collapse8" class="accordion-collapse collapse">
+									<div class="accordion-body">
+										<ul class="list-checkbox list-scroll my-ul">
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox7">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Да</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox7">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Нет</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9"
+										aria-expanded="false" aria-controls="collapse9">
+										Функционал
+									</button>
+								</div>
+								<div id="collapse9" class="accordion-collapse collapse">
+									<div class="accordion-body">
+										<ul class="list-checkbox list-scroll my-ul">
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox8">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Да</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox8">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Нет</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+										Оформление
+									</button>
+								</div>
+								<div id="collapse10" class="accordion-collapse collapse">
+									<div class="accordion-body">
+										<ul class="list-checkbox list-scroll my-ul">
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox9">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Да</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox9">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Нет</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11"
+										aria-expanded="false" aria-controls="collapse11">
+										Цвет циферблата
+									</button>
+								</div>
+								<div id="collapse11" class="accordion-collapse collapse show">
+									<div class="accordion-body">
+										<ul class="list-checkbox list-scroll my-ul">
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-white"></span>
+													<span class="checkbox-text">Белый</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-rhodium"></span>
+													<span class="checkbox-text">Родий</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10" checked>
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-silver"></span>
+													<span class="checkbox-text">Серебристый</span>
+												</label>
+												<a href="#" class="tooltip-result">
+													<span class="text-decoration">Показать</span> <strong>125</strong> товаров
+												</a>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-blue"></span>
+													<span class="checkbox-text">Синий</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-ivory"></span>
+													<span class="checkbox-text">Слоновая кость</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-black"></span>
+													<span class="checkbox-text">Черный</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-anthracite"></span>
+													<span class="checkbox-text">Антрацит</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-blue"></span>
+													<span class="checkbox-text">Синий</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="checkbox" name="checkbox10">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-color checkbox-color-ivory"></span>
+													<span class="checkbox-text">Слоновая кость</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div class="accordion-item">
+								<div class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+										Функционал
+									</button>
+								</div>
+								<div id="collapse12" class="accordion-collapse collapse">
+									<div class="accordion-body">
+										<ul class="list-checkbox list-scroll my-ul">
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="radio" name="checkbox8">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Да</span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox checkbox-v2">
+													<input type="radio" name="checkbox8">
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Нет</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+						<div class="btn-group">
 							<a href="#" class="btn btn-light-grey btn-clear">
 								<svg class="svg-icon">
 									<use xlink:href="img/sprite.svg#clear"></use>
 								</svg>
-								<span>Сбросить фильтры</span>
+								<span class="d-none d-sm-block">Сбросить фильтры</span>
+								<span class="d-block d-sm-none">Сбросить</span>
 							</a>
-						</form>
-
-						<a href="#" class="banner-catalog"><img src="img/banner-catalog.jpg" alt=""></a>
-					</div>
+							<a href="#" class="btn btn-light-grey d-flex d-lg-none">Показать (125)</a>
+						</div>
+					</form>
+				
+					<a href="#" class="banner-catalog d-none d-lg-block"><img src="img/banner-catalog.jpg" alt=""></a>
+				</div>
 
 					<div class="page-content">
-						<div class="row align-items-center mb-40">
+						<div class="row align-items-center mb-40 d-none d-sm-flex">
 							<div class="col-12 col-lg-10">
 								<div class="box-text">
 									<p><strong>Tissot</strong> — марка швейцарских часов, основанная в 1853 году Шарль-Фелисьеном Тиссо в
@@ -837,16 +975,26 @@
 						</div>
 
 						<div class="row">
-							<div class="col-12 col-sm-6">
+							<div class="col-9 d-flex align-items-center">
+								<a href="#" class="filter-mobile d-flex d-lg-none">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#filter"></use>
+									</svg>
+									<span>Фильтры</span>
+								</a>
+							
 								<div class="sorting-box">
 									<p>Сортировать:</p>
+									<svg class="svg-icon d-flex d-lg-none">
+										<use xlink:href="img/sprite.svg#sorting"></use>
+									</svg>
 									<select name="select" class="select-my">
-										<option value="по цене">по цене</option>
-										<option value="по алфавиту">по алфавиту</option>
+										<option value="По цене">По цене</option>
+										<option value="По алфавиту">По алфавиту</option>
 									</select>
 								</div>
 							</div>
-							<div class="col-12 col-sm-6">
+							<div class="col-3">
 								<ul class="nav nav-tabs nav-tabs-catalog" id="myTab" role="tablist">
 									<li class="nav-item" role="presentation">
 										<button class="nav-link" id="1-tab" data-bs-toggle="tab" data-bs-target="#1-tab-pane" type="button"
@@ -878,10 +1026,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -897,10 +1045,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -917,10 +1065,10 @@
 														</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -933,10 +1081,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -950,10 +1098,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -966,10 +1114,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -982,10 +1130,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
-													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+										
+													<a href="#" class="btn-add-card in-basket"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>В корзине</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -998,10 +1146,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1015,10 +1163,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1034,10 +1182,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1054,10 +1202,10 @@
 														</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1070,10 +1218,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1087,10 +1235,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1103,10 +1251,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1119,10 +1267,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 											<div class="product-card">
@@ -1135,10 +1283,10 @@
 														<div class="price">112500₽</div>
 														<div class="loan-price">от 8961₽ в мес.</div>
 													</div>
-
+										
 													<a href="#" class="btn-add-card"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#basket"></use>
-														</svg></a>
+															<use xlink:href="img/sprite.svg#basket2"></use>
+														</svg><span>Купить</span></a>
 												</div>
 											</div>
 										</div>
@@ -2013,166 +2161,166 @@
 		</div>
 	</section>
 
-	<section class="viewed mb-100">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h2>Вы недавно смотрели</h2>
-				</div>
+<section class="viewed mb-100">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Вы недавно смотрели</h2>
+			</div>
 
-				<div class="col-12">
-					<div class="products-slider">
-						<div class="slide">
-							<div class="product-card">
-								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
-								<div class="product-card__body">
-									<div class="article">T058.109.17.036.00</div>
-									<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+			<div class="col-12">
+				<div class="products-slider">
+					<div class="slide">
+						<div class="product-card">
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">T058.109.17.036.00</div>
+								<a href="product.html" class="product-card__name">Tissot T-Lady Lovely</a>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-								<div class="product-card__footer">
-									<div class="price-wrapper">
-										<div class="price">112500₽</div>
-										<div class="loan-price">от 8961₽ в мес.</div>
-									</div>
 
-									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
-								</div>
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket2"></use>
+									</svg><span>Купить</span></a>
 							</div>
 						</div>
+					</div>
 
-						<div class="slide">
-							<div class="product-card">
-								<ul class="list-labels my-ul">
-									<li class="list-labels__new">Новинка</li>
-								</ul>
-								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
-								<div class="product-card__body">
-									<div class="article">L4.790.2.11.2</div>
+					<div class="slide">
+						<div class="product-card">
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-								<div class="product-card__footer">
-									<div class="price-wrapper">
-										<div class="price">112500₽</div>
-										<div class="loan-price">от 8961₽ в мес.</div>
-									</div>
 
-									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
-								</div>
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket2"></use>
+									</svg><span>Купить</span></a>
 							</div>
 						</div>
+					</div>
 
-						<div class="slide">
-							<div class="product-card">
-								<ul class="list-labels my-ul">
-									<li class="list-labels__sale">-25</li>
-								</ul>
-								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
-								<div class="product-card__body">
-									<div class="article">L4.790.2.11.2</div>
-								</div>
-								<div class="product-card__footer">
-									<div class="price-wrapper">
-										<div class="price">112500₽<div class="old-price">112500₽</div>
-										</div>
-										<div class="loan-price">от 8961₽ в мес.</div>
+					<div class="slide">
+						<div class="product-card">
+							<ul class="list-labels my-ul">
+								<li class="list-labels__sale">-25</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽<div class="old-price">112500₽</div>
 									</div>
-
-									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
+
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket2"></use>
+									</svg><span>Купить</span></a>
 							</div>
 						</div>
+					</div>
 
-						<div class="slide">
-							<div class="product-card">
-								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
-								<div class="product-card__body">
-									<div class="article">L4.790.2.11.2</div>
+					<div class="slide">
+						<div class="product-card">
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-								<div class="product-card__footer">
-									<div class="price-wrapper">
-										<div class="price">112500₽</div>
-										<div class="loan-price">от 8961₽ в мес.</div>
-									</div>
 
-									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
-								</div>
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket2"></use>
+									</svg><span>Купить</span></a>
 							</div>
 						</div>
+					</div>
 
-						<div class="slide">
-							<div class="product-card">
-								<ul class="list-labels my-ul">
-									<li class="list-labels__new">Новинка</li>
-								</ul>
-								<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
-								<div class="product-card__body">
-									<div class="article">T058.109.17.036.00</div>
+					<div class="slide">
+						<div class="product-card">
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model1.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">T058.109.17.036.00</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-								<div class="product-card__footer">
-									<div class="price-wrapper">
-										<div class="price">112500₽</div>
-										<div class="loan-price">от 8961₽ в мес.</div>
-									</div>
 
-									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
-								</div>
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket2"></use>
+									</svg><span>Купить</span></a>
 							</div>
 						</div>
+					</div>
 
-						<div class="slide">
-							<div class="product-card">
-								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
-								<div class="product-card__body">
-									<div class="article">L4.790.2.11.2</div>
+					<div class="slide">
+						<div class="product-card">
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-								<div class="product-card__footer">
-									<div class="price-wrapper">
-										<div class="price">112500₽</div>
-										<div class="loan-price">от 8961₽ в мес.</div>
-									</div>
 
-									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
-								</div>
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket2"></use>
+									</svg><span>Купить</span></a>
 							</div>
 						</div>
+					</div>
 
-						<div class="slide">
-							<div class="product-card">
-								<ul class="list-labels my-ul">
-									<li class="list-labels__new">Новинка</li>
-								</ul>
-								<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
-								<div class="product-card__body">
-									<div class="article">L4.790.2.11.2</div>
+					<div class="slide">
+						<div class="product-card">
+							<ul class="list-labels my-ul">
+								<li class="list-labels__new">Новинка</li>
+							</ul>
+							<a href="product.html" class="product-card__img"><img src="img/model2.png" alt=""></a>
+							<div class="product-card__body">
+								<div class="article">L4.790.2.11.2</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="price-wrapper">
+									<div class="price">112500₽</div>
+									<div class="loan-price">от 8961₽ в мес.</div>
 								</div>
-								<div class="product-card__footer">
-									<div class="price-wrapper">
-										<div class="price">112500₽</div>
-										<div class="loan-price">от 8961₽ в мес.</div>
-									</div>
 
-									<a href="#" class="btn-add-card"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#basket"></use>
-										</svg></a>
-								</div>
+								<a href="#" class="btn-add-card"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#basket2"></use>
+									</svg><span>Купить</span></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 	<section class="subscribe-section bg-grey">
 		<div class="container">
 			<div class="row">
