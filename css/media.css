@@ -729,6 +729,9 @@
   .products-row-catalog-v2 .product-card {
     width: 50%;
   }
+  .nav-tabs-plan .nav-item {
+    margin: 0 auto 0 0;
+  }
 }
 @media only screen and (max-width: 670px) {
   .dropdown-location {
@@ -1025,6 +1028,47 @@
   .filter-mobile {
     margin: 0 auto 0 0;
   }
+  .modal-title {
+    font-size: 20px;
+  }
+  .modal-content .btn-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .modal-content .btn-group .btn {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .modal-content .btn-group .btn:last-child {
+    margin: 0;
+  }
+  .nav-tabs-plan .nav-item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 0 0;
+  }
+  .plan-choice {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .plan-choice__body {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .modal-body .box-text br {
+    display: none;
+  }
+  .star-rating {
+    margin: 0 0 0 10px;
+  }
+  .star-rating label {
+    width: 24px;
+    height: 24px;
+  }
+  .label-file {
+    padding: 20px 30px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .corporate-home-advantages-box {
@@ -1083,6 +1127,16 @@
   }
   .list-similar li a {
     width: 100%;
+  }
+  .nav-tabs-plan {
+    margin: 0 0 15px;
+  }
+  .nav-tabs-plan .nav-link {
+    max-width: 120px;
+  }
+  .variable-installment-plan li {
+    padding: 10px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 420px) {

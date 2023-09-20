@@ -205,6 +205,7 @@ footer .address {
   font-weight: 500;
   width: 100%;
   text-align: center;
+  line-height: normal;
 }
 
 .modal-body {
