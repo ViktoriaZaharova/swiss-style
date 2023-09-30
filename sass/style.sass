@@ -342,6 +342,7 @@ h3
 .h3
 	width: 100%
 	font-size: 18px
+	line-height: normal
 	font-weight: bold
 	margin: 0 0 20px
 
@@ -370,8 +371,10 @@ h3
 .nav-link
 	padding: 0
 	color: #232323
+	box-shadow: none
 	&:hover
 		color: $accent
+	
 
 .nav-tabs
 	width: 100%
@@ -794,7 +797,8 @@ h3
 	font-size: 13px
 	input
 		position: absolute
-		z-index: -1
+		// z-index: -1
+		background: transparent
 		left: 0
 		top: 0
 		width: 100%

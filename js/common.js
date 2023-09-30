@@ -5,8 +5,12 @@ $(window).scroll(function () {
 	if ($(this).scrollTop() > 200) {
 		$('header').addClass('fixed');
 		$('header .form-search.open').fadeOut().removeClass('open');
+		$('.form-search-result').hide();
 	} else {
 		$('header').removeClass('fixed');
+	}
+	if ($('header').not('fixed')) {
+		$('.header-bottom').fadeIn();
 	}
 });
 
@@ -21,8 +25,22 @@ $('.btn-search').on('click', function (e) {
 	$('header .form-search').fadeToggle().toggleClass('open');
 });
 
-$('header .dropdown-menu .dropdown .dropdown-toggle').on('click', function (e) {
-	e.stopPropagation();
+$(window).on('load resize', function () {
+	if ($(window).width() < 992) {
+		$('.dropdown-toggle-main').attr("data-bs-toggle", "dropdown");
+		$('header .dropdown-menu .dropdown .dropdown-toggle').on('click', function (e) {
+			e.stopPropagation();
+		});
+	}
+});
+
+// search result
+$('header .form-search input').on('keyup change', function () {
+	if (this.value.length > 0) {
+		$('.form-search-result').fadeIn();
+	} else {
+		$('.form-search-result').fadeOut();
+	}
 });
 
 $('.btn-edit-location').on('click', function (e) {
@@ -410,7 +428,6 @@ $('.accordion-catalog').each(function () {
 		$(this).find('.accordion-item').slice(10).hide();
 		$(this).append('<a href="#" class="link-all-filter color-inherit text-decoration">Все фильтры +</a>');
 	}
-
 });
 
 // hidden list > 5
@@ -418,7 +435,7 @@ $('.accordion-catalog').each(function () {
 // show list all
 $('.link-all-filter').on('click', function (e) {
 	e.preventDefault();
-	$(this).prev('.accordion-item:hidden').slice(0, 5).slideDown();
+	$('.sidebar .accordion-item:hidden').slideDown();
 
 	var onBlock = $(this).prev('.accordion-item:hidden').length;
 	if (onBlock <= 0) {
@@ -544,8 +561,8 @@ $(document).ready(function () {
 	});
 
 	nav.find('a').on('click', function () {
-		var $el = $(this)
-			, id = $el.attr('href');
+		var $el = $(this),
+			id = $el.attr('href');
 
 		$('html, body').animate({
 			scrollTop: $(id).offset().top - nav_height
@@ -567,4 +584,3 @@ $('.filter-mobile').on('click', function (e) {
 $('.sidebar-catalog__close').on('click', function () {
 	$('.sidebar-catalog').fadeOut();
 });
-

@@ -479,6 +479,7 @@ h3 {
 .h3 {
   width: 100%;
   font-size: 18px;
+  line-height: normal;
   font-weight: bold;
   margin: 0 0 20px;
 }
@@ -516,6 +517,8 @@ h3 {
 .nav-link {
   padding: 0;
   color: #232323;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .nav-link:hover {
   color: #c21212;
@@ -1114,7 +1117,7 @@ h3 {
 }
 .checkbox-catalog input {
   position: absolute;
-  z-index: -1;
+  background: transparent;
   left: 0;
   top: 0;
   width: 100%;

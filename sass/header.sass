@@ -25,7 +25,8 @@ header
 			background: #fff
 			border-top: 1px solid #f1f1f1
 	.btn-search
-		display: none		
+		display: none
+		
 
 .header
 	position: absolute
@@ -43,6 +44,8 @@ header
 .header-top
 	padding: 14px 0
 	font-size: 13px
+	position: relative
+	z-index: 10000
 
 .logo
 	transition: .3s
@@ -82,6 +85,15 @@ header
 		fill: #333
 	label
 		margin: 0
+
+.form-search-result
+	position: absolute
+	width: 100%
+	top: 100%
+	left: 0		
+	background: #fff
+	z-index: 5
+	display: none
 
 .dropdown-location
 	font-size: 13px
@@ -227,8 +239,10 @@ header
 
 .header-bottom
 	background: #f1f1f1
-	padding: 14px 0
+	// padding: 14px 0
 	font-size: 16px
+	.nav-link
+		padding: 14px 0
 
 .nav-menu-user, .nav-menu
 	display: flex
@@ -247,13 +261,16 @@ header
 		border-radius: 0
 		background: #f1f1f1
 		min-width: 500px
-		top: 12px !important
+		top: 100% !important
 		font-size: 13px
 		padding: 20px 15px 0
 		margin: 0 !important
+		position: absolute
+		transform: none !important
 		&__footer
 			position: relative
 			display: none
+			padding: 20px 0
 			&::before
 				content: ''
 				position: absolute
@@ -272,12 +289,16 @@ header
 			&:hover
 				background: transparent
 				color: $accent
+	.dropdown
+		&:hover
+			>.dropdown-menu
+				display: block		
 
 .nav-link-all
 	display: flex
 	align-items: center
 	justify-content: center
-	margin: 20px auto
+	margin: 0 auto
 	border-bottom: 2px solid $accent
 	font-size: 15px
 	color: #232323
@@ -289,6 +310,10 @@ header
 		fill: #232323
 
 .dropdown-catalog
+	.nav-link
+		&:focus
+			box-shadow: none
+			border: none
 	> .dropdown-menu
 		position: relative
 		display: flex
@@ -303,6 +328,11 @@ header
 			flex-wrap: nowrap
 			flex-direction: row
 			align-items: center
+			.dropdown
+				// &:hover
+				// 	.dropdown-menu
+				// 		display: block
+				// 		position: absolute
 
 .dropdown-menu-list
 	display: flex
@@ -315,7 +345,7 @@ header
 	fill: #232323
 	align-items: center
 	justify-content: center
-	
+
 	&:hover
 		fill: $accent
 
