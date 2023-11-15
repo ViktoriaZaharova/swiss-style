@@ -3,14 +3,20 @@ $('[name="phone"]').mask('+7 (999) 999-99-99');
 // header fixed
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 200) {
+		$('header').removeClass('no-fixed');
 		$('header').addClass('fixed');
 		$('header .form-search.open').fadeOut().removeClass('open');
 		$('.form-search-result').hide();
 	} else {
 		$('header').removeClass('fixed');
+		$('header').addClass('no-fixed');
 	}
-	if ($('header').not('fixed')) {
+	if ($('header').hasClass('no-fixed')) {
 		$('.header-bottom').fadeIn();
+		$('.btn-burger').removeClass('click');
+	}
+	if ($('header').hasClass('fixed')) {
+		$('.header-bottom').fadeOut();
 	}
 });
 
