@@ -1088,12 +1088,13 @@ h3 {
           align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .list-checkbox-catalog li {
   width: calc(33.33% - 3px);
+  margin: 0 3px 0 0;
+}
+.list-checkbox-catalog li:last-child {
+  margin: 0;
 }
 
 .checkbox-catalog {

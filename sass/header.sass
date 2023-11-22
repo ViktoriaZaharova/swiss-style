@@ -26,6 +26,16 @@ header
 			border-top: 1px solid #f1f1f1
 	.btn-search
 		display: none
+	&.not-fixed
+		.btn-burger
+			display: flex
+		.logo
+			font-size: 7.5px
+			letter-spacing: 1.43px
+		.logo-icon
+			max-width: 127px 
+		.header-bottom
+			display: block
 
 .header
 	position: absolute
@@ -71,7 +81,7 @@ header
 	max-width: 430px
 	width: 100%
 	[type="submit"]
-	@include d-flex
+		@include d-flex
 		position: absolute
 		top: 50%
 		right: 19px
@@ -93,6 +103,7 @@ header
 	background: #fff
 	z-index: 5
 	display: none
+	.product-card-row
 
 .dropdown-location
 	font-size: 13px
@@ -239,6 +250,7 @@ header
 .header-bottom
 	background: #f1f1f1
 	// padding: 14px 0
+	display: block
 	font-size: 16px
 	.nav-link
 		padding: 14px 0

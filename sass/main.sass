@@ -159,7 +159,7 @@
 		width: 1px
 		z-index: 1
 		background: #f2f2f2
-	.slide
+	.slick-slide
 		padding: 25px 0 30px
 	.slick-dots
 		margin: 0
@@ -236,11 +236,13 @@
 				@include d-flex
 				img
 					max-height: 100%
-				&:hover
-					img
+				&:hover, &.active
+					img, svg
 						display: none
 					.icon-hover
 						display: block
+					svg
+						fill: $accent
 			svg
 				fill: $accent
 	&__head
@@ -391,7 +393,7 @@
 		color: #fff
 		width: fit-content
 		padding: 15px 20px
-		
+
 		span
 			display: block
 		.svg-icon
@@ -422,6 +424,9 @@
 		padding: 16px 20px
 		border-radius: 0
 		font-weight: normal
+	&:hover
+		.btn
+			background: $accent
 
 // seo-section
 .seo-section
@@ -617,6 +622,18 @@
 .btn-toggle
 	margin: 0 auto
 
+.icon-preloader-show
+	width: 40px
+	height: 40px
+	display: none
+	align-items: center
+	justify-content: center
+	margin: 0 auto
+	stroke: $accent
+	svg
+		width: 100%
+		height: 100%
+
 .blog-card-min
 	width: 100%
 	display: flex
@@ -709,7 +726,7 @@
 	&:last-child
 		margin: 0
 	h2
-		margin: 0 0 15px	
+		margin: 0 0 15px
 
 .how-to-buy-stages
 	width: 100%
@@ -749,7 +766,7 @@
 	&:last-child
 		margin: 0
 	h2
-		margin: 0 0 15px	
+		margin: 0 0 15px
 
 // favorites
 .page-favorites
@@ -1159,6 +1176,7 @@
 		background: #fff
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
 		padding: 10px
+		display: flex !important
 	.slick-next
 		right: -10px
 	.slick-prev
@@ -1274,6 +1292,15 @@
 			background: transparent
 	&:last-of-type
 		margin: 0
+	.list-scroll
+		transition: .3s
+		&::-webkit-scrollbar-track, &::-webkit-resizer, &::-webkit-scrollbar-thumb
+			background: $grey
+			transition: .3s
+	&:hover
+		.list-scroll
+			&::-webkit-scrollbar-track, &::-webkit-resizer, &::-webkit-scrollbar-thumb
+				background: $accent
 
 .accordion-body
 	width: 100%
@@ -1410,6 +1437,13 @@
 	.list-characteristics
 		strong
 			display: block
+		li
+			position: relative
+			min-height: 55px
+			max-height: 55px
+			overflow: hidden
+			margin: 0 0 10px
+		
 
 // article
 .page-article
@@ -1877,6 +1911,22 @@
 					text-align: right
 	.btn
 		width: 100%
+		&:hover
+			box-shadow: 0 0 10px rgba(#232323, .4)
+	.btn-accent
+		&:hover
+			color: #fff
+			background: $accent
+			svg
+				fill: #fff
+	.btn-light-grey
+		&:hover
+			color: #232323
+			background: $grey
+			box-shadow: 0 0 10px rgba(#232323, .4)
+	.btn-border
+		color: #232323
+		background: #fff
 	.btn-group
 		width: 100%
 		.btn

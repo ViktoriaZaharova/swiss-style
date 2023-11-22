@@ -35,6 +35,21 @@ header.fixed .header-bottom {
 header .btn-search {
   display: none;
 }
+header.not-fixed .btn-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header.not-fixed .logo {
+  font-size: 7.5px;
+  letter-spacing: 1.43px;
+}
+header.not-fixed .logo-icon {
+  max-width: 127px;
+}
+header.not-fixed .header-bottom {
+  display: block;
+}
 
 .header {
   position: absolute;
@@ -140,7 +155,6 @@ header .btn-search {
   z-index: 5;
   display: none;
 }
-
 .dropdown-location {
   font-size: 13px;
 }
@@ -376,6 +390,7 @@ header .btn-search {
 
 .header-bottom {
   background: #f1f1f1;
+  display: block;
   font-size: 16px;
 }
 .header-bottom .nav-link {

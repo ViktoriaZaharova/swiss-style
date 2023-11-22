@@ -780,9 +780,12 @@ h3
 	display: flex
 	align-items: stretch
 	flex-wrap: wrap
-	justify-content: space-between
+	// justify-content: space-between
 	li
 		width: calc(33.33% - 3px)
+		margin: 0 3px 0 0
+		&:last-child
+			margin: 0
 
 .checkbox-catalog
 	text-align: center
@@ -829,6 +832,7 @@ h3
 .list-scroll
 	overflow-y: auto
 	max-height: 250px
+	
 	&::-webkit-scrollbar
 		width: 5px
 		height: 5px
