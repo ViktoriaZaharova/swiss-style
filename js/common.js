@@ -278,7 +278,7 @@ $('.article-catalog-slider').slick({
 
 $('.articles-slider').slick({
 	slidesToShow: 5,
-	slidesToScroll: 1,
+	slidesToScroll: 2,
 	arrows: false,
 	dots: true,
 	autoplay: true,
