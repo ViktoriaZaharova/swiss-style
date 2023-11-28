@@ -9,6 +9,11 @@
 	.slick-arrow
 		top: 47%
 
+.home-slider__item
+	width: 100%
+	img
+		width: 100%			
+
 .advantages
 	margin: 70px 0 40px
 
@@ -672,6 +677,8 @@
 	border: solid 1px #f2f2f2
 	padding: 20px
 	font-size: 13px
+	position: sticky
+	top: 78px
 	h3
 		font-size: 13px
 		text-transform: uppercase
@@ -926,6 +933,11 @@
 		@include d-flex
 
 // basket-page
+.page-basket
+	.total-basket
+		position: sticky
+		top: 77px
+
 .total-basket
 	width: 100%
 	box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2)
@@ -946,6 +958,7 @@
 				font-size: 16px
 				width: 100%
 				padding: 10px
+				box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2)
 	.total-sum
 		font-size: 18px
 		font-weight: bold
@@ -1448,6 +1461,11 @@
 // article
 .page-article
 	margin: 0 0 90px
+	.box-text
+		a
+			display: inline
+			color: $accent
+			text-decoration: underline
 
 // .article-navigation
 // 	position: sticky

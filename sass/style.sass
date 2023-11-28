@@ -47,8 +47,6 @@ body
 	color: #232323
 	padding: 148px 0 0
 
-
-
 img
 	display: block
 	max-width: 100%
@@ -288,7 +286,7 @@ ul, ol
 	display: inline
 
 .d-inline-flex
-	display: inline-flex	
+	display: inline-flex
 
 .font-700
 	font-weight: bold
@@ -332,6 +330,7 @@ h2
 	font-weight: 500
 	width: 100%
 	line-height: 1.38
+	margin-bottom: 20px
 
 h3
 	width: 100%
@@ -345,6 +344,18 @@ h3
 	line-height: normal
 	font-weight: bold
 	margin: 0 0 20px
+
+p
+	margin: 0 0 10px
+	&:last-child
+		margin: 0
+
+ul
+	margin: 0 0 10px
+	li
+		margin: 0 0 5px
+		&:last-child
+			margin: 0
 
 .dropdown-toggle
 	cursor: pointer
@@ -374,7 +385,6 @@ h3
 	box-shadow: none
 	&:hover
 		color: $accent
-	
 
 .nav-tabs
 	width: 100%
@@ -443,6 +453,8 @@ h3
 		height: 12px
 		background: #e5e5e5
 		border-radius: 50%
+		&:only-child
+			display: none
 		&:last-child
 			margin: 0
 		button
@@ -582,6 +594,9 @@ h3
 		margin: 0 17px 0 0
 		&:last-child
 			margin: 0
+		&:first-child
+			.page-link
+				border-radius: 50%
 	.page-link
 		@include d-flex
 		border: none
@@ -690,7 +705,7 @@ h3
 	.svg-icon
 		width: 14px
 		height: 12px
-		fill: #232323	
+		fill: #232323
 		margin: 0 10px 0 0
 
 .filter-mobile
@@ -703,11 +718,11 @@ h3
 		width: 16px
 		min-width: 16px
 		height: 10px
-		margin: 0 10px 0 0	
+		margin: 0 10px 0 0
 	&:hover
 		color: $accent
 		.svg-icon
-			fill: $accent	
+			fill: $accent
 
 .select-my
 	appearance: none
@@ -832,7 +847,7 @@ h3
 .list-scroll
 	overflow-y: auto
 	max-height: 250px
-	
+
 	&::-webkit-scrollbar
 		width: 5px
 		height: 5px
@@ -946,5 +961,3 @@ h3
 		@include d-flex
 		margin: 0 15px 0 0
 	&__body
-
-

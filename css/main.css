@@ -7,6 +7,13 @@
   top: 47%;
 }
 
+.home-slider__item {
+  width: 100%;
+}
+.home-slider__item img {
+  width: 100%;
+}
+
 .advantages {
   margin: 70px 0 40px;
 }
@@ -1026,6 +1033,8 @@
   border: solid 1px #f2f2f2;
   padding: 20px;
   font-size: 13px;
+  position: sticky;
+  top: 78px;
 }
 .subscribe-blog h3 {
   font-size: 13px;
@@ -1417,6 +1426,11 @@
           justify-content: center;
 }
 
+.page-basket .total-basket {
+  position: sticky;
+  top: 77px;
+}
+
 .total-basket {
   width: 100%;
   -webkit-box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2);
@@ -1442,6 +1456,8 @@
   font-size: 16px;
   width: 100%;
   padding: 10px;
+  -webkit-box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2);
+          box-shadow: 0px 1px 24px 0 rgba(29, 29, 27, 0.2);
 }
 .total-basket .total-sum {
   font-size: 18px;
@@ -2197,6 +2213,11 @@
 
 .page-article {
   margin: 0 0 90px;
+}
+.page-article .box-text a {
+  display: inline;
+  color: #c21212;
+  text-decoration: underline;
 }
 
 .article-image {

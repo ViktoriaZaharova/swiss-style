@@ -413,13 +413,7 @@ footer .address {
   padding: 25px 0 30px;
 }
 .analogues-slider .btn-add-card {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   color: #fff;
-  border-radius: 0;
-  padding: 15px 20px;
-  height: 48px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);

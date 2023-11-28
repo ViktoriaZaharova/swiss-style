@@ -16,7 +16,7 @@ $(window).scroll(function () {
 		$('header').removeClass('fixed');
 		$('header').removeClass('not-fixed');
 	}
-	
+
 	// if ($('.btn-burger').hasClass('click')) {
 	// 	$('.header-bottom').fadeIn();
 	// }
@@ -278,7 +278,7 @@ $('.article-catalog-slider').slick({
 
 $('.articles-slider').slick({
 	slidesToShow: 5,
-	slidesToScroll: 2,
+	slidesToScroll: 1,
 	arrows: false,
 	dots: true,
 	autoplay: true,
@@ -322,6 +322,8 @@ $('.brands-slider').slick({
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });
+
+
 
 $('.product-gallery-preview').slick({
 	slidesToShow: 5,
