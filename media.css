@@ -610,7 +610,8 @@
     position: relative;
     top: 0;
   }
-  .footer-bottom .box-text {
+
+	.footer-bottom .box-text {
     text-align: left;
   }
   .link-developer {
