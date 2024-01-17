@@ -1804,7 +1804,14 @@
 }
 
 .brands-slider {
+  min-height: 52px;
+  height: 52px;
   margin: 0 0 30px;
+  display: block !important;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
 }
 .brands-slider .slide {
   margin: 0 9px 0 0;
@@ -1823,10 +1830,10 @@
   display: flex !important;
 }
 .brands-slider .slick-next {
-  right: -10px;
+  right: 3px;
 }
 .brands-slider .slick-prev {
-  left: -10px;
+  left: 3px;
 }
 .brands-slider .slick-disabled {
   display: none !important;

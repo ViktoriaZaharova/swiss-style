@@ -314,10 +314,14 @@ $('.articles-slider').slick({
 $('.brands-slider').slick({
 	slidesToShow: 8,
 	variableWidth: true,
-	infinite: false,
+	// centerMode: true,
+	infinite: true,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });
+
+
+$('.brands-slider.slick-initialized').slick("setPosition");
 
 
 
