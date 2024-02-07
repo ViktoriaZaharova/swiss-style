@@ -1252,6 +1252,13 @@
   font-weight: bold;
   line-height: 1.5;
 }
+.contacts-box .whatsapp-link {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0 0 10px;
+}
 
 .list-social-v2 li a {
   width: 40px;

@@ -329,6 +329,7 @@ $('.product-gallery-preview').slick({
 	slidesToShow: 5,
 	vertical: true,
 	focusOnSelect: true,
+	infinite: false,
 	asNavFor: '.product-gallery-slider',
 	prevArrow: '<button type="button" class="slick-prev slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next slick-arrow-white"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
@@ -346,6 +347,7 @@ $('.product-gallery-preview').slick({
 $('.product-gallery-slider').slick({
 	slidesToShow: 1,
 	arrows: false,
+	infinite: false,
 	asNavFor: '.product-gallery-preview',
 });
 

@@ -125,13 +125,14 @@ footer .address {
   width: 100%;
   color: #999;
 }
-.link-developer img {
-  margin: 0 0 0 10px;
+.link-developer a {
+  display: block;
+  width: 70px;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  max-width: 70px;
+  margin: 0 0 0 10px;
 }
-.link-developer:hover img {
+.link-developer a:hover {
   -webkit-filter: none;
           filter: none;
 }

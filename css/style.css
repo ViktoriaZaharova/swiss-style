@@ -1023,7 +1023,7 @@ ul li:last-child {
   width: fit-content;
   padding: 0 15px 0 0;
   background: #fff url("../img/angle-down.svg") no-repeat right center;
-  background-size: 7px;
+  background-size: 10px;
   cursor: pointer;
 }
 
