@@ -6,13 +6,18 @@
 	z-index: -1
 
 .home-slider
+	min-height: 458px
+	height: 458px
 	.slick-arrow
 		top: 47%
 
 .home-slider__item
 	width: 100%
+	min-height: 458px
+	height: 458px
 	img
 		width: 100%
+		opacity: 1 !important
 
 .advantages
 	margin: 70px 0 40px
@@ -62,6 +67,7 @@
 	position: relative
 	z-index: 1
 	border: 1px solid transparent
+	overflow: hidden
 	&:last-child
 		margin: 0 0 30px
 	&:hover
@@ -524,6 +530,12 @@
 	width: 100%
 	color: #8c8b8b
 	font-size: 13px
+	a
+		display: inline
+		text-decoration: underline
+		color: inherit
+		&:hover
+			color: #fff
 
 // delivery
 .nav-tabs-delivery
@@ -539,6 +551,9 @@
 		font-size: 18px
 		&::before
 			bottom: 0
+		h3
+			font-size: 18px
+			margin: 0
 
 .tab-content-delivery
 	padding: 30px 0 0
@@ -1616,7 +1631,7 @@
 	padding: 0 30px 0 0
 
 .checkout-payments
-	margin: 0 0 120px
+	margin: 60px 0
 	h2
 		margin: 0 0 30px
 
@@ -1669,7 +1684,7 @@
 		line-height: 1.43
 
 .method-obtaining
-	margin: 93px 0 76px
+	margin: 60px 0
 	h2
 		margin: 0 0 30px
 	.tab-content
