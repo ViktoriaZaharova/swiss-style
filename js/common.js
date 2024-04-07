@@ -20,12 +20,10 @@ $(window).scroll(function () {
 
 $('.btn-burger').on('click', function () {
 	$(this).toggleClass('click');
-	$('header').toggleClass('fixed');
+	$('header').addClass('fixed');
 	$('header').toggleClass('not-fixed');
 	$('header .form-search.open').fadeOut().removeClass('open');
 });
-
-
 
 
 $(window).on('load resize', function () {
