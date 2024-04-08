@@ -281,6 +281,9 @@
         -ms-flex-align: start;
             align-items: flex-start;
   }
+	.sidebar-wrapper {
+		max-width: none;
+	}
   .sidebar {
     max-width: none;
     display: -webkit-box;
