@@ -259,8 +259,12 @@
 				flex-direction: column
 				align-items: flex-start
 
-	.sidebar-wrapper
-		max-width: none			
+	.page-catalog
+		&__title
+			max-width: none
+		&__subtitle
+			width: 100%	
+			padding: 0
 
 	.sidebar
 		max-width: none
@@ -586,7 +590,7 @@
 	.nav-tabs-delivery
 		.nav-link
 			h3
-				font-size: 18px	
+				font-size: 18px
 
 	.footer-bottom
 		font-size: 11px
@@ -992,6 +996,12 @@
 	.categories-box
 		.btn
 			background: #c21212
+
+	.page-catalog
+		&__subtitle
+			flex-wrap: wrap
+		.logo-brand
+			margin: 10px 0 0			
 
 @media only screen and (max-width: 480px)
 	.corporate-home-advantages-box

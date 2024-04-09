@@ -1930,6 +1930,28 @@
   margin: 0 6px 0 0;
 }
 
+.page-catalog__title {
+  width: 100%;
+  max-width: 300px;
+}
+.page-catalog__subtitle {
+  width: calc(100% - 300px);
+  padding: 0 0 0 30px;
+  margin: 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.page-catalog__subtitle .box-text {
+  margin: 10px 0 0;
+}
+.page-catalog .logo-brand {
+  margin: 0 0 0 auto;
+}
+
 .nav-tabs-catalog {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
