@@ -1825,10 +1825,20 @@
           align-items: start;
 }
 .page-catalog__subtitle .box-text {
-  margin: 10px 0 0;
+  margin: 10px 0 0 auto;
+  max-width: 500px;
+  text-align: right;
 }
 .page-catalog .logo-brand {
-  margin: 0 0 0 auto;
+  margin: 0 0 0 30px;
+}
+
+.page-catalog-v2 .page-catalog__title {
+  max-width: none;
+}
+.page-catalog-v2 .page-catalog__subtitle {
+  padding: 0;
+  width: 100%;
 }
 
 .articles-slider {

@@ -1195,9 +1195,21 @@
 		display: flex
 		align-items: start
 		.box-text
-			margin: 10px 0 0
+			margin: 10px 0 0 auto
+			max-width: 500px
+			text-align: right
 	.logo-brand
-		margin: 0 0 0 auto		
+		margin: 0 0 0 30px	
+
+.page-catalog-v2
+	.page-catalog
+		&__title
+			max-width: none
+		&__subtitle
+			padding: 0
+			width: 100%	
+
+
 
 .articles-slider
 	overflow: hidden
